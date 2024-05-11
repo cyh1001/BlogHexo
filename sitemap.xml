@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/05/12/%E5%8D%8E%E4%B8%8E%E5%8D%8E%E7%9A%84%E5%93%81%E7%89%8C%E5%87%BA%E4%BA%8B%E8%AE%BA/</loc>
+    
+    <lastmod>2024-05-11</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2024/05/09/%E3%80%8C%E9%A3%9F%E8%B4%AB%E9%81%93%E3%80%8D%E5%92%8C%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%80%83/</loc>
     
     <lastmod>2024-05-09</lastmod>
@@ -193,7 +202,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2024-05-09</lastmod>
+    <lastmod>2024-05-11</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
