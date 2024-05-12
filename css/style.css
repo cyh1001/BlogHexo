@@ -316,13 +316,15 @@ article .entry figure.highlight table {
   border-collapse: separate;
 }
 article .entry blockquote {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  font-style: italic;
-  font-family: "Georgia", serif;
-  font-size: 1.2em;
-  padding: 0 30px 15px;
-  text-align: center;
+  border-left: 4px solid #ccc;
+  border-top: none;
+  border-bottom: none;
+  font-style: normal;
+  font-family: inherit;
+  font-size: 1em;
+  color: #888;
+  padding: 0 15px;
+  text-align: left;
 }
 article .entry blockquote footer {
   border-top: none;
