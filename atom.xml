@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-05-12T16:17:19.949Z</updated>
+  <updated>2024-05-17T03:48:57.011Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,47 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>极简设计和用户体验</title>
+    <link href="https://caoyihan.com/2024/05/17/%E6%9E%81%E7%AE%80%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/"/>
+    <id>https://caoyihan.com/2024/05/17/%E6%9E%81%E7%AE%80%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/</id>
+    <published>2024-05-17T03:48:56.000Z</published>
+    <updated>2024-05-17T03:48:57.011Z</updated>
+    
+    <content type="html"><![CDATA[<p>上次读到<a href="https://www.ruanyifeng.com/blog/2022/07/weekly-issue-216.html">《极简主义的胜利》</a>，也发现很多网站产品的风格很类似，包括网页和logo。比如都是极简风格，比较喜欢用蓝色或紫色。其余的装饰比较少。</p><p>比如：Glitter AI</p><p><img src="C:\Users\caoca\AppData\Roaming\Typora\typora-user-images\image-20240516135317113.png" alt="Glitter AI"></p><p>Supabase</p><p><img src="C:\Users\caoca\AppData\Roaming\Typora\typora-user-images\image-20240516135641983.png" alt="Supabase"></p><p>Jira logo</p><p><img src="https://jira.agileassets.com/images/atlassian-jira-logo-large.png" alt="Atlassian Jira and Jira Plugins - Jira"></p><p>我之前觉得，千篇一律的设计太无聊了，为什么他们不能差异化地做出一些不同的设计呢？</p><p>最近读了《华与华方法》，似乎找到了原因。</p><p>一切创意的创作原则也是降低成本，降低识别成本，记忆成本，阅读城堡，理解成本，传播成本。因为创意本身不是目的，创意是要解决问题的。比如一家银行的logo，首先要和餐馆区分开，要让用户第一眼看到的时候，就知道是银行。其次才是和其他银行区分开。所以大多数银行的logo设计里，都有一个铜钱。</p><p>各种网站的设计也是这样。首先需要让用户一目了然，用标题，落地页和正文，快速告诉用户这个网站是做什么的，然后才是美学上的设计。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;上次读到&lt;a href=&quot;https://www.ruanyifeng.com/blog/2022/07/weekly-issue-216.html&quot;&gt;《极简主义的胜利》&lt;/a&gt;，也发现很多网站产品的风格很类似，包括网页和logo。比如都是极简风格，比较喜欢用蓝色或紫色。其</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://caoyihan.com/2024/05/15/%E6%96%87%E6%91%98/"/>
+    <id>https://caoyihan.com/2024/05/15/%E6%96%87%E6%91%98/</id>
+    <published>2024-05-15T07:47:24.000Z</published>
+    <updated>2024-05-17T03:50:11.968Z</updated>
+    
+    <content type="html"><![CDATA[<p>机缘巧合下，我为帮助一位朋友解决他所面临的问题，用相近一个小时写了个插件。出乎意料的是，这个插件竟然在接下来的数个月里为我带来了远超日常工资的额外收入。</p><p>这个插件技术含量并不高，对任何程序员来说都是易如反掌的事情，但对普通人来说，它能让成本降低无数倍，所以他们拥有强烈的付费意愿，最终一传十、十传百，很快，我的微信好友从 200 人不到变成 1000+。</p><p>——这篇<a href="https://4ark.me/posts/2024-01-01-2023-summary/">文章</a>，作者记述了他偶然创作的小插件获得成功的故事。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;机缘巧合下，我为帮助一位朋友解决他所面临的问题，用相近一个小时写了个插件。出乎意料的是，这个插件竟然在接下来的数个月里为我带来了远超日常工资的额外收入。&lt;/p&gt;
+&lt;p&gt;这个插件技术含量并不高，对任何程序员来说都是易如反掌的事情，但对普通人来说，它能让成本降低无数倍，所以他们</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>纪念陈皓</title>
@@ -391,49 +432,6 @@
       
     <summary type="html">&lt;p&gt;我怕忘记发生了什么。我怕忘记现在自己的思想面貌&lt;/p&gt;
 </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>虚拟机和元宇宙</title>
-    <link href="https://caoyihan.com/2024/03/19/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E5%85%83%E5%AE%87%E5%AE%99/"/>
-    <id>https://caoyihan.com/2024/03/19/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E5%85%83%E5%AE%87%E5%AE%99/</id>
-    <published>2024-03-19T07:54:07.000Z</published>
-    <updated>2024-03-19T07:54:07.549Z</updated>
-    
-    <content type="html"><![CDATA[<p>读到一篇好玩的<a href="https://wygxmew.github.io/posts/why-am-i-addicted-to-installing-systems/">文章</a></p><p>作者讲述为什么他沉迷于在虚拟机中安装系统。</p><p>读下来感觉好像沉迷于在虚拟机中安装系统，就好像沉迷于在 Minecraft 中建造房子一样，也好像在元宇宙里打工一样。</p><p>「现实中我买不起房，可是我在虚拟机里装一个系统，相当于搭建一个数字房子，各种软件应用相当于其中的家装设施，从中体验到的成就感和快乐满足，跟现实中置房装修本质上不都一样吗。我的电脑系统就是与我的精神世界相连的家，现实世界里我的那个家早已破败不堪，基本上已经不抱幻想了，而数字世界里我的那个家则井井有条、日新月异，我的大部分时间和精力都花在这里。」</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;读到一篇好玩的&lt;a href=&quot;https://wygxmew.github.io/posts/why-am-i-addicted-to-installing-systems/&quot;&gt;文章&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;作者讲述为什么他沉迷于在虚拟机中安装系统。&lt;/p&gt;
-&lt;p&gt;读下来感</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>读《Because Reading is Fundamental》有感</title>
-    <link href="https://caoyihan.com/2024/03/19/ReadingIsFundamentalOrNot/"/>
-    <id>https://caoyihan.com/2024/03/19/ReadingIsFundamentalOrNot/</id>
-    <published>2024-03-19T07:24:01.000Z</published>
-    <updated>2024-04-22T12:34:48.903Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天读到<a href="https://blog.codinghorror.com/because-reading-is-fundamental-2/">《Because Reading is Fundamental》</a>:</p><p>Ars Technica在2011年进行了一个小实验。当他们发布《枪支更有可能在家中被愚蠢地使用，而非自卫》，文章第七段的最后一句话中嵌入了这段文字：</p><p>如果您已经阅读了这篇文章，请在下面的评论中提及香蕉。我们很确定这个故事的 90% 的受访者甚至不会先阅读它。</p><p>我也特意去翻了原来的评论，发现第一个提到香蕉的，已经在第三页了，可见大部分人在匆忙发表评论前，并没有读完全文。（当然，也有可能是第七段末尾是后来补充上去的）</p><p> Farhad Manjoo在<a href="http://www.slate.com/articles/technology/technology/2013/06/how_people_read_online_why_you_won_t_finish_this_article.html?ref=blog.codinghorror.com">You Won’t Finish This Article</a>中收集了这样一个数据<img src="/../images/article-scroll-graph-slate.png"></p><p>实验表明，我们不需要激励谈话。已经有太多人说了太多的话了。我们迫切需要鼓励倾听。（另一面是，有人也说，1%的用户产生了90%的内容，9%的用户创造了10%的内容，而其他90%的人主要是沉默的观察者。）</p><p>作者问，假设你对二战感兴趣。你更愿意和谁讨论这个问题？是刚刚浏览了维基百科文章的家伙，还是阅读了《第三帝国的兴衰》全文的女孩？</p><p>作者也提出了一些鼓励阅读的建议：</p><p>1.消除阅读中断，主要是分页。（让我想起短视频flow)</p><p>2.记录阅读时间</p><p>4.实时对话，而非异步通信。这样会让用户更有交流的感觉。</p><p>注意，作者 Jeff Atwood 是 Stack Overflow 的创始人，可以发现一个论坛的创始人有很多思考似乎和现在的一些观点向背（例如提倡实时对话，认为创作者太多等等）</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天读到&lt;a href=&quot;https://blog.codinghorror.com/because-reading-is-fundamental-2/&quot;&gt;《Because Reading is Fundamental》&lt;/a&gt;:&lt;/p&gt;
-&lt;p&gt;Ars Technica在2</summary>
       
     
     
