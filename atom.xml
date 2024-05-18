@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-05-17T03:48:57.011Z</updated>
+  <updated>2024-05-18T10:16:46.208Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>张一鸣和他的创业策略</title>
+    <link href="https://caoyihan.com/2024/05/18/%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%92%8C%E4%BB%96%E7%9A%84%E5%88%9B%E4%B8%9A%E7%AD%96%E7%95%A5/"/>
+    <id>https://caoyihan.com/2024/05/18/%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%92%8C%E4%BB%96%E7%9A%84%E5%88%9B%E4%B8%9A%E7%AD%96%E7%95%A5/</id>
+    <published>2024-05-18T10:16:46.000Z</published>
+    <updated>2024-05-18T10:16:46.208Z</updated>
+    
+    <content type="html"><![CDATA[<p>阑夕在<a href="https://tech.sina.com.cn/csj/2018-11-17/doc-ihnyuqhh6042529.shtml">《理性蜕变中的张一鸣》</a>里说：</p><blockquote><ul><li>黄章晋说，张一鸣的创业项目是区分人的筛子，被他捕获的，是自我塑造意识薄弱，延迟满足能力低下，很难在现实世界获得成就奖赏的人，用饭桌上的话来说就是，他们的时间和生命不值钱，是我们给了他们幸福感。</li><li>创业可以分为两种，一种是比较感性的，知行合一的。做的事情就是自己真心认同并热爱的。另一种是理性的，是从逻辑判断某个市场存在机会，然后调度一切资源进入谋求成功，自己是否对这件事情抱有兴趣，倒是非必要的。显而易见，张一鸣属于后一种创业者。他绝对不会是今日头条和抖音上的内容消费者，甚至恰恰相反。</li><li>认识张一鸣十几年的大学室友说这个人像机器一样，“不打牌，不看碟，也不玩游戏，读了四年大学，除了上课、看书，他的业余活动就是写代码和修电脑。显然，如果张一鸣在他的大学时代遇到今日头条，恐怕连下载按钮都不会去点。</li><li>张一鸣甚至很清醒的表达过一个现在看来相当残酷的观点：人可以分为两类，一类是追求效率的少数精英，他们可以在现实生活里实现自我认知，另一类则是大部分需要围绕一个东西打转的人，不管这些东西是宗教、小说、爱情还是今日头条，用户需要沉迷其中。</li><li>张一鸣说，RSS模式对于用户是不友善的，RSS要求用户具备相当高的信息组织能力，而且还要足够自律，在信息匮乏和信息过载之间获得平衡，而普通用户是做不到的。——这篇日志没有给他刚刚开始做的今日头条打半个字的广告，但指向性已经相当明确，因为判断用户需要信息饲养，这才有了今日头条的横空出世。</li></ul></blockquote><p>其实也给我的其启示是，有时创业确实应该瞄准更广大的普罗大众，而不是少数过于精英的人。</p><p>前一阵子还看到github上一个<a href="https://github.com/1c7/chinese-independent-developer">中国独立开发者项目列表</a>，给我的感觉是，大部分程序员做的项目，实在太小众了，比方说很多rss相关的，很多生产力工具。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;阑夕在&lt;a href=&quot;https://tech.sina.com.cn/csj/2018-11-17/doc-ihnyuqhh6042529.shtml&quot;&gt;《理性蜕变中的张一鸣》&lt;/a&gt;里说：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;黄章晋说，张一鸣的创业项目</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>极简设计和用户体验</title>
@@ -411,27 +434,6 @@
       
       
     <summary type="html">&lt;p&gt;感觉为自己做产品，就像为自己写作一样。为自己做产品，更能做出好产品。&lt;br&gt;&lt;a href=&quot;https://samhawken.bearblog.dev/write-for-yourself/&quot;&gt;「如果你为别人而不是为自己写作，你的文字就会死在纸上，你会发现你的内心也死了</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>为什么要写随笔</title>
-    <link href="https://caoyihan.com/2024/03/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E9%9A%8F%E7%AC%94/"/>
-    <id>https://caoyihan.com/2024/03/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E9%9A%8F%E7%AC%94/</id>
-    <published>2024-03-19T10:43:48.000Z</published>
-    <updated>2024-03-19T10:43:48.645Z</updated>
-    
-    <content type="html"><![CDATA[<p>我怕忘记发生了什么。我怕忘记现在自己的思想面貌</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;我怕忘记发生了什么。我怕忘记现在自己的思想面貌&lt;/p&gt;
-</summary>
       
     
     
