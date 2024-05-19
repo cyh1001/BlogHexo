@@ -35,13 +35,40 @@ h6 {
   font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 h1 {
-  font-size: 1.8em;
+  font-size: 2em;
+  font-weight: bold !important;
+  margin-top: 1em; /* 上边距 */
+  margin-bottom: 0.5em; /* 下边距 */
 }
 h2 {
-  font-size: 1.5em;
+  font-size: 1.75em;
+  font-weight: bold !important;
+  margin-top: 1em; /* 上边距 */
+  margin-bottom: 0.5em; /* 下边距 */
 }
 h3 {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: bold !important;
+  margin-top: 1em; /* 上边距 */
+  margin-bottom: 0.5em; /* 下边距 */
+}
+h4 {
+  font-size: 1.25em;
+  font-weight: bold !important;
+  margin-top: 1em; /* 上边距 */
+  margin-bottom: 0.5em; /* 下边距 */
+}
+h5 {
+  font-size: 1em;
+  font-weight: bold !important;
+  margin-top: 1em; /* 上边距 */
+  margin-bottom: 0.5em; /* 下边距 */
+}
+h6 {
+  font-size: 0.875em;
+  font-weight: bold !important;
+  margin-top: 1em; /* 上边距 */
+  margin-bottom: 0.5em; /* 下边距 */
 }
 a {
   text-decoration: none;
