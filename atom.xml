@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-05-18T10:16:46.208Z</updated>
+  <updated>2024-05-19T10:09:38.800Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>卡马克和DOOM</title>
+    <link href="https://caoyihan.com/2024/05/19/%E5%8D%A1%E9%A9%AC%E5%85%8B%E5%92%8CDOOM/"/>
+    <id>https://caoyihan.com/2024/05/19/%E5%8D%A1%E9%A9%AC%E5%85%8B%E5%92%8CDOOM/</id>
+    <published>2024-05-19T10:09:38.000Z</published>
+    <updated>2024-05-19T10:09:38.800Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近看了一本书《DOOM 启示录》。</p><p><img src="/../images/%E5%8D%A1%E9%A9%AC%E5%85%8B.jpg" alt="约翰·卡马克"></p><p>主人公之一，是约翰·卡马克，他是 DOOM 这个游戏的主要创作者，也是 id Software 的创始人之一。</p><p><img src="/../images/littlecat.jpg" alt="一只小猫"></p><p>DOOM 是一个很知名的游戏，不过大概是两个年代前的了。</p><p>卡马克有一只猫，叫咪子，咪子陪伴了他很久，他编程时，猫就趴在电脑上面。甚至他的合伙人，都把咪子放到公司的员工名单中了。</p><p>但那只猫后来脾气变得有点暴躁，在办公室闲游乱逛，海拔新买的皮沙发尿了一通。</p><p>卡马克就向公司的人宣布，咪子只会给他带来麻烦，他要把咪子送到动物收容所。</p><p>即使他那个合伙人说，咪子送到收容所可能就活不了了，但卡马克不以为然，回到房间继续工作了。</p><p>因为卡马克性格就是这样，他写程序时很专注很专注。</p><p>其他员工要是不合适，他就会踢除，（即使是他朋友）。</p><p><img src="/../images/DOOM" alt="DOOM"></p><p>还有一个小故事，</p><p>有一次他同事，为了测试卡马克的专注力，在他隔壁放A片，并把音量调到最大，其他同事很快都被呻吟声吸引到了电视机旁。但卡马克好像一开始没听到，后来听到了，就“嗯？”了一声，并没有停止工作。</p><p><a href="https://www.ruanyifeng.com/blog/2023/06/weekly-issue-258.html">阮一峰认为</a>，正是这样的性格，才造就了卡马克，使他做出做优秀的游戏。</p><p>还有一件小事：卡马克会把游戏的开发进展，放到计划日志中，告诉所有人。但后来卡马克觉得更新日志很头疼，因为所有人都想从字里行间的蛛丝马迹中，读出些什么来。</p><p>有时可能也有人想从一些名人发的帖子中，读出些什么来，但其实有可能作者就是随便写的。</p><p>《DOOM 启示录》也多次强调卡马克的黑客精神。</p><blockquote><p>卡马克清楚地知道，他喜欢的事情就是——编程，他系统地安排着生活，以便把大部分时间都用于此。从制作 DOOM 时起，他就决定开始调整生物钟，以达到一种更孤寂更专注的境界，以避开罗梅洛的尖叫，避开记者的电话，避开所有这些日常生活中使他分心的事物。他开始强迫自己每天睡觉前多熬一个小时，然后第二天再晚一个小时到办公室。1995 年初，他养成了他觉得最理想的作息规律：下午四点到公司，凌晨四点离开。为了 Quake，他得全神贯注才行。</p></blockquote><blockquote><p>卡马克听到艾尔建议他去申请专利后怒不可遏。</p><p>卡马克认为，所有科学技术，以及文化、知识、理论，都是在前人的基础上发展起来的。去注册一项专利，就等于宣布说：”这个想法是我的想法，你不能使用或扩展它，因为，我“拥有”了这个想法，这听起来荒谬绝伦。</p><p>专利制度威胁到他生命中最重要的事情：编写代码去解决问题。如果这个世界上充斥着各种专利，以至于他连解决一个简单的问题都要侵犯到某项专利的话，那么，这将不是他所乐意生活在其中的世界。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近看了一本书《DOOM 启示录》。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/../images/%E5%8D%A1%E9%A9%AC%E5%85%8B.jpg&quot; alt=&quot;约翰·卡马克&quot;&gt;&lt;/p&gt;
+&lt;p&gt;主人公之一，是约翰·卡马克，他是 DOOM 这个游戏的主要创作者，也是 </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>张一鸣和他的创业策略</title>
@@ -414,26 +436,6 @@
       
       
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.owenyoung.com/thoughts/&quot;&gt;摘录&lt;/a&gt;：笔记是一种无限游戏，没有结果，只有过程。而博客是一种有限游戏，因为产出了公开的作品：博文。这说明我们不应该当一个完美主义者，只在脑海中或草稿箱中保留想法，反之我们应该尽</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>为自己而创作</title>
-    <link href="https://caoyihan.com/2024/03/25/create-for-yourself/"/>
-    <id>https://caoyihan.com/2024/03/25/create-for-yourself/</id>
-    <published>2024-03-24T21:37:22.000Z</published>
-    <updated>2024-03-24T21:37:22.472Z</updated>
-    
-    <content type="html"><![CDATA[<p>感觉为自己做产品，就像为自己写作一样。为自己做产品，更能做出好产品。<br><a href="https://samhawken.bearblog.dev/write-for-yourself/">「如果你为别人而不是为自己写作，你的文字就会死在纸上，你会发现你的内心也死了。」</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;感觉为自己做产品，就像为自己写作一样。为自己做产品，更能做出好产品。&lt;br&gt;&lt;a href=&quot;https://samhawken.bearblog.dev/write-for-yourself/&quot;&gt;「如果你为别人而不是为自己写作，你的文字就会死在纸上，你会发现你的内心也死了</summary>
       
     
     
