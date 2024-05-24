@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-05-23T15:49:15.802Z</updated>
+  <updated>2024-05-24T06:38:02.824Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简单比正确更重要</title>
+    <link href="https://caoyihan.com/2024/05/24/simplicity-is-more-important-than-correctness/"/>
+    <id>https://caoyihan.com/2024/05/24/simplicity-is-more-important-than-correctness/</id>
+    <published>2024-05-24T06:38:02.000Z</published>
+    <updated>2024-05-24T06:38:02.824Z</updated>
+    
+    <content type="html"><![CDATA[<p>Luyao写了一个帖子<a href="https://zhangluyao.com/blog/worse_is_better/">《简单比正确更重要》</a></p><blockquote><p>为什么一些看起来“很垃圾”的软件会占领市场?</p><p>我从中学到的东西就是，<strong>简单比正确更重要</strong>。不必追求“正确”，你需要 50% 正确，当它像病毒一样传播以后，人们会花时间将它改进到 90% 正确。但它首先要是一个病毒，而不是一个“正确”的东西。而复杂的东西显然不会成为病毒。（作者把 C 语言和 Unix 称做最大的计算机病毒。）</p></blockquote><p>参考链接：<a href="https://www.jwz.org/doc/worse-is-better.html">https://www.jwz.org/doc/worse-is-better.html</a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Luyao写了一个帖子&lt;a href=&quot;https://zhangluyao.com/blog/worse_is_better/&quot;&gt;《简单比正确更重要》&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;为什么一些看起来“很垃圾”的软件会占领市场?&lt;/p&gt;
+&lt;p&gt;我从中学到的</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>中外程序员差异和文字表达</title>
@@ -68,16 +91,16 @@
     <link href="https://caoyihan.com/2024/05/20/A-website-with-high-traffic/"/>
     <id>https://caoyihan.com/2024/05/20/A-website-with-high-traffic/</id>
     <published>2024-05-20T03:51:31.000Z</published>
-    <updated>2024-05-20T03:57:44.690Z</updated>
+    <updated>2024-05-23T15:54:51.605Z</updated>
     
-    <content type="html"><![CDATA[<p>偶然发现一个网站 <a href="https://floor796.com/">floor796</a>。</p><p><img src="/../images/796.jpg"></p><p>其实我还不太理解这个网站是做什么用的，但我是第一次看到这种类型的网站，而且流量也出奇地高，月访问量超过60万。</p><p><img src="/../images/796traffic.png"></p>]]></content>
+    <content type="html"><![CDATA[<p>偶然发现一个网站 <a href="https://floor796.com/">floor796</a>。</p><p><img src="/../images/796.jpg"></p><p>虽然我还不太知道这个网站有什么用，但我觉得很有意思，而且流量也出奇地高，月访问量超过60万。</p><p><img src="/../images/796traffic.png"></p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;偶然发现一个网站 &lt;a href=&quot;https://floor796.com/&quot;&gt;floor796&lt;/a&gt;。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/../images/796.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;其实我还不太理解这个网站是做什么用的，但我是第一次看到这种类型的网站，而且</summary>
+&lt;p&gt;虽然我还不太知道这个网站有什么用，但我觉得很有意思，而且流量也出奇地高，月</summary>
       
     
     
@@ -422,28 +445,6 @@
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://yayu.net/264.html&quot;&gt;《提高摄影水平的100条建议》&lt;/a&gt;&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;三分法则99%的时候都有效。（三分法则：人们的目光总是自然落在画面三分之二处的位置上，尽量使主要的被摄体位于画面三等分线的焦点上，</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>短想法</title>
-    <link href="https://caoyihan.com/2024/04/22/%E7%9F%AD%E6%83%B3%E6%B3%95/"/>
-    <id>https://caoyihan.com/2024/04/22/%E7%9F%AD%E6%83%B3%E6%B3%95/</id>
-    <published>2024-04-22T04:57:56.000Z</published>
-    <updated>2024-05-06T14:13:44.841Z</updated>
-    
-    <content type="html"><![CDATA[<p>像公众号，或者小红书，知乎这些，已经是流量非常大的平台了，看的人已经很多了，自己要想获得竞争优势，就应该避开这些平台。如果我跟其他人摄入的信息都一样，自己就很难有优势。</p><p>而如果完全不看，就可以做到很强的差异化，差异化就是竞争力。</p><p>自己或许应该多去一些更边缘，但也更有意思的网站找找。</p><p>一般用搜索引擎，往往只会看到或点击前面几个链接。但实际上多往后面看一看，也有可能发现意外的惊喜。比如找到更合适且更便宜的工具。——2024.5.2</p><p>总担心自己说的话太没有含金量。</p><p>昨天写了<a href="https://www.caoyihan.com/2024/04/21/%E9%98%BF%E6%8B%89%E4%BC%AF%E7%9A%84%E5%8A%B3%E4%BC%A6%E6%96%AF/">《阿拉伯的劳伦斯》的书评</a>，书中其实提供了大量的素材和细节，但自己写的时候，反而感觉素材太多太混乱了，不知道从哪里着手。而看到自己写出来的文字时，发现那些丰富的细节都不知道去哪了。</p><p>本来按理说这样的稿子就应该埋掉的。但我担心如果我一篇都写不出来，以后也会写不出来。这次写了之后，就知道以后看书时应该注意什么了。</p><p>而且，最近看的《认知心理学》也很强调对学习材料的精细加工，自己花了三天阅读《阿拉伯的劳伦斯》，或许就是很低效的，所以必须逼自己写点什么——2024.4.22</p><p>而且，书评或者学习笔记之类的文字，真的对读者有价值吗？反正我自己应该很少看别人的学习笔记，偶尔买书前会看看书评。不过总感觉读者应该不喜欢看书评&amp;学习笔记。自己和朋友聊天时，也不会说这类东西吧。</p><p>其实也觉得「情绪」或「生活」类的内容，也对读者没有价值。这类内容或许只适合发在朋友圈，因为只有对你比较熟悉的人，才会好奇你的近况吧——2024.4.22</p><p>看到「和菜头」能多年日更，并写成文笔晓畅的文章，就很佩服！能长期坚持做一件事，就很能让人佩服了！也佩服竹叶老师，能写那么多真诚的文字，（而不是互联网上流行的假文字）——2024.4.22</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;像公众号，或者小红书，知乎这些，已经是流量非常大的平台了，看的人已经很多了，自己要想获得竞争优势，就应该避开这些平台。如果我跟其他人摄入的信息都一样，自己就很难有优势。&lt;/p&gt;
-&lt;p&gt;而如果完全不看，就可以做到很强的差异化，差异化就是竞争力。&lt;/p&gt;
-&lt;p&gt;自己或许应该多去</summary>
       
     
     
