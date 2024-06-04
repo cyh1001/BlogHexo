@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-06-04T06:30:30.724Z</updated>
+  <updated>2024-06-04T08:25:08.833Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>为什么应该用Hugging Face Inference Endpoints构建AI应用</title>
+    <link href="https://caoyihan.com/2024/06/04/WhyHuggingFaceInferenceEndpoints/"/>
+    <id>https://caoyihan.com/2024/06/04/WhyHuggingFaceInferenceEndpoints/</id>
+    <published>2024-06-04T08:25:08.000Z</published>
+    <updated>2024-06-04T08:25:08.833Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在构建产品的过程当中，偶然使用了Hugging face 的 Inference API 和Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p><p>我采取的整体技术方案是，Next.js + Vercel + Hugging Face Inference Endpoint 的 API，前后端采用统一的框架，没有使用云服务器。</p><p>因为做独立开发，最重要的，就是快速推出产品，而且为了快速迭代，应该使用简单的部署方案。而为了尽可能地使用简单的技术方案，用API构建产品，比自己部署大模型，要更方便快速，尤其是在构造MVP的时候。</p><p>但问题是，有很多模型并没有提供API，或者提供的API并不完全，比如说OpenAI的Whisper，现在官方还只提供Whisper-large-V2的API，但Whisper-large-V3已经推出很长时间了，但OpenAI并没有提供API。而且还有很多基于某些特定任务做了微调的大模型，也没有提供 API。也有些模型，只有Python 的 API，没有提供JavaScript 的API，使用起来也会麻烦一点。</p><p>并且，不同的模型，提供的API格式可能也不一样，如果产品需要用到多个不同的模型，切换起来会麻烦一点。</p><p>而 Hugging Face 就为很多模型提供了API，只需要在Hugging Face找到需要的模型，点击Deploy—Inference API，即可使用，并且有Python, JavaScript, cURL三个版本。而且，要切换不同的模型，只需要更改API链接，比如将<code>meta-llama/Meta-Llama-3-8B-Instruct</code>修改成<code>https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3</code>即可。</p><p><img src="/../images/InferenceAPI2.png" alt="image-20240604160351720"></p><p><img src="/../images/InferenceAPI1.png" alt="image-20240604160054753"></p><p>注意，Inference API 只适合开发环境或者测试，因为比较拥挤，在生产环境是不够用的。在生产环境需要使用Inference Endpoints。Inference API 是免费的，Inference Endpoints按小时付费，</p><p><img src="/../images/EndPoints.png" alt="image-20240604161107855"></p><p>Inference Endpoints 的主要作用，正如它<a href="https://huggingface.co/inference-endpoints/dedicated">官网</a>所说，是让生产部署更加简单。可以部署任何模型到任何云。</p><p>而且如果需要自己训练模型，也可以把模型上传到Hugging Face Hub ，然后使用Inference Endpoints进行部署。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近在构建产品的过程当中，偶然使用了Hugging face 的 Inference API 和Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)&lt;/p&gt;
+&lt;p&gt;我采取的整体技术方案是，Next.js + Vercel + Hugging </summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>关于APIConnectionError： Connection error在JavaScript的最新解决方案</title>
@@ -422,28 +443,6 @@
       
     <summary type="html">&lt;p&gt;「我想，一个人还能在网上写下自己的感慨，那么他的个人境遇就不会差到哪里去。」——&lt;a href=&quot;https://mp.weixin.qq.com/s/dgXWMrTr0S1EUEFtA0sHyQ&quot;&gt;槽边往事&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;我自己也有这样的体会，自己发社媒多的时候，</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>「你的特质需要被保护」</title>
-    <link href="https://caoyihan.com/2024/04/28/%E3%80%8C%E4%BD%A0%E7%9A%84%E7%89%B9%E8%B4%A8%E9%9C%80%E8%A6%81%E8%A2%AB%E4%BF%9D%E6%8A%A4%E3%80%8D/"/>
-    <id>https://caoyihan.com/2024/04/28/%E3%80%8C%E4%BD%A0%E7%9A%84%E7%89%B9%E8%B4%A8%E9%9C%80%E8%A6%81%E8%A2%AB%E4%BF%9D%E6%8A%A4%E3%80%8D/</id>
-    <published>2024-04-28T04:52:15.000Z</published>
-    <updated>2024-04-28T04:52:15.693Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天读到一个<a href="https://www.owenyoung.com/thoughts/">帖子</a>，作者Owen认为「你的特质需要被保护」。</p><p>特质包括对产品的想法，直觉和审美。</p><p>Owen发现，当他和某些圈子混熟之后，很容易受到他们的影响，以前坚持的想法会和所在的圈子看齐，（可能是为了被接纳吧），从而离那个「有特质的自己越来越远」。</p><p>而特质是很宝贵的，需要被保护起来。</p><p>作者建议，最好一开始就和不喜欢的圈子 or 人保持一定距离。</p><p>我感觉，隐身于一个群体里，太安全了。而「特质」是一种差异化，差异化就是竞争力。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天读到一个&lt;a href=&quot;https://www.owenyoung.com/thoughts/&quot;&gt;帖子&lt;/a&gt;，作者Owen认为「你的特质需要被保护」。&lt;/p&gt;
-&lt;p&gt;特质包括对产品的想法，直觉和审美。&lt;/p&gt;
-&lt;p&gt;Owen发现，当他和某些圈子混熟之后，很容易受到他</summary>
       
     
     
