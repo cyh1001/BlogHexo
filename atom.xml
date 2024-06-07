@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-06-04T08:25:08.833Z</updated>
+  <updated>2024-06-07T09:39:53.425Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Climbing the wrong hill</title>
+    <link href="https://caoyihan.com/2024/06/07/Climbing-the-wrong-hill/"/>
+    <id>https://caoyihan.com/2024/06/07/Climbing-the-wrong-hill/</id>
+    <published>2024-06-07T09:39:53.000Z</published>
+    <updated>2024-06-07T09:39:53.425Z</updated>
+    
+    <content type="html"><![CDATA[<p>我经常提醒自己，不要<a href="https://cdixon.org/2009/09/19/climbing-the-wrong-hill">climbing the wrong hill</a>。</p><p>计算机科学中的一个经典问题是爬山（hill climbing）。想象一下，自己像一个小蚂蚁一样被扔在丘陵地带的一个随机地点，你只看得到周围一个小局部。目标是到达最高的山丘。</p><p>一个最简单的算法是：在任何时刻，都朝着更高的方向迈出一小步，这种方法的风险是，很可能到达某个小山丘的顶部，而非最高的山丘顶部。</p><p>另一个通常更好的算法是让你反复地把自己放在地形的随机部分，做简单的爬山，然后在多次这样的尝试之后退后一步，决定哪个山丘最高。</p><p>作为一个普通人，我们可能知道我们想要登上的山峰并不是我们正在攀登的山丘。但现在的山丘诱惑力很强。最终陷入了行为经济学家强调的一个常见陷阱：人们倾向于系统性地高估短期回报，而非长期回报。这种影响在更有野心的人身上似乎更强烈。他们的雄心壮志似乎使他们很难放弃短期的上升台阶。</p><p>那我们应该怎么做呢？应该随机地进入地形的不同部分，寻找最高的山峰，当寻找到最高的山峰时，不要再在当前的山丘上浪费时间，无论下一步看起来多么好。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我经常提醒自己，不要&lt;a href=&quot;https://cdixon.org/2009/09/19/climbing-the-wrong-hill&quot;&gt;climbing the wrong hill&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;计算机科学中的一个经典问题是爬山（hill climb</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>为什么应该用Hugging Face Inference Endpoints构建AI应用</title>
@@ -422,27 +443,6 @@
     <summary type="html">&lt;p&gt;&lt;a href=&quot;https://onepagelove.com/&quot;&gt;onepagelove&lt;/a&gt; 网站收集了一些好看的单页网站。我觉得可以为自己做网站提供一些思路。这里摘录几个例子。&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://mubasic-test.</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://caoyihan.com/2024/04/28/%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%BF%98%E8%83%BD%E5%9C%A8%E7%BD%91%E4%B8%8A%E5%86%99%E4%B8%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%9F%E6%85%A8%EF%BC%8C%E9%82%A3%E4%B9%88%E4%BB%96%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%A2%83%E9%81%87%E5%B0%B1%E4%B8%8D%E4%BC%9A%E5%B7%AE%E5%88%B0%E5%93%AA%E9%87%8C%E5%8E%BB%E3%80%82/"/>
-    <id>https://caoyihan.com/2024/04/28/%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%BF%98%E8%83%BD%E5%9C%A8%E7%BD%91%E4%B8%8A%E5%86%99%E4%B8%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%9F%E6%85%A8%EF%BC%8C%E9%82%A3%E4%B9%88%E4%BB%96%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%A2%83%E9%81%87%E5%B0%B1%E4%B8%8D%E4%BC%9A%E5%B7%AE%E5%88%B0%E5%93%AA%E9%87%8C%E5%8E%BB%E3%80%82/</id>
-    <published>2024-04-28T14:40:07.000Z</published>
-    <updated>2024-04-28T14:40:52.052Z</updated>
-    
-    <content type="html"><![CDATA[<p>「我想，一个人还能在网上写下自己的感慨，那么他的个人境遇就不会差到哪里去。」——<a href="https://mp.weixin.qq.com/s/dgXWMrTr0S1EUEFtA0sHyQ">槽边往事</a></p><p>我自己也有这样的体会，自己发社媒多的时候，说明心境起码没有太糟。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;「我想，一个人还能在网上写下自己的感慨，那么他的个人境遇就不会差到哪里去。」——&lt;a href=&quot;https://mp.weixin.qq.com/s/dgXWMrTr0S1EUEFtA0sHyQ&quot;&gt;槽边往事&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;我自己也有这样的体会，自己发社媒多的时候，</summary>
       
     
     
