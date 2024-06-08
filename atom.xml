@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-06-08T03:53:53.869Z</updated>
+  <updated>2024-06-08T12:35:11.804Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>你为什么不应该对你的创业想法保密</title>
+    <link href="https://caoyihan.com/2024/06/08/why-you-shouldnot-keep-your-startup-idea-secret/"/>
+    <id>https://caoyihan.com/2024/06/08/why-you-shouldnot-keep-your-startup-idea-secret/</id>
+    <published>2024-06-08T12:35:11.000Z</published>
+    <updated>2024-06-08T12:35:11.804Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天读到Chris Dixon的一篇文章<a href="https://cdixon.org/2009/08/22/why-you-shouldnt-keep-your-startup-idea-secret">你为什么不应该对你的创业想法保密</a>。Chris Dixon是a16z的普通合伙人，也是Hunch的联创。</p><p>Chris Dixon认为，创业的「隐身模式」是危险的，应该和任何愿意谈论的人谈论自己的创业想法，包括投资人、创业者、业内人士、朋友、或者路人。</p><p>与人交流有很多好处。可以获得改进建议；发现缺陷；可以了解到行业相关信息；了解到同类竞品；可以更好地了解到人们对于这个产品及功能的兴奋程度。也可以完善自己的销售，或者对投资人的路演。也可能甚至发现这是一个馊主意，免去走弯路的麻烦。</p><p>而就被窃取想法的担忧而言。首先，世界上只有极少数人，能偷窃你的想法并真正实现。因为很多人有自己的工作，而且大部分创业者都是有道德和诚信的，有道德的企业家不会复制你的想法。而投资人，要么不喜欢你的想法，要么愿意资助你，而不会另外去建立一个团队。</p><p>其次，大多数人会认为你的想法很愚蠢。（即使事实未必是这样。）</p><p>即使你的想法落入坏人之手，他们可能只会得到高层次的“电梯推销”，无论如何都没有多大价值。到那时，你已经通过与尽可能多的人交谈，进一步、更详细地发展了这个想法。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天读到Chris Dixon的一篇文章&lt;a href=&quot;https://cdixon.org/2009/08/22/why-you-shouldnt-keep-your-startup-idea-secret&quot;&gt;你为什么不应该对你的创业想法保密&lt;/a&gt;。Chris Dix</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>好的研究离不开详尽的调查</title>
@@ -419,27 +439,6 @@
     <summary type="html">&lt;p&gt;默克尔树，也称哈希树。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;定义&lt;/strong&gt;：若一种树，满足每个叶节点等于数据块的哈希值，每个非叶节点都等于其子节点的哈希值。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/c</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>不要给牦牛剃毛</title>
-    <link href="https://caoyihan.com/2024/05/08/%E4%B8%8D%E8%A6%81%E7%BB%99%E7%89%A6%E7%89%9B%E5%89%83%E6%AF%9B/"/>
-    <id>https://caoyihan.com/2024/05/08/%E4%B8%8D%E8%A6%81%E7%BB%99%E7%89%A6%E7%89%9B%E5%89%83%E6%AF%9B/</id>
-    <published>2024-05-08T10:18:21.000Z</published>
-    <updated>2024-05-08T10:18:21.512Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天读到一篇有意思的文章<a href="https://seths.blog/2005/03/dont_shave_that/">《不要给牦牛剃毛》</a>。</p><p>给牦牛剃毛（Yak Shaving）指的是一系列步骤的最后一步。当您发现需要做的事情时，就会发生这些步骤：</p><blockquote><p> “我今天想给汽车打蜡。”<br>“哎呀，软管还是冬天坏了。我需要在家得宝买一个新的。<br>“但是家得宝在Tappan Zee桥的另一边，由于通行费，没有我的EZPass到达那里是很痛苦的。”<br>“但是，等等！我可以借用我邻居的 EZPass……”<br>“不过，鲍勃不会把他的 EZPass 借给我，直到我还我儿子借来的 mooshi 枕头。”<br>“我们还没有归还它，因为一些馅料掉了出来，我们需要一些牦牛毛来重新填充它。”<br>接下来你知道的，你在动物园里，给牦牛剃毛，这样你就可以给你的车打蜡了。</p></blockquote><p>解决方案也很简单，可以参考马斯克的「五步工作法」：先判断每项步骤，把能删除的全部删除了；再做简化和优化。</p><p>比如在上面的例子中，就是不要去家得宝买软管。</p><p>有的时候，现在的「完成」比以后的「完美」更重要。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天读到一篇有意思的文章&lt;a href=&quot;https://seths.blog/2005/03/dont_shave_that/&quot;&gt;《不要给牦牛剃毛》&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;给牦牛剃毛（Yak Shaving）指的是一系列步骤的最后一步。当您发现需要做的事情时，就会发生这</summary>
       
     
     
