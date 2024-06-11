@@ -37,7 +37,7 @@ h6 {
 h1 {
   font-size: 2em;
   font-weight: bold !important;
-  margin-top: 1em; /* 上边距 */
+  margin-top: 0em; /* 上边距 */
   margin-bottom: 0.5em; /* 下边距 */
 }
 h2 {
