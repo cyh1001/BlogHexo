@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-06-08T12:35:11.804Z</updated>
+  <updated>2024-06-11T11:48:24.282Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>保持无聊也是开始工作的好方法</title>
+    <link href="https://caoyihan.com/2024/06/11/do-nothing-and-get-started/"/>
+    <id>https://caoyihan.com/2024/06/11/do-nothing-and-get-started/</id>
+    <published>2024-06-11T03:18:49.000Z</published>
+    <updated>2024-06-11T11:48:24.282Z</updated>
+    
+    <content type="html"><![CDATA[<p>保持无聊也是开始工作的好方法。</p><p>当各种信息流进入脑子的时候，大脑顺着信息流，似乎容易停止思考。但当封印了X、公众号、YouTube，以及其他各类信息流渠道的时候，会更容易感觉到无聊，但其实也把大脑空了出来。这时就更容易进入深度思考，也更容易进入工作状态。</p><p>所以有时感觉到无聊可能是好事，可以主动让自己感觉到无聊，也应该提升自己对无聊的忍受力。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;保持无聊也是开始工作的好方法。&lt;/p&gt;
+&lt;p&gt;当各种信息流进入脑子的时候，大脑顺着信息流，似乎容易停止思考。但当封印了X、公众号、YouTube，以及其他各类信息流渠道的时候，会更容易感觉到无聊，但其实也把大脑空了出来。这时就更容易进入深度思考，也更容易进入工作状态。&lt;/p</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>你为什么不应该对你的创业想法保密</title>
@@ -79,19 +100,19 @@
   </entry>
   
   <entry>
-    <title>为什么应该用Hugging Face Inference Endpoints构建AI应用</title>
+    <title>为什么应该用 Hugging Face Inference Endpoints 构建AI应用</title>
     <link href="https://caoyihan.com/2024/06/04/WhyHuggingFaceInferenceEndpoints/"/>
     <id>https://caoyihan.com/2024/06/04/WhyHuggingFaceInferenceEndpoints/</id>
     <published>2024-06-04T08:25:08.000Z</published>
-    <updated>2024-06-04T08:25:08.833Z</updated>
+    <updated>2024-06-11T10:19:53.253Z</updated>
     
-    <content type="html"><![CDATA[<p>最近在构建产品的过程当中，偶然使用了Hugging face 的 Inference API 和Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p><p>我采取的整体技术方案是，Next.js + Vercel + Hugging Face Inference Endpoint 的 API，前后端采用统一的框架，没有使用云服务器。</p><p>因为做独立开发，最重要的，就是快速推出产品，而且为了快速迭代，应该使用简单的部署方案。而为了尽可能地使用简单的技术方案，用API构建产品，比自己部署大模型，要更方便快速，尤其是在构造MVP的时候。</p><p>但问题是，有很多模型并没有提供API，或者提供的API并不完全，比如说OpenAI的Whisper，现在官方还只提供Whisper-large-V2的API，但Whisper-large-V3已经推出很长时间了，但OpenAI并没有提供API。而且还有很多基于某些特定任务做了微调的大模型，也没有提供 API。也有些模型，只有Python 的 API，没有提供JavaScript 的API，使用起来也会麻烦一点。</p><p>并且，不同的模型，提供的API格式可能也不一样，如果产品需要用到多个不同的模型，切换起来会麻烦一点。</p><p>而 Hugging Face 就为很多模型提供了API，只需要在Hugging Face找到需要的模型，点击Deploy—Inference API，即可使用，并且有Python, JavaScript, cURL三个版本。而且，要切换不同的模型，只需要更改API链接，比如将<code>meta-llama/Meta-Llama-3-8B-Instruct</code>修改成<code>https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3</code>即可。</p><p><img src="/../images/InferenceAPI2.png" alt="image-20240604160351720"></p><p><img src="/../images/InferenceAPI1.png" alt="image-20240604160054753"></p><p>注意，Inference API 只适合开发环境或者测试，因为比较拥挤，在生产环境是不够用的。在生产环境需要使用Inference Endpoints。Inference API 是免费的，Inference Endpoints按小时付费，</p><p><img src="/../images/EndPoints.png" alt="image-20240604161107855"></p><p>Inference Endpoints 的主要作用，正如它<a href="https://huggingface.co/inference-endpoints/dedicated">官网</a>所说，是让生产部署更加简单。可以部署任何模型到任何云。</p><p>而且如果需要自己训练模型，也可以把模型上传到Hugging Face Hub ，然后使用Inference Endpoints进行部署。</p>]]></content>
+    <content type="html"><![CDATA[<p>最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p><p>我采取的整体技术方案是，Next.js + Vercel + Hugging Face Inference Endpoint 的 API，前后端采用统一的框架，没有使用云服务器。</p><p>因为做独立开发，最重要的，就是快速推出产品，而且为了快速迭代，应该使用简单的部署方案。而为了尽可能地使用简单的技术方案，用 API 构建产品，比自己部署大模型，要更方便快速，尤其是在构造 MVP（最小可行性产品）的时候。</p><p>但问题是，有很多模型并没有提供 API，或者提供的 API 并不完全，比如说 OpenAI 的 Whisper，现在官方还只提供 Whisper-large-V2 的 API，但 Whisper-large-V3 已经推出很长时间了，但 OpenAI 并没有提供 API。而且还有很多基于某些特定任务做了微调的大模型，也没有提供 API。也有些模型，只有 Python 的 API，没有提供JavaScript 的API，使用起来也会麻烦一点。</p><p>并且，不同的模型，提供的 API 格式可能也不一样，如果产品需要用到多个不同的模型，切换起来会麻烦一点。</p><p>而 Hugging Face 就为很多模型提供了 API，只需要在 Hugging Face 找到需要的模型，点击 Deploy—Inference API，即可使用，并且有 Python, JavaScript, cURL 三个版本。而且，要切换不同的模型，只需要更改API链接，比如将<code>meta-llama/Meta-Llama-3-8B-Instruct</code>修改成<code>https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3</code>即可。</p><p><img src="/../images/InferenceAPI2.png" alt="image-20240604160351720"></p><p><img src="/../images/InferenceAPI1.png" alt="image-20240604160054753"></p><p>注意，Inference API 只适合开发环境或者测试，因为比较拥挤，在生产环境是不够用的。在生产环境需要使用 Inference Endpoints。Inference API 是免费的，Inference Endpoints 按小时付费。如果说使用量较大的话，也需要注意成本。</p><p><img src="/../images/EndPoints.png" alt="image-20240604161107855"></p><p>Inference Endpoints 的主要作用，正如它<a href="https://huggingface.co/inference-endpoints/dedicated">官网</a>所说，是让生产部署更加简单。可以部署任何模型到任何云。</p><p>而且如果需要自己训练模型，也可以把模型上传到 Hugging Face Hub ，然后使用 Inference Endpoints 进行部署。</p><p>总的来说，Hugging Face 的 Inference API 和 Inference Endpoints 为独立开发者和小型团队提供了一个轻量化的解决方案，帮助他们快速推出和迭代产品。</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;最近在构建产品的过程当中，偶然使用了Hugging face 的 Inference API 和Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)&lt;/p&gt;
-&lt;p&gt;我采取的整体技术方案是，Next.js + Vercel + Hugging </summary>
+    <summary type="html">&lt;p&gt;最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)&lt;/p&gt;
+&lt;p&gt;我采取的整体技术方案是，Next.js + Vercel + Huggin</summary>
       
     
     
@@ -125,16 +146,24 @@
     <link href="https://caoyihan.com/2024/06/03/Text-Role-Play/"/>
     <id>https://caoyihan.com/2024/06/03/Text-Role-Play/</id>
     <published>2024-06-03T06:25:07.000Z</published>
-    <updated>2024-06-03T06:25:07.061Z</updated>
+    <updated>2024-06-11T11:51:40.512Z</updated>
     
-    <content type="html"><![CDATA[<p>最近偶然接触到一个亚文化圈子「语C」，突然发现，这不就和各种流行的AI聊天机器人很像吗？</p><p>语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化。</p><p>由于这个圈子黑话很多，所以我整理了一些常用的词义，方便对语C感兴趣的朋友们收藏，碰到时可以对照理解。Enjoy。</p><h4 id="语C黑话手册"><a href="#语C黑话手册" class="headerlink" title="语C黑话手册"></a>语C黑话手册</h4><ol><li><strong>语C，语擦，语cos</strong>：语言cosplay，一种用纯文字进行的角色扮演活动。</li><li><strong>皮</strong>：饰演的角色。</li><li><strong>披皮、上皮、改备注</strong>：将备注修改成自己所扮演的角色。</li><li><strong>带套</strong>：例如]、】、}、)等符号，用于说明三次元现实情况的句子。一些群也有单独的规定。</li><li><strong>开戏，KJ</strong>：将自己的角色带入特定场景或剧情，与其他角色互动或对话。</li><li><strong>前台、主、戏</strong>：用于开戏的地方。</li><li><strong>后台</strong>：在前台开戏或游戏等不能说话的情况下，可以围观、讨论或崩坏的地方。</li><li><strong>游戏</strong>：无聊时的活动，如KG、猜数字、谁是卧底、真心话大冒险等。</li><li><strong>插戏</strong>：在开戏过程中突然出现无关角色或突然说话的情况。</li><li><strong>入戏</strong>：完全代入角色，不做与角色不符的行为或语气。</li><li><strong>KG</strong>：KingGame（国王游戏），由一人主持，私Q发给参加者一个编号，让主持人决定几号做什么活动。</li><li><strong>崩皮</strong>：做出与角色不符的行为或语气。</li><li><strong>围观</strong>：不参与聊天或开戏，只是观看的人。</li><li><strong>SQ</strong>：私Q，私聊的意思。</li><li><strong>玛丽苏</strong>：原创角色，通常指完美无缺的女性角色。</li><li><strong>小白</strong>：不了解语C或戏剧氛围不好的人，指语C的初学者。</li><li><strong>审核</strong>：考核角色扮演水平，通过审核才能进主场，也有其他用途。</li><li><strong>剧本</strong>：游戏时设定好的剧情，多用于KG或开戏时。</li><li><strong>拉线</strong>：在聊天框上用符号或下划线作为分界线，分割开戏或游戏的区域，线下不能插戏。</li><li><strong>线下</strong>：指拉线后的所有聊天记录。</li><li><strong>刷屏</strong>：重复发送同样的表情、符号、语句等；开戏时文字超过一屏也算刷屏。</li><li><strong>认亲</strong>：在语C中相认并称呼昵称等的行为。</li><li><strong>圈</strong>：一个动漫题材或按种类分布的语C范围。</li><li><strong>混圈</strong>：在多个语C圈子中都有加入。</li><li><strong>混圈名</strong>：在语C中为自己起的名字。</li><li><strong>CP，西皮</strong>：在语C中为自己找到的唯一爱人。</li><li><strong>情人</strong>：开戏时调情对象，没有唯一性。</li><li><strong>419</strong>：指一夜情，音译自“For One Night”。</li><li><strong>气场帝</strong>：指在角色扮演中气场很好的人。</li><li><strong>煤气厂</strong>：音译“没气场”，指没有气场。</li><li><strong>油漆厂</strong>：音译“有气场”，指有气场。</li><li><strong>爬墙</strong>：有CP的情况下与其他角色发生情感互动。</li><li><strong>PC</strong>：指替人代演，剧情需要的角色。</li><li><strong>弧</strong>：因为忙别的事情而离开一段时间没有及时回应。</li><li><strong>AW</strong>：Anewworld的缩写，意为“一弧一世界”。</li><li><strong>圈名</strong>：在语C圈内为自己起的名字。</li><li><strong>梗</strong>：在语C中指开戏的背景、设定，由出梗人或首先开戏的人给出。</li><li><strong>梗废</strong>：不会出梗的人的自称。</li><li><strong>镜面</strong>：两人用同样的角色身份进行对戏，多用于两人抢角色时。</li><li><strong>同梗</strong>：两人或以上用相同的梗单独进行对戏或自述，多用于两人抢角色时。</li><li><strong>皮设</strong>：角色设定。</li><li><strong>BG</strong>：指“Boy and Girl”的缩写，即异性恋情节，通常指男女性别的恋爱关系。</li><li><strong>BGB</strong>：指“Boy-Girl-Boy”的缩写，表示双性恋或双向恋情节，即角色可能与男生或女生都可以形成恋爱关系。</li><li><strong>GL</strong>：指“Girls’ Love”，即百合情节，女生之间的恋爱关系。</li><li><strong>BL</strong>：指“Boys’ Love”，即耽美情节，男生之间的恋爱关系。</li></ol><h3 id="语C的核心"><a href="#语C的核心" class="headerlink" title="语C的核心"></a>语C的核心</h3><p>语C的核心在于通过文字扮演角色，创造出能打动人心的剧情和角色互动。戏的好坏不在于其他，而在于这场戏是否能将大家感动。</p>]]></content>
+    <content type="html"><![CDATA[<p>最近偶然接触到一个亚文化圈子「语C」，突然发现，这不就和各种流行的AI聊天机器人很像吗？</p><p>语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化。</p><p>由于这个圈子黑话很多，所以我整理了一些常用的词义，方便对语C感兴趣的朋友们收藏，碰到时可以对照理解。Enjoy。</p><h4 id="语C黑话手册"><a href="#语C黑话手册" class="headerlink" title="语C黑话手册"></a>语C黑话手册</h4><ol><li><p><strong>语C，语擦，语cos</strong>：语言cosplay，一种用纯文字进行的角色扮演活动。</p></li><li><p><strong>皮</strong>：饰演的角色。</p></li><li><p><strong>披皮、上皮、改备注</strong>：将备注修改成自己所扮演的角色。</p></li><li><p><strong>带套</strong>：例如]、】、}、)等符号，用于说明三次元现实情况的句子。一些群也有单独的规定。</p></li><li><p><strong>开戏，KJ</strong>：将自己的角色带入特定场景或剧情，与其他角色互动或对话。</p><span id="more"></span></li><li><p><strong>前台、主、戏</strong>：用于开戏的地方。</p></li><li><p><strong>后台</strong>：在前台开戏或游戏等不能说话的情况下，可以围观、讨论或崩坏的地方。</p></li><li><p><strong>游戏</strong>：无聊时的活动，如KG、猜数字、谁是卧底、真心话大冒险等。</p></li><li><p><strong>插戏</strong>：在开戏过程中突然出现无关角色或突然说话的情况。</p></li><li><p><strong>入戏</strong>：完全代入角色，不做与角色不符的行为或语气。</p></li><li><p><strong>KG</strong>：KingGame（国王游戏），由一人主持，私Q发给参加者一个编号，让主持人决定几号做什么活动。</p></li><li><p><strong>崩皮</strong>：做出与角色不符的行为或语气。</p></li><li><p><strong>围观</strong>：不参与聊天或开戏，只是观看的人。</p></li><li><p><strong>SQ</strong>：私Q，私聊的意思。</p></li><li><p><strong>玛丽苏</strong>：原创角色，通常指完美无缺的女性角色。</p></li><li><p><strong>小白</strong>：不了解语C或戏剧氛围不好的人，指语C的初学者。</p></li><li><p><strong>审核</strong>：考核角色扮演水平，通过审核才能进主场，也有其他用途。</p></li><li><p><strong>剧本</strong>：游戏时设定好的剧情，多用于KG或开戏时。</p></li><li><p><strong>拉线</strong>：在聊天框上用符号或下划线作为分界线，分割开戏或游戏的区域，线下不能插戏。</p></li><li><p><strong>线下</strong>：指拉线后的所有聊天记录。</p></li><li><p><strong>刷屏</strong>：重复发送同样的表情、符号、语句等；开戏时文字超过一屏也算刷屏。</p></li><li><p><strong>认亲</strong>：在语C中相认并称呼昵称等的行为。</p></li><li><p><strong>圈</strong>：一个动漫题材或按种类分布的语C范围。</p></li><li><p><strong>混圈</strong>：在多个语C圈子中都有加入。</p></li><li><p><strong>混圈名</strong>：在语C中为自己起的名字。</p></li><li><p><strong>CP，西皮</strong>：在语C中为自己找到的唯一爱人。</p></li><li><p><strong>情人</strong>：开戏时调情对象，没有唯一性。</p></li><li><p><strong>419</strong>：指一夜情，音译自“For One Night”。</p></li><li><p><strong>气场帝</strong>：指在角色扮演中气场很好的人。</p></li><li><p><strong>煤气厂</strong>：音译“没气场”，指没有气场。</p></li><li><p><strong>油漆厂</strong>：音译“有气场”，指有气场。</p></li><li><p><strong>爬墙</strong>：有CP的情况下与其他角色发生情感互动。</p></li><li><p><strong>PC</strong>：指替人代演，剧情需要的角色。</p></li><li><p><strong>弧</strong>：因为忙别的事情而离开一段时间没有及时回应。</p></li><li><p><strong>AW</strong>：Anewworld的缩写，意为“一弧一世界”。</p></li><li><p><strong>圈名</strong>：在语C圈内为自己起的名字。</p></li><li><p><strong>梗</strong>：在语C中指开戏的背景、设定，由出梗人或首先开戏的人给出。</p></li><li><p><strong>梗废</strong>：不会出梗的人的自称。</p></li><li><p><strong>镜面</strong>：两人用同样的角色身份进行对戏，多用于两人抢角色时。</p></li><li><p><strong>同梗</strong>：两人或以上用相同的梗单独进行对戏或自述，多用于两人抢角色时。</p></li><li><p><strong>皮设</strong>：角色设定。</p></li><li><p><strong>BG</strong>：指“Boy and Girl”的缩写，即异性恋情节，通常指男女性别的恋爱关系。</p></li><li><p><strong>BGB</strong>：指“Boy-Girl-Boy”的缩写，表示双性恋或双向恋情节，即角色可能与男生或女生都可以形成恋爱关系。</p></li><li><p><strong>GL</strong>：指“Girls’ Love”，即百合情节，女生之间的恋爱关系。</p></li><li><p><strong>BL</strong>：指“Boys’ Love”，即耽美情节，男生之间的恋爱关系。</p></li></ol><h3 id="语C的核心"><a href="#语C的核心" class="headerlink" title="语C的核心"></a>语C的核心</h3><p>语C的核心在于通过文字扮演角色，创造出能打动人心的剧情和角色互动。戏的好坏不在于其他，而在于这场戏是否能将大家感动。</p>]]></content>
     
     
-      
-      
     <summary type="html">&lt;p&gt;最近偶然接触到一个亚文化圈子「语C」，突然发现，这不就和各种流行的AI聊天机器人很像吗？&lt;/p&gt;
-&lt;p&gt;语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化</summary>
-      
+&lt;p&gt;语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化。&lt;/p&gt;
+&lt;p&gt;由于这个圈子黑话很多，所以我整理了一些常用的词义，方便对语C感兴趣的朋友们收藏，碰到时可以对照理解。Enjoy。&lt;/p&gt;
+&lt;h4 id=&quot;语C黑话手册&quot;&gt;&lt;a href=&quot;#语C黑话手册&quot; class=&quot;headerlink&quot; title=&quot;语C黑话手册&quot;&gt;&lt;/a&gt;语C黑话手册&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;语C，语擦，语cos&lt;/strong&gt;：语言cosplay，一种用纯文字进行的角色扮演活动。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;皮&lt;/strong&gt;：饰演的角色。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;披皮、上皮、改备注&lt;/strong&gt;：将备注修改成自己所扮演的角色。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;带套&lt;/strong&gt;：例如]、】、}、)等符号，用于说明三次元现实情况的句子。一些群也有单独的规定。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;开戏，KJ&lt;/strong&gt;：将自己的角色带入特定场景或剧情，与其他角色互动或对话。&lt;/p&gt;</summary>
     
     
     
@@ -417,28 +446,6 @@
 &lt;p&gt;最近正好读到一篇「食贫道」对内容的思考：&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;p&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>理解Merkle-Tree（默克尔树）</title>
-    <link href="https://caoyihan.com/2024/05/09/%E7%90%86%E8%A7%A3Merkle-Tree%EF%BC%88%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%EF%BC%89/"/>
-    <id>https://caoyihan.com/2024/05/09/%E7%90%86%E8%A7%A3Merkle-Tree%EF%BC%88%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%EF%BC%89/</id>
-    <published>2024-05-09T04:02:23.000Z</published>
-    <updated>2024-05-09T04:02:23.779Z</updated>
-    
-    <content type="html"><![CDATA[<p>默克尔树，也称哈希树。</p><p><strong>定义</strong>：若一种树，满足每个叶节点等于数据块的哈希值，每个非叶节点都等于其子节点的哈希值。</p><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hash_Tree.svg/1200px-Hash_Tree.svg.png" alt="Merkle tree - Wikipedia"></p><p>例如，假设我们要验证以下数据：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, world!</span><br></pre></td></tr></table></figure><p>我们可以将其分成两个小块：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello, </span><br><span class="line">world!</span><br></pre></td></tr></table></figure><p>然后计算每个小块的哈希值：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SHA256(Hello, ) = 1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad</span><br><span class="line">SHA256(world!) = 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64</span><br></pre></td></tr></table></figure><p>接下来，将这两个哈希值配对并计算它们的哈希值：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHA256(1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad, 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64) = 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure><p>现在只剩下一个哈希值，这就是默克尔树的根哈希值：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure><p><strong>作用</strong>：</p><p>默克尔树主要防止传输的数据不被篡改。一个默克尔树，若某个数据块的内容发生修改，则对应的叶节点的哈希值就会改变，根哈希值就也会发生改变。所以，我们要验证数据是否发生篡改，只需要比较哈希值即可。</p><p>在区块链中，例如比特币，假如比特币不用默克尔树，那么每个节点都必须保留每笔比特币交易的完整内容，这将是极其庞大的数据。而利用默克尔树，只储存并比较根哈希值。</p><p>参考资料：<a href="https://www.simplilearn.com/tutorials/blockchain-tutorial/merkle-tree-in-blockchain">https://www.simplilearn.com/tutorials/blockchain-tutorial/merkle-tree-in-blockchain</a></p><p>附比特币计算默克尔树-根哈希值的源码：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">uint256 ComputeMerkleRoot(std::vector&lt;uint256&gt; hashes, bool* mutated) &#123;</span><br><span class="line"></span><br><span class="line">  bool mutation = false;</span><br><span class="line"></span><br><span class="line">  while (hashes.size() &gt; 1) &#123;</span><br><span class="line"></span><br><span class="line">​    if (mutated) &#123;</span><br><span class="line"></span><br><span class="line">​      for (size_t pos = 0; pos + 1 &lt; hashes.size(); pos += 2) &#123;</span><br><span class="line"></span><br><span class="line">​        if (hashes[pos] == hashes[pos + 1]) mutation = true;</span><br><span class="line"></span><br><span class="line">​      &#125;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    if (hashes.size() &amp; 1) &#123;</span><br><span class="line"></span><br><span class="line">​      hashes.push_back(hashes.back());</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    SHA256D64(hashes[0].begin(), hashes[0].begin(), hashes.size() / 2);</span><br><span class="line"></span><br><span class="line">​    hashes.resize(hashes.size() / 2);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (mutated) *mutated = mutation;</span><br><span class="line"></span><br><span class="line">  if (hashes.size() == 0) return uint256();</span><br><span class="line"></span><br><span class="line">  return hashes[0];</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;默克尔树，也称哈希树。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;定义&lt;/strong&gt;：若一种树，满足每个叶节点等于数据块的哈希值，每个非叶节点都等于其子节点的哈希值。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://upload.wikimedia.org/wikipedia/c</summary>
       
     
     
