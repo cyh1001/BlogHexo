@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/07/27/How-to-Angel-Invest2/</loc>
+    
+    <lastmod>2024-07-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2024/07/03/%E6%9C%89%E7%BC%BA%E9%99%B7%E7%9A%84%E6%98%A0%E5%B0%84%E5%BC%95%E6%93%8E/</loc>
     
     <lastmod>2024-07-03</lastmod>
@@ -391,7 +400,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2024-07-18</lastmod>
+    <lastmod>2024-07-27</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
