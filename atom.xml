@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-07-27T13:56:04.325Z</updated>
+  <updated>2024-07-31T13:29:20.209Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -17,19 +17,62 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>博客、小红书和即刻</title>
-    <link href="https://caoyihan.com/2024/07/27/Blogs-Little-Red-Book-And-Jike/"/>
-    <id>https://caoyihan.com/2024/07/27/Blogs-Little-Red-Book-And-Jike/</id>
-    <published>2024-07-27T13:56:04.000Z</published>
-    <updated>2024-07-27T13:56:04.325Z</updated>
+    <title>文摘-24年7月</title>
+    <link href="https://caoyihan.com/2024/07/31/%E6%96%87%E6%91%98-24%E5%B9%B47%E6%9C%88/"/>
+    <id>https://caoyihan.com/2024/07/31/%E6%96%87%E6%91%98-24%E5%B9%B47%E6%9C%88/</id>
+    <published>2024-07-31T13:29:20.000Z</published>
+    <updated>2024-07-31T13:29:20.209Z</updated>
     
-    <content type="html"><![CDATA[<p>最近在同时运营博客、小红书和即刻。</p><p>我发现只要发小红书，就不可避免地陷入流量逻辑。Utility（效用）不可避免地变成点赞、收藏和浏览次数。在这种情况下，似乎会渐渐偏离自己分享的初心，而去关注读者喜欢阅读什么样的内容，自己创作什么样的内容会获得更好的数据，然后根据读者的喜好来创作。也似乎不可避免地为了保持更新频率，而输出一些质量一般般的内容。发到最后，自己也感觉自己创作的内容很没有营养。</p><p>而且小红书也不是一个适合沉淀的平台。很多纯文字的想法并没有合适的配图。而且早期的内容，读者点进主页之后，也需要下划很久才能找到。</p><p>最近读到<a href="https://mpmisko.github.io/2024/wtf-happened-to-blogs/">《WTF happened to blogs 博客怎么了》</a>：「Blogs are raw, unfiltered windows into someone’s mind.博客是进入某人原始的、未经过滤的思想的窗口。」至少我现在发博客，不会有流量焦虑。Plausible（一个流量分析工具）过期后，更不会每天都去查看访问量。在这样的心态下，反而感觉能写出一些更真实，更值得阅读的内容，沉淀得也会更有深度一点。</p><p>或许，我下一篇文章就应该写《小红书创作者应该如何避免流量焦虑》。</p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://www.semianalysis.com/p/google-we-have-no-moat-and-neither">Google “We Have No Moat, And Neither Does OpenAI” 谷歌“我们没有护城河，OpenAI 也没有”</a></p><p>旧文重读，这篇文章很重要。</p><p><a href="https://paulgraham.com/startupmistakes.html">《The 18 Mistakes That Kill Startups》</a></p><p>Paul Graham 对初创公司提了一些建议：</p><ol><li><p>不要只有一个创始人，即不要独自创业。因为这表明你的idea 吸引不到其他人参与。而且创业很困难，你需要合伙人一起集思广益，说服自己避免愚蠢的决定，并在陷入低估时振奋起来。</p></li><li><p>要选一个好位置。最好是硅谷，其次是波士顿、西雅图、奥斯汀、丹佛和纽约。</p></li><li><p>不要害怕竞争，不要做太微小的市场。</p><blockquote><p><strong>3. Marginal Niche 3. 边缘利基</strong></p><p>Most of the groups that apply to Y Combinator suffer from a common problem: choosing a small, obscure niche in the hope of avoiding competition.<br>大多数申请 Y Combinator 的群体都有一个共同点： 问题：选择一个小的、不起眼的利基市场以避免 竞赛。</p><p>If you watch little kids playing sports, you notice that below a certain age they’re afraid of the ball. When the ball comes near them their instinct is to avoid it. I didn’t make a lot of catches as an eight year old outfielder, because whenever a fly ball came my way, I used to close my eyes and hold my glove up more for protection than in the hope of catching it.<br>如果你观察小孩子做运动，你会注意到下面的 到了一定年龄他们就会害怕球。当球靠近时 他们的本能是避免它。我没有抓到很多东西 作为一名八岁的外野手，因为每当飞球到来时 我的方式是，我常常闭上眼睛，更多地举起手套 保护而不是希望抓住它。</p><p>Choosing a marginal project is the startup equivalent of my eight year old strategy for dealing with fly balls. If you make anything good, you’re going to have competitors, so you may as well face that. You can only avoid competition by avoiding good ideas.<br>选择一个边际项目相当于我的八个项目的启动 一年前处理飞球的策略。如果你做了什么 很好，你将会有竞争对手，所以你不妨面对 那。你只能通过避免好的想法来避免竞争。</p><p>I think this shrinking from big problems is mostly unconscious. It’s not that people think of grand ideas but decide to pursue smaller ones because they seem safer. Your unconscious won’t even let you think of grand ideas. So the solution may be to think about ideas without involving yourself. What would be a great idea for <em>someone else</em> to do as a startup?<br>我认为这种面对大问题的退缩大多是无意识的。 人们并不是想到了宏伟的想法，而是决定去追求 较小的，因为它们看起来更安全。你的无意识甚至不会 让你想到宏伟的想法。所以解决方案可能是考虑 不涉及自己的想法。什么是个好主意 <em>别人</em>来做初创公司吗？</p></blockquote><p>这点特意直接摘录原文。Paul Graham 这篇文章创作于2006年，所以我不确定在2024年，这些建议是否是 100% 正确的。因为上面几点都和 Pieter Levels 都很不同。Pieter Levels 建议首先独自创业，因此对创业的地点更没有要求，而且建议从微小的市场切入。</p></li></ol><p><a href="https://nav.al/angel-1">《How to Angel Invest, Part 1》</a></p><blockquote><p><strong>Few people can play at angel investing<br>很少有人可以参与天使投资</strong></p><p>Angel investing is odd in that very few people can play in it. Very few people have the know-how, geographic access, capital, risk horizon and patience. But at the same time, the underlying assets are changing the world.<br>天使投资很奇怪，因为很少有人可以参与其中。很少有人拥有专业知识、地理准入、资本、风险范围和耐心。但与此同时，标的资产正在改变世界。</p><p>I see a lot of people in Silicon Valley who could be good angel investors —they are in the tech industry and have access to dealflow—but instead spend their time on other things. They spend time thinking about macroeconomics: <em>What if the Fed cuts interest rates? What’s happening in the trade war with China?</em> Or they’re shorting stocks, investing in special economic zones or flipping real estate.<br>我看到硅谷有很多人可以成为优秀的天使投资人——他们在科技行业，可以接触到交易流——但他们却把时间花在其他事情上。他们花时间思考宏观经济学：如果美联储降息怎么办？与中国的贸易战发生了什么？或者他们正在做空股票，投资经济特区或炒作房地产。</p></blockquote><p>——2024.7.27</p><p>如果可以随时变更想法，或许更有利于创新。</p><p>The real diversity that matters is the diversity of ideas .</p><p>真正重要的多样性是思想的多样性</p><p><a href="https://nav.al/decentralization">source</a></p><p>——2024.7.23 </p><p>团体不会承认失败，也更难转换想法。而在团队中转变想法，会让团体分崩离析。这或许也是小微创业者的机会。</p><p><a href="https://nav.al/failure">source</a></p><p>——2024.7.23 </p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;最近在同时运营博客、小红书和即刻。&lt;/p&gt;
-&lt;p&gt;我发现只要发小红书，就不可避免地陷入流量逻辑。Utility（效用）不可避免地变成点赞、收藏和浏览次数。在这种情况下，似乎会渐渐偏离自己分享的初心，而去关注读者喜欢阅读什么样的内容，自己创作什么样的内容会获得更好的数据，然后</summary>
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://www.semianalysis.com/p/google-we-have-no-moat-and-neither&quot;&gt;Google “We Have No Moat, And Neither Does OpenAI” 谷歌“我们没有护城河，</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>小红书的粉丝有用吗</title>
+    <link href="https://caoyihan.com/2024/07/30/Are-fans-of-Little-Red-Book-useful/"/>
+    <id>https://caoyihan.com/2024/07/30/Are-fans-of-Little-Red-Book-useful/</id>
+    <published>2024-07-30T02:55:47.000Z</published>
+    <updated>2024-07-30T02:55:47.099Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天也在想：小红书的粉丝有什么用？</p><p>如果是自己的粉丝的话，自己可以或许推广一下自己的产品，或者可以作为个人品牌来推广自己。但好像很多小红书号，不能做这样的用途，只可以接一些利润微薄的商单。</p><p>昨天泽凯哥跟我说，他在国外留学时，「小红书简直是救命稻草」「新时代的百科全书」我也很好奇，为什么小红书上可以产生那么多的生活指南，而百度不能？而且，小红书的流量逻辑，让作为创作者的自己倍感焦虑，为什么小红书的 UGC 还可以做得那么好？</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;今天也在想：小红书的粉丝有什么用？&lt;/p&gt;
+&lt;p&gt;如果是自己的粉丝的话，自己可以或许推广一下自己的产品，或者可以作为个人品牌来推广自己。但好像很多小红书号，不能做这样的用途，只可以接一些利润微薄的商单。&lt;/p&gt;
+&lt;p&gt;昨天泽凯哥跟我说，他在国外留学时，「小红书简直是救命稻草</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>无需扩展</title>
+    <link href="https://caoyihan.com/2024/07/29/Not-Scaling/"/>
+    <id>https://caoyihan.com/2024/07/29/Not-Scaling/</id>
+    <published>2024-07-29T05:40:13.000Z</published>
+    <updated>2024-07-29T05:40:13.789Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://tailscale.com/blog/new-internet">《The New Internet 新互联网》</a>：</p><blockquote><p>在现代计算中，我们容忍长时间的构建，然后是 docker 构建，然后上传到容器存储，以及程序运行前的几分钟部署时间，甚至在日志输出上传到您可以看到它的地方之前的时间更长，所有这些都是因为我们被欺骗了，认为一切都必须扩展。人们对部署到最新的新兴容器托管服务感到兴奋，因为它只需几十秒即可推出，而不是几分钟。但是在 1990 年代我缓慢的计算机上，我可以运行一个 perl 或 python 程序，该程序在毫秒内启动，每秒处理超过 0.2 个请求，并立即将日志打印到 stderr，这样我就可以一遍又一遍地编辑-运行-调试，每分钟多次。</p></blockquote><p>而事实上，很多东西根本不会扩展，所以也不需要提前扩展。但类似的扩展工作可能提前占用了开发人员大量的时间。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://tailscale.com/blog/new-internet&quot;&gt;《The New Internet 新互联网》&lt;/a&gt;：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在现代计算中，我们容忍长时间的构建，然后是 docker 构建，然后上传到容</summary>
       
     
     
@@ -54,6 +97,27 @@
 &lt;p&gt;在种子阶段，判断更多的是关于人的判断、产品潜力和市场潜力，而不是你衡量现金流、客户获取成本或病毒式传播指标的能力——因为你没有太多数据。&lt;/p&gt;
 &lt;p&gt;而多元化的投资组合，可以理解为对知识匮乏的一种对冲。&lt;/p&gt;
 &lt;p&gt;Naval认为，&lt;strong&gt;在天使轮阶段，没有人有足够的信息，能抱有很高的信念，或万无一失的判断&lt;/strong&gt;。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>博客、小红书和即刻</title>
+    <link href="https://caoyihan.com/2024/07/25/Blogs-Little-Red-Book-And-Jike/"/>
+    <id>https://caoyihan.com/2024/07/25/Blogs-Little-Red-Book-And-Jike/</id>
+    <published>2024-07-25T13:56:04.000Z</published>
+    <updated>2024-07-28T03:50:36.186Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在同时运营博客、小红书和即刻。</p><p>我发现只要发小红书，就不可避免地陷入流量逻辑。Utility（效用）不可避免地变成点赞、收藏和浏览次数。在这种情况下，似乎会渐渐偏离自己分享的初心，而去关注读者喜欢阅读什么样的内容，自己创作什么样的内容会获得更好的数据，然后根据读者的喜好来创作。也似乎不可避免地为了保持更新频率，而输出一些质量一般般的内容。发到最后，自己也感觉自己创作的内容很没有营养。</p><p>而且小红书也不是一个适合沉淀的平台。很多纯文字的想法并没有合适的配图。而且早期的内容，读者点进主页之后，也需要下划很久才能找到。</p><p>最近读到<a href="https://mpmisko.github.io/2024/wtf-happened-to-blogs/">《WTF happened to blogs 博客怎么了》</a>：「Blogs are raw, unfiltered windows into someone’s mind.博客是进入某人原始的、未经过滤的思想的窗口。」至少我现在发博客，不会有流量焦虑。Plausible（一个流量分析工具）过期后，更不会每天都去查看访问量。在这样的心态下，反而感觉能写出一些更真实，更值得阅读的内容，沉淀得也会更有深度一点。</p><p>或许，我下一篇文章就应该写《小红书创作者应该如何避免流量焦虑》。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近在同时运营博客、小红书和即刻。&lt;/p&gt;
+&lt;p&gt;我发现只要发小红书，就不可避免地陷入流量逻辑。Utility（效用）不可避免地变成点赞、收藏和浏览次数。在这种情况下，似乎会渐渐偏离自己分享的初心，而去关注读者喜欢阅读什么样的内容，自己创作什么样的内容会获得更好的数据，然后</summary>
+      
     
     
     
@@ -387,72 +451,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;我在游戏中体验到一种超越现实的理想亲密关系。我们的恋爱从暧昧开始，他会假装不经意地关心我，暗中吃我和别人的醋，我们给彼此起专属的外号。随着了解增加，我发现他其实在很早之前就爱上了我。当然了，他还拥有几乎完美的外貌和身材。&lt;/p&gt;
 &lt;/blockquote&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>一个流量很高的冷门网站</title>
-    <link href="https://caoyihan.com/2024/05/20/A-website-with-high-traffic/"/>
-    <id>https://caoyihan.com/2024/05/20/A-website-with-high-traffic/</id>
-    <published>2024-05-20T03:51:31.000Z</published>
-    <updated>2024-06-11T12:29:28.668Z</updated>
-    
-    <content type="html"><![CDATA[<p>偶然发现一个网站 <a href="https://floor796.com/">floor796</a>。</p><p><img src="/../images/796.jpg"></p><p>虽然我还不太知道这个网站有什么用，但我觉得很有意思，而且流量也出奇地高，月访问量超过 60 万。</p><p><img src="/../images/796traffic.png"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;偶然发现一个网站 &lt;a href=&quot;https://floor796.com/&quot;&gt;floor796&lt;/a&gt;。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/../images/796.jpg&quot;&gt;&lt;/p&gt;
-&lt;p&gt;虽然我还不太知道这个网站有什么用，但我觉得很有意思，而且流量也出奇地高，月</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>卡马克和 DOOM</title>
-    <link href="https://caoyihan.com/2024/05/19/%E5%8D%A1%E9%A9%AC%E5%85%8B%E5%92%8CDOOM/"/>
-    <id>https://caoyihan.com/2024/05/19/%E5%8D%A1%E9%A9%AC%E5%85%8B%E5%92%8CDOOM/</id>
-    <published>2024-05-19T10:09:38.000Z</published>
-    <updated>2024-06-11T12:30:24.196Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近读了一本书《DOOM 启示录》，这本书讲述了《DOOM》这款游戏的开发历程，以及其背后的主创之一——约翰·卡马克的故事。</p><p><img src="/../images/%E5%8D%A1%E9%A9%AC%E5%85%8B.jpg" alt="Carmack"></p><h4 id="约翰·卡马克"><a href="#约翰·卡马克" class="headerlink" title="约翰·卡马克"></a>约翰·卡马克</h4><p>约翰·卡马克是《DOOM》这款游戏的主要创作者，也是 id Software 的联合创始人之一。二十多年前，卡马克凭借《DOOM》在游戏界获得了极高的声誉。</p><p><img src="/../images/littlecat2.jpg"></p><h4 id="卡马克的猫"><a href="#卡马克的猫" class="headerlink" title="卡马克的猫"></a>卡马克的猫</h4><p>卡马克有一只猫，叫咪子，咪子陪伴了他很久，他编程时，猫就趴在电脑上面。甚至他的合伙人罗梅洛，都把咪子放到公司的员工名单中了。</p><p>但后来那只猫脾气变得有点暴躁，总是在办公室闲游乱逛，还把新买的皮沙发尿了一通。</p><p>卡马克就向公司的人宣布，咪子只会给他带来麻烦，他要把咪子送到动物收容所。</p><p>即使他那个合伙人说，咪子送到收容所可能就活不了了，但卡马克不以为然，回到房间继续工作了。</p><p>其他员工要是不合适，他就会踢除，甚至 id Software 的创始人之一罗梅洛，也是卡马克踢除的，因为他认为罗梅洛不再专注了。</p><p><img src="/../images/DOOM.jpg" alt="DOOM"></p><h4 id="卡马克的专注力"><a href="#卡马克的专注力" class="headerlink" title="卡马克的专注力"></a>卡马克的专注力</h4><p>因为卡马克性格就是这样，他写程序时很专注很专注。</p><p>有一次，他同事为了测试卡马克的专注力，在他隔壁放色情片，并把音量调到最大，其他同事很快都被呻吟声吸引到了电视机旁。但卡马克好像一开始没听到，后来听到了，就“嗯？”了一声，并没有停止工作。</p><h4 id="卡马克的黑客精神"><a href="#卡马克的黑客精神" class="headerlink" title="卡马克的黑客精神"></a>卡马克的黑客精神</h4><p>《DOOM 启示录》里提到过很多次：</p><blockquote><p>卡马克清楚地知道，他喜欢的事情就是——编程，他系统地安排着生活，以便把大部分时间都用于此。从制作 DOOM 时起，他就决定开始调整生物钟，以达到一种更孤寂更专注的境界，以避开罗梅洛的尖叫，避开记者的电话，避开所有这些日常生活中使他分心的事物。他开始强迫自己每天睡觉前多熬一个小时，然后第二天再晚一个小时到办公室。1995 年初，他养成了他觉得最理想的作息规律：下午四点到公司，凌晨四点离开。为了 Quake，他得全神贯注才行。</p></blockquote><blockquote><p>卡马克听到艾尔建议他去申请专利后怒不可遏。</p><p>卡马克认为，所有科学技术，以及文化、知识、理论，都是在前人的基础上发展起来的。去注册一项专利，就等于宣布说：”这个想法是我的想法，你不能使用或扩展它，因为，我“拥有”了这个想法，这听起来荒谬绝伦。</p><p>专利制度威胁到他生命中最重要的事情：编写代码去解决问题。如果这个世界上充斥着各种专利，以至于他连解决一个简单的问题都要侵犯到某项专利的话，那么，这将不是他所乐意生活在其中的世界。</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;最近读了一本书《DOOM 启示录》，这本书讲述了《DOOM》这款游戏的开发历程，以及其背后的主创之一——约翰·卡马克的故事。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;/../images/%E5%8D%A1%E9%A9%AC%E5%85%8B.jpg&quot; alt=&quot;Carmack&quot;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>张一鸣和他的创业策略</title>
-    <link href="https://caoyihan.com/2024/05/18/%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%92%8C%E4%BB%96%E7%9A%84%E5%88%9B%E4%B8%9A%E7%AD%96%E7%95%A5/"/>
-    <id>https://caoyihan.com/2024/05/18/%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%92%8C%E4%BB%96%E7%9A%84%E5%88%9B%E4%B8%9A%E7%AD%96%E7%95%A5/</id>
-    <published>2024-05-18T10:16:46.000Z</published>
-    <updated>2024-06-11T12:31:38.452Z</updated>
-    
-    <content type="html"><![CDATA[<p>阑夕在<a href="https://tech.sina.com.cn/csj/2018-11-17/doc-ihnyuqhh6042529.shtml">《理性蜕变中的张一鸣》</a>里说：</p><blockquote><ul><li>黄章晋说，张一鸣的创业项目是区分人的筛子，被他捕获的，是自我塑造意识薄弱，延迟满足能力低下，很难在现实世界获得成就奖赏的人，用饭桌上的话来说就是，他们的时间和生命不值钱，是我们给了他们幸福感。</li><li>创业可以分为两种，一种是比较感性的，知行合一的。做的事情就是自己真心认同并热爱的。另一种是理性的，是从逻辑判断某个市场存在机会，然后调度一切资源进入谋求成功，自己是否对这件事情抱有兴趣，倒是非必要的。显而易见，张一鸣属于后一种创业者。他绝对不会是今日头条和抖音上的内容消费者，甚至恰恰相反。</li><li>认识张一鸣十几年的大学室友说这个人像机器一样，“不打牌，不看碟，也不玩游戏，读了四年大学，除了上课、看书，他的业余活动就是写代码和修电脑。显然，如果张一鸣在他的大学时代遇到今日头条，恐怕连下载按钮都不会去点。</li><li>张一鸣甚至很清醒的表达过一个现在看来相当残酷的观点：人可以分为两类，一类是追求效率的少数精英，他们可以在现实生活里实现自我认知，另一类则是大部分需要围绕一个东西打转的人，不管这些东西是宗教、小说、爱情还是今日头条，用户需要沉迷其中。</li><li>张一鸣说，RSS模式对于用户是不友善的，RSS要求用户具备相当高的信息组织能力，而且还要足够自律，在信息匮乏和信息过载之间获得平衡，而普通用户是做不到的。——这篇日志没有给他刚刚开始做的今日头条打半个字的广告，但指向性已经相当明确，因为判断用户需要信息饲养，这才有了今日头条的横空出世。</li></ul></blockquote><p>其实也给我的其启示是，有时创业确实应该瞄准更广大的普罗大众，而不是少数过于精英的人。</p><p>前一阵子还看到 github 上一个<a href="https://github.com/1c7/chinese-independent-developer">中国独立开发者项目列表</a>，给我的感觉是，大部分程序员做的项目，实在太小众了，比方说很多 rss 相关的，很多生产力工具。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;阑夕在&lt;a href=&quot;https://tech.sina.com.cn/csj/2018-11-17/doc-ihnyuqhh6042529.shtml&quot;&gt;《理性蜕变中的张一鸣》&lt;/a&gt;里说：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;黄章晋说，张一鸣的创业项目</summary>
-      
     
     
     
