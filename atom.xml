@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-08-03T00:56:09.329Z</updated>
+  <updated>2024-08-06T15:14:59.677Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Next.js项目部署云服务器全流程（git仓库直接部署版）</title>
+    <link href="https://caoyihan.com/2024/08/06/Nextjs-deploy-cloud-git/"/>
+    <id>https://caoyihan.com/2024/08/06/Nextjs-deploy-cloud-git/</id>
+    <published>2024-08-06T15:12:25.000Z</published>
+    <updated>2024-08-06T15:14:59.677Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>TL;DR</strong>：这篇文章是关于用最简单的方法在云服务器上部署Next.js项目的简易教程。主要使用Ubuntu 22.04,（Google Cloud）,pm2, screen, Nginx</p><h2 id="一-准备工作"><a href="#一-准备工作" class="headerlink" title="一. 准备工作"></a>一. 准备工作</h2><ol><li>本地项目存储到github仓库</li><li>准备一台云服务器。这里使用的是Ubuntu 22.04, Google Cloud</li></ol><h2 id="二-云服务器准备工作"><a href="#二-云服务器准备工作" class="headerlink" title="二. 云服务器准备工作"></a>二. 云服务器准备工作</h2><ol><li>云服务器安装 Node.js 和 npm<ol><li>更新系统包列表：sudo apt update</li><li>安装一些必要的工具：sudo apt install -y curl dirmngr apt-transport-https lsb-release ca-certificates software-properties-common</li><li>导入 NodeSource GPG 密钥：<br> curl -fsSL <a href="https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key">https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key</a> | sudo gpg –dearmor -o &#x2F;etc&#x2F;apt&#x2F;keyrings&#x2F;nodesource.gpg</li><li>创建 NodeSource 仓库文件：echo “deb [signed-by&#x3D;&#x2F;etc&#x2F;apt&#x2F;keyrings&#x2F;nodesource.gpg] <a href="https://deb.nodesource.com/node_20.x">https://deb.nodesource.com/node_20.x</a> nodistro main” | sudo tee &#x2F;etc&#x2F;apt&#x2F;sources.list.d&#x2F;nodesource.list</li><li>sudo apt update</li><li>安装 Node.js 和 npm：sudo apt install -y nodejs</li><li>检查：node -v  npm -v</li></ol></li><li>安装 PM2 (用于进程管理，比较容易，推荐安装)<ol><li>npm install -g pm2</li></ol></li></ol><h2 id="三-将-Next-js-项目传输到服务器"><a href="#三-将-Next-js-项目传输到服务器" class="headerlink" title="三. 将 Next.js 项目传输到服务器"></a>三. 将 Next.js 项目传输到服务器</h2><ol><li>在服务器上 clone 您的仓库</li><li>.env文件，直接从本地上传。Google Cloud提供本地上传文件服务。（注意：.开头的文件，在Linux中默认隐藏。使用）</li></ol><h2 id="四-在服务器上构建您的项目"><a href="#四-在服务器上构建您的项目" class="headerlink" title="四. 在服务器上构建您的项目"></a>四. 在服务器上构建您的项目</h2><p>1.<br>        cd your-nextjs-project<br>        npm install<br>        npm run build<br>2.  使用 PM2 启动您的应用<br>    1. 创建一个名为 <code>ecosystem.config.js</code> 的文件，内容如下：<br>       <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">module.exports = &#123;</span><br><span class="line">  apps: [&#123;</span><br><span class="line">    name: &quot;nextjs-app&quot;,</span><br><span class="line">    script: &quot;npm&quot;,</span><br><span class="line">    args: &quot;start&quot;,</span><br><span class="line">    env: &#123;</span><br><span class="line">      NODE_ENV: &quot;production&quot;,</span><br><span class="line">    &#125;,</span><br><span class="line">  &#125;],</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><pre><code>   然后运行：   <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pm2 start ecosystem.config.js</span><br></pre></td></tr></table></figure></code></pre><ol start="3"><li>配置 Nginx<ol><li>安装 Nginx：<code>sudo apt install nginx</code> (Ubuntu) 或 <code>sudo yum install nginx</code> (CentOS)</li></ol></li><li>检查防火墙：确保开放 80 端口（HTTP）和 443 端口（HTTPS，如果使用）<ol><li>注意，google cloud 默认的端口是开放的，所以不需要另外设置。</li></ol></li><li>设置 SSL。使用 Let’s Encrypt 和 Certbot 可以轻松设置免费的 SSL 证书<ol><li>sudo apt install certbot python3-certbot-nginx -y</li><li>sudo certbot –nginx -d your_domain.com</li></ol></li></ol><h2 id="五-启动应用"><a href="#五-启动应用" class="headerlink" title="五.启动应用"></a>五.启动应用</h2><ol><li>使用 screen 创建一个新会话：screen -S nextjs</li><li>在 screen 会话中，使用 PM2 启动您的应用：pm2 start npm –name “next-app” – start</li><li>设置 PM2 在服务器重启时自动启动您的应用：<br> pm2 startup systemd<br> pm2 save</li><li>分离 screen 会话：按 <code>Ctrl+A</code> 然后按 <code>D</code></li></ol><h2 id="六-Nginx配置"><a href="#六-Nginx配置" class="headerlink" title="六. Nginx配置"></a>六. Nginx配置</h2><ol><li><p>sudo nano &#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;[项目名字或者域名]例如 podcasthighlight.com</p></li><li><p>添加Nginx配置：<br> server {<br> listen 80;<br> listen [::]:80;<br> server_name podcasthighlight.com;<br> return 301 https:&#x2F;&#x2F;$server_name$request_uri;<br> }</p><p> server {<br> listen 443 ssl http2;<br> listen [::]:443 ssl http2;<br> server_name podcasthighlight.com;<br><br> ssl_certificate &#x2F;path&#x2F;to&#x2F;your&#x2F;fullchain.pem;<br> ssl_certificate_key &#x2F;path&#x2F;to&#x2F;your&#x2F;privkey.pem;<br><br> # 推荐的 SSL 设置<br> ssl_protocols TLSv1.2 TLSv1.3;<br> ssl_prefer_server_ciphers on;<br> ssl_ciphers ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384;<br> ssl_session_cache shared:SSL:10m;<br> ssl_session_timeout 10m;<br> ssl_session_tickets off;<br><br> # HSTS (可选，但推荐)<br> add_header Strict-Transport-Security “max-age&#x3D;31536000; includeSubDomains” always;<br><br> location &#x2F; {<br>     proxy_pass <a href="http://localhost:3000/">http://localhost:3000</a>;<br>     proxy_http_version 1.1;<br>     proxy_set_header Upgrade $http_upgrade;<br>     proxy_set_header Connection ‘upgrade’;<br>     proxy_set_header Host $host;<br>     proxy_cache_bypass $http_upgrade;<br><br>     proxy_set_header X-Real-IP $remote_addr;<br>     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;<br>     proxy_set_header X-Forwarded-Proto $scheme;<br> }<br><br> # 可选：配置访问日志和错误日志<br> access_log &#x2F;var&#x2F;log&#x2F;nginx&#x2F;podcasthighlight.access.log;<br> error_log &#x2F;var&#x2F;log&#x2F;nginx&#x2F;podcasthighlight.error.log;<br> }</p></li><li><p>启动 Nginx<br>sudo ln -s &#x2F;etc&#x2F;nginx&#x2F;sites-available&#x2F;[项目名字或者域名] &#x2F;etc&#x2F;nginx&#x2F;sites-enabled<br>sudo nginx -t<br>sudo systemctl restart nginx</p></li></ol><h2 id="七-域名相关"><a href="#七-域名相关" class="headerlink" title="七.域名相关"></a>七.域名相关</h2><ol><li>Google Cloud需要设置静态 IP，这个可能需要一点费用。</li></ol><p>请注意：先设置静态IP，然后配置域名DNS，再配置SSL。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;：这篇文章是关于用最简单的方法在云服务器上部署Next.js项目的简易教程。主要使用Ubuntu 22.04,（Google Cloud）,pm2, screen, Nginx&lt;/p&gt;
+&lt;h2 id=&quot;一-准备工作&quot;&gt;&lt;a hre</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>文摘-24年7月</title>
@@ -444,29 +465,6 @@
 &lt;p&gt;文字表达能力是开源社区里一个非常重要的，因为但凡一个大的改动都需要和其他人广泛讨论和协作。&lt;/p&gt;
 &lt;p</summary>
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://caoyihan.com/2024/05/20/boyfriend-for-a-day/"/>
-    <id>https://caoyihan.com/2024/05/20/boyfriend-for-a-day/</id>
-    <published>2024-05-20T06:10:59.000Z</published>
-    <updated>2024-05-23T15:24:05.823Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://mp.weixin.qq.com/s/sIx6fpOVYe1n-ywDwSMi8Q">《一日男友》</a>：</p><blockquote><p>被夸奖、被鼓励、被倾听、被看见，我们把对这些事物的渴望投射到“爱”上。“爱”不会天然眷顾每一个人。为了得到它，一些女性四处求索，从手机里到现实中，从二次元到三次元。她们痴迷、成瘾，最终相信自己得到了爱，哪怕是短暂的，明码标价的爱。</p></blockquote><blockquote><p>我在游戏中体验到一种超越现实的理想亲密关系。我们的恋爱从暧昧开始，他会假装不经意地关心我，暗中吃我和别人的醋，我们给彼此起专属的外号。随着了解增加，我发现他其实在很早之前就爱上了我。当然了，他还拥有几乎完美的外貌和身材。</p></blockquote><span id="more"></span><blockquote><p>我给他发消息，哪怕只是一个表情包，他也会耐心回复三四句话。我们一起抓娃娃，我一个也没抓到，他会摸我的头，说，“至少现在我们知道怎么做会抓不到，下次避开就好了。” 他从不吝啬对我的夸奖，我向他倾诉工作成果，他会说“毕竟是你，完全在意料之中。”</p></blockquote><blockquote><p>更重要的是，他们能够理解我的情感，也能表达自己的情感。不高兴吃醋了他会直接告诉我：“刚才你对他们说的是真的吗？真的有很多别的搭档吗？”产生误会了他会第一时间说清：“我不了解酒的价格，刚才不是故意点这么贵的，以后不会了。”我告诉他他每次短信都只用句号，显得没有情绪。他立刻在回复里加上了感叹号。“如果不习惯，可以先对我练习。”我说。“本来也是只打算对你说的！”他回答我。</p><p>在《恋与深空》的设定里，角色们都有一种叫做“evol”的超能力。这个单词倒过来写是“love”。在我对现实世界男性的观察里，理解爱、能够爱的确像一种超能力。</p></blockquote><blockquote><p>游戏里，萧逸会主动送她钻戒。场景也符合她对浪漫的想象——他请她参加一场婚礼主题的赛车嘉年华，穿着白西服的萧逸给穿着婚纱的她戴上一枚蓝色钻戒。</p></blockquote><blockquote><p>四月底，甜甜去外地旅游，约了一个当地的委托老师作为萧逸陪她三天，每天八小时，一天400元。提前三天，委托老师就把自己的qq头像换成了萧逸的照片，每天用萧逸的语气和她聊几句天。见面那天，萧逸直接抱住她：“好久不见，萧小五。” 萧小五是游戏里萧逸对女主角的昵称。</p></blockquote><blockquote><p>有次约会，甜甜拿出手机刷短视频，看到另一个游戏里的男主角，脱口而出“我老公真帅”。坐她对面的萧逸看起来吃醋了，说，萧小五你要不要听听你在说什么？甜甜赶紧卖乖解释，但心里暗爽。</p></blockquote><p>读着真的很感动，原来吃醋也是一种表达「爱」的方式</p><blockquote><p>每场委托开始前，委托老师都会给单主发送一张了解她们喜好的问卷，我收到的问卷是这样的：</p><p>可以接受怎样的肢体接触？</p><p>是否有过敏&#x2F;忌口？</p><p>喜欢的食物&#x2F;口味？</p><p>喜欢的颜色？</p><p>你对什么话题感兴趣？</p><p>有什么话题要避雷？</p><p>希望我主动开启话题还是安静倾听？</p><p>有什么希望我为你做的事？</p><p>……</p><p>不到二十个问题，我花了整整一个星期也没有填完。我发现从未有人问过、在意过我的这些问题，以至于连我自己都不知道答案。我到底喜欢什么口味？通常都是大家选完剩下的饮料我随手打开。我对什么话题感兴趣？我已经习惯了在对话里去找别人的话口，在冷场时接茬。填问卷时我第一次听见自己的想法：不要让我找话题，我希望你来对所有的沉默负责。有什么能为我做的事？有一句话出现在我的脑海里，我打下一个开头又删掉，花了十分钟才写完这八个字。</p><p>“希望你能多夸夸我。”这句话被打在屏幕上时，我的鼻子酸了一下。</p><p>填这张问卷时的感觉是我过去二十年来从未有过的生命体验。照顾他人、讨好他人的本能被完全剔除，面对这些问题时我第一次成为一个100%只用考虑自己的人。这种感觉让我陌生，甚至恐惧，这样是可以的吗？真的有人在乎吗？</p></blockquote><blockquote><p>七七是coser委托老师。约会中途，趁单主上厕所，七七打电话让亲友送来。单主从洗手间出来，齐司礼抱着花坐在商场的拐角，她看到单主眼睛一下就红了。</p><p>七七会在约会开始前研究单主的朋友圈。一次委托，他看到单主发过一张自己和齐司礼立牌的合影，于是找朋友手绘，裱成一幅画；还有一张单主的自拍，他设置成当天手机屏保和聊天背景。</p></blockquote><blockquote><p>cos委托很容易被理解为一种交易，花钱的单主是甲方，收钱的委托老师是乙方，甲方购买乙方的服务，乙方为甲方提供情绪价值。实际上，在两个女孩之间发生的这种“伪恋爱”并不只是金钱交易，而更像是两个女孩在共同创造一种她们真正需要的亲密关系。</p></blockquote><blockquote><p>单主不会高高在上地享受服务。为了扮演好男性角色，小艾需要给自己穿上十厘米的增高鞋，垫两层沉重的垫肩，气温低的时候也会穿衣服单薄的造型。在她接的五次委托里，每个单主都在约会时关心她的感受：脚累不累，要不要休息？风吹过来冷不冷？这家餐厅你喜欢吗？今天你真的玩得开心吗？</p></blockquote><blockquote><p>一次委托时，单主有事短暂离开，小艾偷偷买了一支玫瑰藏在背后，想给单主惊喜。见面时，小艾发现单主手上拎着一个小蛋糕，是这款游戏和蛋糕店的联名，她专门买了陆沉的款式。她也想给小艾惊喜。</p></blockquote><p>有时看到其他人发的一些恋爱日常，我都会想：「这是真的吗？！这个世界上真的存在这样一种生活吗？！」</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://mp.weixin.qq.com/s/sIx6fpOVYe1n-ywDwSMi8Q&quot;&gt;《一日男友》&lt;/a&gt;：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;被夸奖、被鼓励、被倾听、被看见，我们把对这些事物的渴望投射到“爱”上。“爱”不会天然眷顾每一个人。为了得到它，一些女性四处求索，从手机里到现实中，从二次元到三次元。她们痴迷、成瘾，最终相信自己得到了爱，哪怕是短暂的，明码标价的爱。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;我在游戏中体验到一种超越现实的理想亲密关系。我们的恋爱从暧昧开始，他会假装不经意地关心我，暗中吃我和别人的醋，我们给彼此起专属的外号。随着了解增加，我发现他其实在很早之前就爱上了我。当然了，他还拥有几乎完美的外貌和身材。&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
     
     
     
