@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-08-06T15:18:33.526Z</updated>
+  <updated>2024-08-13T12:59:37.545Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>记录Auth.js的callbackUrl问题解决经历</title>
+    <link href="https://caoyihan.com/2024/08/13/Authjs-callbackUrl/"/>
+    <id>https://caoyihan.com/2024/08/13/Authjs-callbackUrl/</id>
+    <published>2024-08-13T12:59:37.000Z</published>
+    <updated>2024-08-13T12:59:37.545Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到<a href="http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError">http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError</a></p><p>一开始猜测是Nginx配置问题，检查之后确认无误。</p><p>后面花了很长时间，才意识到，Auth.js可以开启debug:true。开启后，发现我向github发送的请求内容中，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;signinUrl&quot;: &quot;http://0.0.0.0:3000/api/auth/signin/github&quot;,</span><br><span class="line">“callbackUrl”： “http://0.0.0.0:3000/api/auth/callback/github”，</span><br></pre></td></tr></table></figure><p>虽然没有发现具体原因。但是想起auth.js文档中，明确写了v5版本，不需要规定<code>AUTH_URL</code></p><p><img src="/../images/authjs-AUTH_URL.png" alt="Auth.js AUTH_URL"></p><p>在环境变量中，设置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">AUTH_URL=【自己的域名】</span><br><span class="line">例如：AUTH_URL=https://podcasthighlight.com</span><br></pre></td></tr></table></figure><p>重启项目，发现运行正常，问题解决。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到&lt;a</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Next.js项目部署云服务器全流程（git仓库直接部署版）</title>
@@ -440,30 +460,6 @@
 &lt;blockquote&gt;
 &lt;p&gt;为什么一些看起来“很垃圾”的软件会占领市场?&lt;/p&gt;
 &lt;p&gt;我从中学到</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>中外程序员差异和文字表达</title>
-    <link href="https://caoyihan.com/2024/05/23/expressions/"/>
-    <id>https://caoyihan.com/2024/05/23/expressions/</id>
-    <published>2024-05-23T15:49:15.000Z</published>
-    <updated>2024-05-23T15:49:15.802Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://catcoding.me/p/diff/">《中外程序员差异》</a></p><blockquote><p>文字表达</p><p>文字表达能力是开源社区里一个非常重要的，因为但凡一个大的改动都需要和其他人广泛讨论和协作。</p><p>不少国外的程序员有文字表达的习惯，就是即使看很小的一点问题也会通过文字表达出来。这是很多国内程序员所没有的习惯，因为我们大多比较含蓄，认为多做比说强，说多容易错，说多容易暴露自己。</p><p>可能和教育和网络环境也有一定关系，如果不是刻意维持文字表达的习惯，很多人高中毕业后就没有写过几篇长文，对很多事情也没有自己的看法。</p><p>另外他们习惯使用 Email 来沟通，但中国开发人员大多习惯使用 IM 沟通。这两者还是有区别的，IM 沟通会让人不自觉地回复得更快，有的模糊想法随口就就表达了。而 Email 沟通更容易让人把事情写清楚，也更容易写得更长和有条理。</p><p>这种细微的差异长久了之后就可看出中英文技术社区的巨大差别。另外，中文网络的环境中戾气更重一些，人们对自我推销很反感，容易揣测你的意图。</p></blockquote><p>看到这一点，深有感触。说多确实容易说错，但即使这样，也应该多说。</p><p>而且，我自己短的帖子写多了，也会觉得长文很难写，写一篇2000字的文章，可能要花一整个下午。把事情写清楚，也是一种需要锻炼的能力。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://catcoding.me/p/diff/&quot;&gt;《中外程序员差异》&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;文字表达&lt;/p&gt;
-&lt;p&gt;文字表达能力是开源社区里一个非常重要的，因为但凡一个大的改动都需要和其他人广泛讨论和协作。&lt;/p&gt;
-&lt;p</summary>
       
     
     

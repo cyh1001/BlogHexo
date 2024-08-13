@@ -46,7 +46,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 54925</div>
+    <div class="word-count">Total words in posts: 55466</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -67,6 +67,49 @@
 </header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article id="post-Authjs-callbackUrl" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-08-13T12:59:37.000Z"><a href="/2024/08/13/Authjs-callbackUrl/">2024-08-13</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/08/13/Authjs-callbackUrl/">记录Auth.js的callbackUrl问题解决经历</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到<a target="_blank" rel="noopener" href="http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError">http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError</a></p>
+<p>一开始猜测是Nginx配置问题，检查之后确认无误。</p>
+<p>后面花了很长时间，才意识到，Auth.js可以开启debug:true。开启后，发现我向github发送的请求内容中，</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;signinUrl&quot;: &quot;http://0.0.0.0:3000/api/auth/signin/github&quot;,</span><br><span class="line">“callbackUrl”： “http://0.0.0.0:3000/api/auth/callback/github”，</span><br></pre></td></tr></table></figure>
+
+<p>虽然没有发现具体原因。但是想起auth.js文档中，明确写了v5版本，不需要规定<code>AUTH_URL</code></p>
+<p><img src="/../images/authjs-AUTH_URL.png" alt="Auth.js AUTH_URL"></p>
+<p>在环境变量中，设置</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">AUTH_URL=【自己的域名】</span><br><span class="line">例如：AUTH_URL=https://podcasthighlight.com</span><br></pre></td></tr></table></figure>
+
+<p>重启项目，发现运行正常，问题解决。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
   <article id="post-Nextjs-deploy-cloud-git" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
@@ -1792,45 +1835,6 @@
 <p>而且，书评或者学习笔记之类的文字，真的对读者有价值吗？反正我自己应该很少看别人的学习笔记，偶尔买书前会看看书评。不过总感觉读者应该不喜欢看书评&amp;学习笔记。自己和朋友聊天时，也不会说这类东西吧。</p>
 <p>其实也觉得「情绪」或「生活」类的内容，也对读者没有价值。这类内容或许只适合发在朋友圈，因为只有对你比较熟悉的人，才会好奇你的近况吧——2024.4.22</p>
 <p>看到「和菜头」能多年日更，并写成文笔晓畅的文章，就很佩服！能长期坚持做一件事，就很能让人佩服了！也佩服竹叶老师，能写那么多真诚的文字，（而不是互联网上流行的假文字）——2024.4.22</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-阿拉伯的劳伦斯" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2024-04-21T15:45:54.000Z"><a href="/2024/04/21/%E9%98%BF%E6%8B%89%E4%BC%AF%E7%9A%84%E5%8A%B3%E4%BC%A6%E6%96%AF/">2024-04-21</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2024/04/21/%E9%98%BF%E6%8B%89%E4%BC%AF%E7%9A%84%E5%8A%B3%E4%BC%A6%E6%96%AF/">《阿拉伯的劳伦斯》书评</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>最近读完了一本书<a target="_blank" rel="noopener" href="https://book.douban.com/subject/25883305/">《阿拉伯的劳伦斯》</a>，觉得蛮好看。</p>
-<p><img src="/../images/Lawrence%20of%20Arabia.jpg"></p>
-<p>T. E.劳伦斯是1916至1918年阿拉伯起义中，英国与费萨尔一世的联络官，为阿拉伯民族主义解放事业做出了很大贡献。</p>
-<p>最吸引我的是，T. E.劳伦斯原本只是一个普通的牛津大学的学生，在开罗的办公室里看地图和写公文。却通过自己惊人的主观能动性，为自己创造也很多机会。也使自己成为英国在奥斯曼唯一的，不可替代的重要角色。</p>
-<p>只说一个小例子，在阿拉伯起义前夕，因为宗教原因，侯赛因国王只允许英国人最多在海岸活动，不允许进入内地。但劳伦斯却想办法进入腹地，跟阿拉伯人穿一样的衣服，过一样的生活。一开始自然会有点格格不入，阿拉伯军队没有英国的那种效率。费萨尔甚至要花很多时间和部落酋长交流。但在当时，似乎只有劳伦斯一人愿意脱下英国军装，进入阿拉伯的群体，这才让他能真正理解阿拉伯民族，也能和费萨尔建立比较密切的关系。</p>
-<p>原本劳伦斯只是英国与阿拉伯人的临时联络官，但正是因为和费萨尔建立的独特的联系，才使劳伦斯的职位固定了下来。</p>
-<p>而在后面，因为劳伦斯能收集到大量的一手信息，所以能形成自己的判断，提出最独特的建议，也让他能做出很多正确的决策。</p>
 
       
     </div>
