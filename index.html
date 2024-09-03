@@ -46,7 +46,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 57631</div>
+    <div class="word-count">Total words in posts: 60902</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -67,6 +67,42 @@
 </header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article id="post-Digest-24-9" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-09-01T05:42:43.000Z"><a href="/2024/09/01/Digest-24-9/">2024-09-01</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/09/01/Digest-24-9/">文摘-24年9月</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://paulgraham.com/foundermode.html">Founder Mode</a></p>
+<p>Paul Graham 指出，传统的扩大公司的方法论并不完全适合创业公司。有人会为创始人提供很多如何扩大公司的建议，但一些听从了这些建议的公司陷入了灾难。</p>
+<p>Paul Graham 认为创始人常常收到错误建议，原因在于这些方法是根据职业经理人的做法总结的。而创始人往往具有超能力，能做到职业经理人做不到的事情。如果创始人没有运用超能力，就会感觉不对劲。这就是症结所在。</p>
+<p>作者的结论是 1.存在两种模式：创始人模式和职业经理人模式<br>2.创始人模式可能比传统的职业经理人管理模式更有效，即使有时会显得很古怪，甚至让创始人陷入煤气灯效应一样的迷茫，但如果真正实践创始人模式，或许可以实现乔布斯一样的成就。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
   <article id="post-FastAPI-and-Uvicorn" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
@@ -98,6 +134,72 @@
 <h3 id="对比其他-ASGI-服务器："><a href="#对比其他-ASGI-服务器：" class="headerlink" title="对比其他 ASGI 服务器："></a>对比其他 ASGI 服务器：</h3><p>Daphne或许更适合Django，不是 FastAPI的最佳选择。<br>Hypercorn 性能可能不如Uvicorn，配置可能相对复杂。<br>Gunicorn (with Uvicorn workers)。Gunicorn本身是一个WSGI服务器，但它可以使用Uvicorn workers来支持ASGI。主要缺点也是配置更复杂一点。</p>
 <p>参考链接：<a target="_blank" rel="noopener" href="https://asgi.readthedocs.io/en/latest/">ASGI Documentation</a></p>
 <p><a target="_blank" rel="noopener" href="https://www.fullstackpython.com/wsgi-servers.html">Full Stack Python</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-Digest-24-8" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-08-31T05:42:35.000Z"><a href="/2024/08/31/Digest-24-8/">2024-08-31</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/08/31/Digest-24-8/">文摘-24年8月</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>原来「李沐」停更去创业了。<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/read/cv37076357">https://www.bilibili.com/read/cv37076357</a></p>
+<blockquote>
+<p>22年年底的时候想到两个用大语言模型（LLM）做生产力工具的想法。碰巧遇到张一鸣，就向他请教。讨论之后他反问：为什么不做LLM本身呢？我的下意识退缩：我们之前在Amazon的团队做了好几年这个，得上万张卡，和blabla这么一大堆困难。一鸣呵呵表示：这些都是短期困难，眼光得看长远点。 </p>
+</blockquote>
+<blockquote>
+<p>有了钱后就去买GPU。问各个供应商，统一回复是H100交货得一年以后了。灵机一动，直接给老黄写邮件。老黄秒回说他来看下。一个小时后超微的CEO就打电话过来了。多付了些钱，插了个队，20天后拿到了机器。很荣幸早早的吃到了螃蟹。</p>
+<p>螃蟹吃到怀疑人生，遇到了各种匪夷所思的bug。例如GPU供电不足导致不稳定，后来靠超微工程师修改bios代码打上补丁；例如光纤的切开角度不对，导致通讯不稳定；例如Nvidia的推荐网络布局不是最优，我们重新做一个方案，后来Nvidia自己也采用了这个方案。至今我都不理解，我们就买了不到一千张卡，算小买家吧。但我们遇到的这些问题，难道大买家没遇到吗，为啥需要我们的debug？</p>
+</blockquote>
+<blockquote>
+<p>那么一个人的存在的意义是什么呢？小时候曾因为想不清这个问题而抑郁。所以潜意识里，我想去创造价值，获得存在的意义。我选择“上进”，去提升自己的创造价值的能力；选择录长视频和写教材，创造教育价值；选择去写读博、工作、创业的总结，描述里面的纠结和困难，创造事例的价值；选择去创业，团结很多人的力量去创造更大价值。</p>
+</blockquote>
+<p>Eric Schmidt 斯坦福演讲</p>
+<blockquote>
+<p>Google decided that work life balance and going home early and working from home was more important than winning. And the startups, the reason startups work is because the people work like hell. And I’m sorry to be so blunt, but the fact of the matter is if you all leave the university and go found a company, you’re not going to let people work from home and only come in one day a week. If you want to compete against the other startups with the early days of Google, Microsoft was like that. Exactly.<br>谷歌认为，工作与生活的平衡、早点回家和在家工作比获胜更重要。对于初创公司来说，初创公司之所以能成功，是因为人们拼命工作。我很抱歉这么直言不讳，但事实是，如果你们都离开大学去寻找一家公司，你们不会让人们在家工作，每周只来一天。如果你想与谷歌早期的其他初创公司竞争，微软就是这样的。确切地。</p>
+<p>But now it seems to be, there’s a long history of in my industry, our industry, I guess, of companies winning in a genuinely creative way and really dominating a space and not making this the next transition. So we’re very well documented. And I think that the truth is founders are special. The founders need to be in charge. The founders are difficult to work with.<br>但现在看来，在我的行业、我们的行业，我想，公司以真正的创造性方式获胜并真正主导一个空间，而不是将其作为下一个转型，有着悠久的历史。所以我们有很好的记录。我认为事实是创始人很特别。创始人需要负责。创始人很难共事。</p>
+<p>They push people hard. As much as we can dislike Elon’s personal behavior, look at what he gets out of people. I had dinner with him and he was flying. I was in Montana. He was flying that night at 10 PM to have a meeting at midnight with x.ai.<br>他们对人们施加压力。尽管我们可能不喜欢埃隆的个人行为，但看看他从人们身上得到了什么。我和他一起吃晚饭，他正在飞行。我当时在蒙大拿州。那天晚上 10 点，他乘飞机前往午夜与 x.ai 开会。</p>
+</blockquote>
+<blockquote>
+<p>Coke and Pepsi will still be around and the fight between Coke and Pepsi will continue to go on and it’s all glacial. When I dealt with telcos, the typical telco deal would take 18 months to sign. There’s no reason to take 18 months to do anything. Get it done. We’re in a period of maximum growth, maximum gain.<br>可口可乐和百事可乐仍将存在，可口可乐和百事可乐之间的斗争将继续进行，而且一切都是冰冷的。当我与电信公司打交道时，典型的电信公司协议需要 18 个月才能签署。没有理由花 18 个月来做任何事情。完成它。我们正处于最大成长、最大收获的时期。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://blog.samaltman.com/e-pur-si-muove">E Pur Si Muove</a></p>
+<blockquote>
+<p>Earlier this year, I noticed something in China that really surprised me.  I realized I felt more comfortable discussing controversial ideas in Beijing than in San Francisco.  I didn’t feel completely comfortable—this was China, after all—just more comfortable than at home.<br>今年早些时候，我注意到中国发生了一些令我惊讶的事情。我意识到，在北京讨论有争议的想法比在旧金山更舒服。我感觉并不完全舒服——毕竟这是中国——只是比在家里舒服多了。</p>
+</blockquote>
+<blockquote>
+<p>限制言论会导致思想的限制，继而导致创新的限制。最成功的社会通常是最开放的社会。通常主流思想是正确的，异端思想是错误的，但真实和不受欢迎的思想才是推动世界前进的动力。</p>
+</blockquote>
+<p>因此自己也应该对不同的思想更包容。</p>
+<p><a target="_blank" rel="noopener" href="https://blog.samaltman.com/the-post-yc-slump">The Post-YC Slump YC</a></p>
+<p>Sam Altman 指出，很多公司在离开YC之后，没有继续坚持不懈地专注于构建一个伟大的产品，而是专注于其他。而且工作也不那么努力，效率也比较低。（失去了YC期间的同辈压力）</p>
+<p>这也让我想起之前在黑客松时爆棚的生产力。</p>
+<blockquote>
+<p>在 YC 期间，我们毫不留情地提醒初创公司，虚假工作不算数，无论您做得多么激烈，仍然会让您获得失败的创业机会。我们也很无情地询问你的进步，如果事情不顺利，我们会对你诚实。在 YC 之后，我们与初创公司的联系减少了——如果你愿意，你可以对我们暗淡无声。就其本身而言，这几乎总是一个迹象，表明创业公司做得很糟糕。</p>
+</blockquote>
 
       
     </div>
@@ -1714,83 +1816,6 @@
 <p>而特质是很宝贵的，需要被保护起来。</p>
 <p>作者建议，最好一开始就和不喜欢的圈子 or 人保持一定距离。</p>
 <p>我感觉，隐身于一个群体里，太安全了。而「特质」是一种差异化，差异化就是竞争力。</p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-TypeScript简史" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2024-04-27T05:18:18.000Z"><a href="/2024/04/27/TypeScript%E7%AE%80%E5%8F%B2/">2024-04-27</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2024/04/27/TypeScript%E7%AE%80%E5%8F%B2/">TypeScript 简史</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <h2 id="2010–2012：开始"><a href="#2010–2012：开始" class="headerlink" title="2010–2012：开始"></a>2010–2012：开始</h2><p>TypeScript 于 2012 年 10 月由 Microsoft 首次发布，由 C# 和 Turbo Pascal 的创建者 Anders Hejlsberg 领导该项目。 </p>
-<p>TypeScript 最初动机是想解决 JavaScript 的缺点。JavaScript 是一种动态类型语言，由于缺乏类型检查，所以容易出现运行时错误。 TypeScript 旨在提供可选的静态类型和面向对象的编程功能，使开发人员更轻松地构建，这对大型程序来说，更加有效。</p>
-<p>由于 TypeScript 是 JavaScript 的严格超集，因此它保留了与现有 JavaScript 代码的兼容性。 TypeScript 编译器 ( <code>tsc</code> ) 将 TypeScript 代码转换为 JavaScript，使其可以在任何支持 JavaScript 的环境中运行。这确保了开发人员可以在他们的项目中逐渐采用 TypeScript，而无需重写整个代码库。</p>
-<p>也就是说，任何<code>.js</code>文件，只要将<code>.js</code>文件重命名为<code>.ts</code>文件，这些文件应该能够在TypeScript项目中正常工作，（除非JavaScript代码使用了TypeScript不支持的特性或模式（例如，使用了与TypeScript的类型系统冲突的代码））。</p>
-<h2 id="2012-2018-年：TypeScript-受到关注，并成为主流"><a href="#2012-2018-年：TypeScript-受到关注，并成为主流" class="headerlink" title="2012-2018 年：TypeScript 受到关注，并成为主流"></a>2012-2018 年：TypeScript 受到关注，并成为主流</h2><p>TypeScript 早年在开发者社区中的采用率稳步增长。 越来越多的流行的前端框架也开始使用TypeScript，例如Angular, React, Vue.js, Next.js, Nuxt.js, Svelte (通过svelte-preprocess支持TypeScript), Stencil, Aurecil, Ember.js。 React、Vue 和其他流行项目在其包中添加了 TypeScript 声明，使开发人员能够从 TypeScript 的类型检查和自动完成功能中受益。这反过来又鼓励更多的开发人员在他们的项目中采用 TypeScript，创建一个积极的反馈循环，进一步推动 TypeScript 的增长。</p>
-<p>在此期间，TypeScript 的类型系统也发生了重大改进，引入了联合类型、交集类型和映射类型等功能。这些增强功能使开发人员能够表达复杂的类型关系，使 TypeScript 更加强大和灵活。</p>
-<h2 id="2018-年至今：TypeScript-的成熟"><a href="#2018-年至今：TypeScript-的成熟" class="headerlink" title="2018 年至今：TypeScript 的成熟"></a>2018 年至今：TypeScript 的成熟</h2><p>近年来，TypeScript 已经成熟成为现代 Web 开发的主要工具。由于它结合了类型安全性、改进的工具以及与 JavaScript 生态系统的兼容性，该语言已在开发人员和组织中广泛采用。</p>
-<p>Microsoft 的 TypeScript 团队继续迭代该语言，定期发布引入新功能和增强功能的版本。与此同时，更广泛的 JavaScript 社区也开始接受 TypeScript，Next.js、NestJS 和 GraphQL 等流行项目提供了一流的开箱即用的 TypeScript 支持。</p>
-<p><a target="_blank" rel="noopener" href="https://medium.com/totally-typescript/a-brief-history-of-typescript-from-origin-to-modern-adoption-791368ec4b91">参考原文</a></p>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-关于看书" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2024-04-23T14:47:07.000Z"><a href="/2024/04/23/%E5%85%B3%E4%BA%8E%E7%9C%8B%E4%B9%A6/">2024-04-23</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2024/04/23/%E5%85%B3%E4%BA%8E%E7%9C%8B%E4%B9%A6/">关于看书</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>今天是「世界读书日」</p>
-<p>可能是之前学数学专业的缘故，自己看大部分书都很容易进入心流。也因此时常觉得光阴蹉跎，时间荒废，很耽误buidl。</p>
-<p>而且，看书的时候，绝大多数都是一个人，和其他人关系不大，也很难说为社会创造了什么。</p>
-<p>之前有一个朋友还写过《读书，是一种不太窝囊的逃避方式》。有时确实觉得看书太多会妨害自身发展。还因此多次和朋友立下flag，要少读些书。</p>
 
       
     </div>

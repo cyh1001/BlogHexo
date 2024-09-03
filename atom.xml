@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-09-01T00:35:11.002Z</updated>
+  <updated>2024-09-01T17:42:43.829Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>文摘-24年9月</title>
+    <link href="https://caoyihan.com/2024/09/01/Digest-24-9/"/>
+    <id>https://caoyihan.com/2024/09/01/Digest-24-9/</id>
+    <published>2024-09-01T05:42:43.000Z</published>
+    <updated>2024-09-01T17:42:43.829Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://paulgraham.com/foundermode.html">Founder Mode</a></p><p>Paul Graham 指出，传统的扩大公司的方法论并不完全适合创业公司。有人会为创始人提供很多如何扩大公司的建议，但一些听从了这些建议的公司陷入了灾难。</p><p>Paul Graham 认为创始人常常收到错误建议，原因在于这些方法是根据职业经理人的做法总结的。而创始人往往具有超能力，能做到职业经理人做不到的事情。如果创始人没有运用超能力，就会感觉不对劲。这就是症结所在。</p><p>作者的结论是 1.存在两种模式：创始人模式和职业经理人模式<br>2.创始人模式可能比传统的职业经理人管理模式更有效，即使有时会显得很古怪，甚至让创始人陷入煤气灯效应一样的迷茫，但如果真正实践创始人模式，或许可以实现乔布斯一样的成就。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://paulgraham.com/foundermode.html&quot;&gt;Founder Mode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Paul Graham 指出，传统的扩大公司的方法论并不完全适合创业公司。有人会为创始人提供很多如何扩大公司的建议，但一些听从</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>为什么 FastAPI 适合用 Uvicorn</title>
@@ -30,6 +51,28 @@
       
     <summary type="html">&lt;p&gt;TL;DR：Uvicorn 很适合 FastAPI。如果使用 FastAPI，建议首选 Uvicorn 作为 ASGI Web 服务器&lt;/p&gt;
 &lt;h4 id=&quot;FastAPI&quot;&gt;&lt;a href=&quot;#FastAPI&quot; class=&quot;headerlink&quot; title=&quot;Fas</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文摘-24年8月</title>
+    <link href="https://caoyihan.com/2024/08/31/Digest-24-8/"/>
+    <id>https://caoyihan.com/2024/08/31/Digest-24-8/</id>
+    <published>2024-08-31T05:42:35.000Z</published>
+    <updated>2024-09-01T17:43:01.385Z</updated>
+    
+    <content type="html"><![CDATA[<p>原来「李沐」停更去创业了。<br><a href="https://www.bilibili.com/read/cv37076357">https://www.bilibili.com/read/cv37076357</a></p><blockquote><p>22年年底的时候想到两个用大语言模型（LLM）做生产力工具的想法。碰巧遇到张一鸣，就向他请教。讨论之后他反问：为什么不做LLM本身呢？我的下意识退缩：我们之前在Amazon的团队做了好几年这个，得上万张卡，和blabla这么一大堆困难。一鸣呵呵表示：这些都是短期困难，眼光得看长远点。 </p></blockquote><blockquote><p>有了钱后就去买GPU。问各个供应商，统一回复是H100交货得一年以后了。灵机一动，直接给老黄写邮件。老黄秒回说他来看下。一个小时后超微的CEO就打电话过来了。多付了些钱，插了个队，20天后拿到了机器。很荣幸早早的吃到了螃蟹。</p><p>螃蟹吃到怀疑人生，遇到了各种匪夷所思的bug。例如GPU供电不足导致不稳定，后来靠超微工程师修改bios代码打上补丁；例如光纤的切开角度不对，导致通讯不稳定；例如Nvidia的推荐网络布局不是最优，我们重新做一个方案，后来Nvidia自己也采用了这个方案。至今我都不理解，我们就买了不到一千张卡，算小买家吧。但我们遇到的这些问题，难道大买家没遇到吗，为啥需要我们的debug？</p></blockquote><blockquote><p>那么一个人的存在的意义是什么呢？小时候曾因为想不清这个问题而抑郁。所以潜意识里，我想去创造价值，获得存在的意义。我选择“上进”，去提升自己的创造价值的能力；选择录长视频和写教材，创造教育价值；选择去写读博、工作、创业的总结，描述里面的纠结和困难，创造事例的价值；选择去创业，团结很多人的力量去创造更大价值。</p></blockquote><p>Eric Schmidt 斯坦福演讲</p><blockquote><p>Google decided that work life balance and going home early and working from home was more important than winning. And the startups, the reason startups work is because the people work like hell. And I’m sorry to be so blunt, but the fact of the matter is if you all leave the university and go found a company, you’re not going to let people work from home and only come in one day a week. If you want to compete against the other startups with the early days of Google, Microsoft was like that. Exactly.<br>谷歌认为，工作与生活的平衡、早点回家和在家工作比获胜更重要。对于初创公司来说，初创公司之所以能成功，是因为人们拼命工作。我很抱歉这么直言不讳，但事实是，如果你们都离开大学去寻找一家公司，你们不会让人们在家工作，每周只来一天。如果你想与谷歌早期的其他初创公司竞争，微软就是这样的。确切地。</p><p>But now it seems to be, there’s a long history of in my industry, our industry, I guess, of companies winning in a genuinely creative way and really dominating a space and not making this the next transition. So we’re very well documented. And I think that the truth is founders are special. The founders need to be in charge. The founders are difficult to work with.<br>但现在看来，在我的行业、我们的行业，我想，公司以真正的创造性方式获胜并真正主导一个空间，而不是将其作为下一个转型，有着悠久的历史。所以我们有很好的记录。我认为事实是创始人很特别。创始人需要负责。创始人很难共事。</p><p>They push people hard. As much as we can dislike Elon’s personal behavior, look at what he gets out of people. I had dinner with him and he was flying. I was in Montana. He was flying that night at 10 PM to have a meeting at midnight with x.ai.<br>他们对人们施加压力。尽管我们可能不喜欢埃隆的个人行为，但看看他从人们身上得到了什么。我和他一起吃晚饭，他正在飞行。我当时在蒙大拿州。那天晚上 10 点，他乘飞机前往午夜与 x.ai 开会。</p></blockquote><blockquote><p>Coke and Pepsi will still be around and the fight between Coke and Pepsi will continue to go on and it’s all glacial. When I dealt with telcos, the typical telco deal would take 18 months to sign. There’s no reason to take 18 months to do anything. Get it done. We’re in a period of maximum growth, maximum gain.<br>可口可乐和百事可乐仍将存在，可口可乐和百事可乐之间的斗争将继续进行，而且一切都是冰冷的。当我与电信公司打交道时，典型的电信公司协议需要 18 个月才能签署。没有理由花 18 个月来做任何事情。完成它。我们正处于最大成长、最大收获的时期。</p></blockquote><p><a href="https://blog.samaltman.com/e-pur-si-muove">E Pur Si Muove</a></p><blockquote><p>Earlier this year, I noticed something in China that really surprised me.  I realized I felt more comfortable discussing controversial ideas in Beijing than in San Francisco.  I didn’t feel completely comfortable—this was China, after all—just more comfortable than at home.<br>今年早些时候，我注意到中国发生了一些令我惊讶的事情。我意识到，在北京讨论有争议的想法比在旧金山更舒服。我感觉并不完全舒服——毕竟这是中国——只是比在家里舒服多了。</p></blockquote><blockquote><p>限制言论会导致思想的限制，继而导致创新的限制。最成功的社会通常是最开放的社会。通常主流思想是正确的，异端思想是错误的，但真实和不受欢迎的思想才是推动世界前进的动力。</p></blockquote><p>因此自己也应该对不同的思想更包容。</p><p><a href="https://blog.samaltman.com/the-post-yc-slump">The Post-YC Slump YC</a></p><p>Sam Altman 指出，很多公司在离开YC之后，没有继续坚持不懈地专注于构建一个伟大的产品，而是专注于其他。而且工作也不那么努力，效率也比较低。（失去了YC期间的同辈压力）</p><p>这也让我想起之前在黑客松时爆棚的生产力。</p><blockquote><p>在 YC 期间，我们毫不留情地提醒初创公司，虚假工作不算数，无论您做得多么激烈，仍然会让您获得失败的创业机会。我们也很无情地询问你的进步，如果事情不顺利，我们会对你诚实。在 YC 之后，我们与初创公司的联系减少了——如果你愿意，你可以对我们暗淡无声。就其本身而言，这几乎总是一个迹象，表明创业公司做得很糟糕。</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;原来「李沐」停更去创业了。&lt;br&gt;&lt;a href=&quot;https://www.bilibili.com/read/cv37076357&quot;&gt;https://www.bilibili.com/read/cv37076357&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;22年年</summary>
       
     
     
@@ -411,56 +454,6 @@
     <summary type="html">&lt;p&gt;最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)&lt;/p&gt;
 &lt;p&gt;我采取的整体技术方案是，Next.js + Vercel + Huggin</summary>
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于APIConnectionError： Connection error在JavaScript的最新解决方案</title>
-    <link href="https://caoyihan.com/2024/06/04/APIConnectionError/"/>
-    <id>https://caoyihan.com/2024/06/04/APIConnectionError/</id>
-    <published>2024-06-04T06:30:30.000Z</published>
-    <updated>2024-06-04T06:30:30.724Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>TL;DR:</strong> 使用 axios 和 dotenv 解决 APIConnectionError 问题。</p><h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>在本地服务器运行 Next.js 项目时，调用 OpenAI API 或 Hugging face API 会报错 <code>APIConnectionError: Connection error</code>。调用 Hugging Face 的其他模型 API 时，同样报错。然而，部署在 Vercel 上可以正常运行。</p><p>项目环境：</p><ul><li>编程语言：JavaScript 和 TypeScript</li><li>框架：Next.js 和 React</li><li>地理位置：中国大陆</li></ul><p><strong>错误原因分析</strong></p><h3 id="错误原因分析："><a href="#错误原因分析：" class="headerlink" title="错误原因分析："></a>错误原因分析：</h3><p>通过谷歌查询，初步判断是 Node.js 的代理问题。附 OpenAI 官方文档：<a href="https://help.openai.com/en/articles/6897191-apiconnectionerror"><strong>APIConnectionError</strong></a></p><h3 id="尝试过的解决方案（无效）："><a href="#尝试过的解决方案（无效）：" class="headerlink" title="尝试过的解决方案（无效）："></a>尝试过的解决方案（无效）：</h3><ol><li><p>在 powershell 上配置代理</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$env:HTTP_PROXY=&quot;http://127.0.0.1:33210&quot;</span><br><span class="line">$env:HTTPS_PROXY=&quot;http://127.0.0.1:33210&quot;</span><br><span class="line">$env:ALL_PROXY=&quot;socks5://127.0.0.1:33211&quot;</span><br></pre></td></tr></table></figure><p>但发现这样配置了之后，仍然出现APIConnectionError: Connection error报错。</p></li><li><p>很多解决方案通过修改 openai 的 Python 库来解决，但是无法用在JavaScript 和 Next.js上。</p></li></ol><h3 id="解决方案概述："><a href="#解决方案概述：" class="headerlink" title="解决方案概述："></a>解决方案概述：</h3><p>使用axios 和dotenv即可解决问题，以下是具体步骤：</p><p>1.在 Next.js 项目中安装 axios 和 dotenv：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios dotenv</span><br></pre></td></tr></table></figure><p>2.在需要调用API的场景，使用axios进行API请求，并同时配置代理。</p><p>代码示例：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">import * as fs from &#x27;fs&#x27;;</span><br><span class="line">import * as path from &#x27;path&#x27;;</span><br><span class="line">import axios from &#x27;axios&#x27;;</span><br><span class="line">import * as dotenv from &#x27;dotenv&#x27;;</span><br><span class="line"></span><br><span class="line">dotenv.config();</span><br><span class="line"></span><br><span class="line">async function query(filePath: string) &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    const data = fs.readFileSync(filePath); // 读取文件内容</span><br><span class="line">    const response = await axios.post(</span><br><span class="line">      &#x27;https://api-inference.huggingface.co/models/openai/whisper-tiny&#x27;,</span><br><span class="line">      data, // 文件内容作为请求体</span><br><span class="line">      &#123;</span><br><span class="line">        headers: &#123;</span><br><span class="line">          &quot;Accept&quot;:&quot;application/json&quot;,</span><br><span class="line">          Authorization: `Bearer hf_xxxxxxxxxxxxxxxxxxxxxxxxxx`,</span><br><span class="line">          &#x27;Content-Type&#x27;: &#x27;audio/wav&#x27;, // 确保内容类型是音频文件</span><br><span class="line">        &#125;,</span><br><span class="line">        proxy: &#123;</span><br><span class="line">          protocol: &#x27;http&#x27;,</span><br><span class="line">          host: &#x27;127.0.0.1&#x27;,</span><br><span class="line">          port: 33210,// 这里应该根据使用的代理，修改成相应的port</span><br><span class="line">        &#125;,</span><br><span class="line">        timeout: 10000, // 设置超时时间为10秒</span><br><span class="line">      &#125;</span><br><span class="line">    );</span><br><span class="line">    return response.data;</span><br><span class="line">  &#125; catch (error) &#123;</span><br><span class="line">    if (axios.isAxiosError(error)) &#123;</span><br><span class="line">      console.error(&#x27;Axios error:&#x27;, error.response?.data);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      console.error(&#x27;Unexpected error:&#x27;, error);</span><br><span class="line">    &#125;</span><br><span class="line">    throw error;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 调用函数并传入文件路径</span><br><span class="line">query(path.resolve(__dirname, &quot;C:\\Users\\caoca\\Music\\sample1.wav&quot;))</span><br><span class="line">  .then((response) =&gt; &#123;</span><br><span class="line">    console.log(JSON.stringify(response));</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch((error) =&gt; &#123;</span><br><span class="line">    console.error(error);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h3><p>通过使用 axios 和 dotenv，可以有效解决 Next.js 项目中调用 OpenAI API 或 Hugging face API 报错的问题，提升开发体验和项目的稳定性。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;strong&gt;TL;DR:&lt;/strong&gt; 使用 axios 和 dotenv 解决 APIConnectionError 问题。&lt;/p&gt;
-&lt;h3 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>语C黑话手册</title>
-    <link href="https://caoyihan.com/2024/06/03/Text-Role-Play/"/>
-    <id>https://caoyihan.com/2024/06/03/Text-Role-Play/</id>
-    <published>2024-06-03T06:25:07.000Z</published>
-    <updated>2024-06-11T11:51:40.512Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近偶然接触到一个亚文化圈子「语C」，突然发现，这不就和各种流行的AI聊天机器人很像吗？</p><p>语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化。</p><p>由于这个圈子黑话很多，所以我整理了一些常用的词义，方便对语C感兴趣的朋友们收藏，碰到时可以对照理解。Enjoy。</p><h4 id="语C黑话手册"><a href="#语C黑话手册" class="headerlink" title="语C黑话手册"></a>语C黑话手册</h4><ol><li><p><strong>语C，语擦，语cos</strong>：语言cosplay，一种用纯文字进行的角色扮演活动。</p></li><li><p><strong>皮</strong>：饰演的角色。</p></li><li><p><strong>披皮、上皮、改备注</strong>：将备注修改成自己所扮演的角色。</p></li><li><p><strong>带套</strong>：例如]、】、}、)等符号，用于说明三次元现实情况的句子。一些群也有单独的规定。</p></li><li><p><strong>开戏，KJ</strong>：将自己的角色带入特定场景或剧情，与其他角色互动或对话。</p><span id="more"></span></li><li><p><strong>前台、主、戏</strong>：用于开戏的地方。</p></li><li><p><strong>后台</strong>：在前台开戏或游戏等不能说话的情况下，可以围观、讨论或崩坏的地方。</p></li><li><p><strong>游戏</strong>：无聊时的活动，如KG、猜数字、谁是卧底、真心话大冒险等。</p></li><li><p><strong>插戏</strong>：在开戏过程中突然出现无关角色或突然说话的情况。</p></li><li><p><strong>入戏</strong>：完全代入角色，不做与角色不符的行为或语气。</p></li><li><p><strong>KG</strong>：KingGame（国王游戏），由一人主持，私Q发给参加者一个编号，让主持人决定几号做什么活动。</p></li><li><p><strong>崩皮</strong>：做出与角色不符的行为或语气。</p></li><li><p><strong>围观</strong>：不参与聊天或开戏，只是观看的人。</p></li><li><p><strong>SQ</strong>：私Q，私聊的意思。</p></li><li><p><strong>玛丽苏</strong>：原创角色，通常指完美无缺的女性角色。</p></li><li><p><strong>小白</strong>：不了解语C或戏剧氛围不好的人，指语C的初学者。</p></li><li><p><strong>审核</strong>：考核角色扮演水平，通过审核才能进主场，也有其他用途。</p></li><li><p><strong>剧本</strong>：游戏时设定好的剧情，多用于KG或开戏时。</p></li><li><p><strong>拉线</strong>：在聊天框上用符号或下划线作为分界线，分割开戏或游戏的区域，线下不能插戏。</p></li><li><p><strong>线下</strong>：指拉线后的所有聊天记录。</p></li><li><p><strong>刷屏</strong>：重复发送同样的表情、符号、语句等；开戏时文字超过一屏也算刷屏。</p></li><li><p><strong>认亲</strong>：在语C中相认并称呼昵称等的行为。</p></li><li><p><strong>圈</strong>：一个动漫题材或按种类分布的语C范围。</p></li><li><p><strong>混圈</strong>：在多个语C圈子中都有加入。</p></li><li><p><strong>混圈名</strong>：在语C中为自己起的名字。</p></li><li><p><strong>CP，西皮</strong>：在语C中为自己找到的唯一爱人。</p></li><li><p><strong>情人</strong>：开戏时调情对象，没有唯一性。</p></li><li><p><strong>419</strong>：指一夜情，音译自“For One Night”。</p></li><li><p><strong>气场帝</strong>：指在角色扮演中气场很好的人。</p></li><li><p><strong>煤气厂</strong>：音译“没气场”，指没有气场。</p></li><li><p><strong>油漆厂</strong>：音译“有气场”，指有气场。</p></li><li><p><strong>爬墙</strong>：有CP的情况下与其他角色发生情感互动。</p></li><li><p><strong>PC</strong>：指替人代演，剧情需要的角色。</p></li><li><p><strong>弧</strong>：因为忙别的事情而离开一段时间没有及时回应。</p></li><li><p><strong>AW</strong>：Anewworld的缩写，意为“一弧一世界”。</p></li><li><p><strong>圈名</strong>：在语C圈内为自己起的名字。</p></li><li><p><strong>梗</strong>：在语C中指开戏的背景、设定，由出梗人或首先开戏的人给出。</p></li><li><p><strong>梗废</strong>：不会出梗的人的自称。</p></li><li><p><strong>镜面</strong>：两人用同样的角色身份进行对戏，多用于两人抢角色时。</p></li><li><p><strong>同梗</strong>：两人或以上用相同的梗单独进行对戏或自述，多用于两人抢角色时。</p></li><li><p><strong>皮设</strong>：角色设定。</p></li><li><p><strong>BG</strong>：指“Boy and Girl”的缩写，即异性恋情节，通常指男女性别的恋爱关系。</p></li><li><p><strong>BGB</strong>：指“Boy-Girl-Boy”的缩写，表示双性恋或双向恋情节，即角色可能与男生或女生都可以形成恋爱关系。</p></li><li><p><strong>GL</strong>：指“Girls’ Love”，即百合情节，女生之间的恋爱关系。</p></li><li><p><strong>BL</strong>：指“Boys’ Love”，即耽美情节，男生之间的恋爱关系。</p></li></ol><h3 id="语C的核心"><a href="#语C的核心" class="headerlink" title="语C的核心"></a>语C的核心</h3><p>语C的核心在于通过文字扮演角色，创造出能打动人心的剧情和角色互动。戏的好坏不在于其他，而在于这场戏是否能将大家感动。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;最近偶然接触到一个亚文化圈子「语C」，突然发现，这不就和各种流行的AI聊天机器人很像吗？&lt;/p&gt;
-&lt;p&gt;语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化。&lt;/p&gt;
-&lt;p&gt;由于这个圈子黑话很多，所以我整理了一些常用的词义，方便对语C感兴趣的朋友们收藏，碰到时可以对照理解。Enjoy。&lt;/p&gt;
-&lt;h4 id=&quot;语C黑话手册&quot;&gt;&lt;a href=&quot;#语C黑话手册&quot; class=&quot;headerlink&quot; title=&quot;语C黑话手册&quot;&gt;&lt;/a&gt;语C黑话手册&lt;/h4&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;语C，语擦，语cos&lt;/strong&gt;：语言cosplay，一种用纯文字进行的角色扮演活动。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;皮&lt;/strong&gt;：饰演的角色。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;披皮、上皮、改备注&lt;/strong&gt;：将备注修改成自己所扮演的角色。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;带套&lt;/strong&gt;：例如]、】、}、)等符号，用于说明三次元现实情况的句子。一些群也有单独的规定。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;&lt;strong&gt;开戏，KJ&lt;/strong&gt;：将自己的角色带入特定场景或剧情，与其他角色互动或对话。&lt;/p&gt;</summary>
     
     
     
