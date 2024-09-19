@@ -845,3 +845,38 @@ pre .clojure .title {
 pre .deletion {
   color: #dc322f;
 }
+.pagination-container {
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+}
+.pagination-container .page-number,
+.pagination-container .extend {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 8px 12px;
+  background-color: #f4f4f4;
+  color: #333;
+  border-radius: 4px;
+  text-decoration: none;
+  -webkit-transition: background-color 0.3s, color 0.3s;
+  -moz-transition: background-color 0.3s, color 0.3s;
+  -o-transition: background-color 0.3s, color 0.3s;
+  -ms-transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+}
+.pagination-container .page-number:hover,
+.pagination-container .extend:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+.pagination-container .current {
+  background-color: #007bff;
+  color: #fff;
+}
+.pagination-container .space {
+  margin: 0 5px;
+}
+.pagination-container .extend {
+  font-weight: bold;
+}
