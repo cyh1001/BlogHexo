@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-09-20T15:38:02.670Z</updated>
+  <updated>2024-09-23T04:14:51.620Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>指令架构集是否有必要开源？聊聊RISC-V和开源闭源指令集的争议。</title>
+    <link href="https://caoyihan.com/2024/09/22/proprietary-vs-open-isa-RISC-V/"/>
+    <id>https://caoyihan.com/2024/09/22/proprietary-vs-open-isa-RISC-V/</id>
+    <published>2024-09-22T16:14:51.000Z</published>
+    <updated>2024-09-23T04:14:51.620Z</updated>
+    
+    <content type="html"><![CDATA[<p>RISC-V，根据维基百科的解释</p><blockquote><p>RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。<br>与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。</p></blockquote><p> 最近读到一篇关于开源与闭源（专有）指令架构集的<a href="https://research.cs.wisc.edu/multifacet/papers/ieeemicro16_card_isa.pdf">争论</a>。Dave Christie的观点，代表了传统闭源 ISA 阵营的观点。而 David Patterson 作为 RISC-V 的主要推动者之一，代表了开源 ISA 阵营。</p><p>Dave Christie：</p><blockquote><ol><li>主流ISA，（尤其是x86，ARM，Power, MIPS, Sparc），已经很好地为该行业服务了。</li><li>构建完美的指令架构集并不能确保商业上的成功。</li><li>指令架构集不仅仅是一门技术，更是生态系统。一旦达到一定规模，它的巨大生态会让它变得无比强大。</li><li>过去的经验证明，目前指令架构集的所有者会负责任地管理。</li><li>指令架构集会偶尔有失误，RISC-V也终将如此。</li></ol></blockquote><p>Dave Christie对 RISV-V提出质疑：</p><blockquote><ol><li>RISC-V存在很多替代品，例如 Open RISC, Lattice Mico32.</li><li>非常长的指令字（VLIW）格式是RISC-V中的一个选项。但这个选项过于学术化，因为它试图为太多人提供太多的东西。VLIW适合高度专业化而非通用的用途。</li><li>不赞成共享的开放核设计可以缩短进入市场的时间。</li><li>不赞成行业需要一个标准化的指令架构集来保护世界免遭专有指令集的垄断。</li></ol></blockquote><p>Dave Christie提出：与其在指令架构集进行标准化，不如使用「虚拟指令架构集」或中间件语言来标准化软硬件之间的接口。例如异构系统架构(Heterogeneous System Architecture(HSA))</p><p>另一方David Patterson认为：</p><blockquote><ol><li>开放的标准、开源的软件塑造了计算机行业，如表一。指令架构集不应该例外。</li><li>指令架构集是软硬件的相接之处，很重要。</li><li>专有的指令架构集是AMD和 Intel 构起的护城河。不仅拥有怪癖的专利，还会在你违反许可时起诉你。即使获得许可证也未必能免受诉讼。</li><li>ARM 的许可证不允许他人设计 ARM 内核，导致扼杀创新和竞争。</li><li>从技术角度看，指令架构集没有理由要专有。因为大部分的生态开发不是指令集的所有者开发，而是外部人员开发的。而且很多人都有设计优秀的指令架构集的经验。而且目前流行的指令集ARM 和 x86 不是特别优雅，只是比较成功。 而且如果指令集与特定的公司挂钩，那么公司倒闭时，指令架构集也会随之而逝。</li></ol></blockquote><p>David Patterson 认为开源指令架构集的优点：</p><blockquote><ol><li>开源产生更多的创新</li><li>共享的内核可以缩短进入市场的时间并降低成本。</li><li>共享的内核可以减少错误，因为大家都可以看得到。</li><li>便于学术研究。</li></ol></blockquote><p>David Patterson 还提出了一个很有意思的角度：</p><blockquote><p>RISC-V 是最小化的模块指令架构集。像 Intel 这类公司设计的指令架构集需要能处理任何东西，因此随着时间的推移，会越来越大。而在21世纪的架构中，指令架构集应该用于SoC（即 System on a Chip，系统级芯片）。这就是RISC-V 的优势：基础指令少，支持32, 64, 128位， 可以添加标准扩展，支持更小的指令大小，为特定SoC指令预留了空间。</p></blockquote><p>从2024年的角度来看，David Patterson关于开源指令架构集和RISC-V的观点大体上被证明是正确的。RISC-V作为一个模块化、可扩展的 ISA，确实获得了广泛采用。目前，RISC-V拥有蓬勃发展的生态系统，得到了学术界和工业界的大力支持，在嵌入式系统、IoT和高性能计算等领域都有所突破。然而，传统的专有指令架构集如ARM和x86在市场份额上仍然保持强势地位。</p><p><img src="/../images/isa-1.png" alt="isa-1"></p><p><img src="/../images/isa-2.png" alt="isa-2"></p><p>注：ISA 是 Instruction Set Architecture 的缩写，中文通常翻译为”指令集架构”。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;RISC-V，根据维基百科的解释&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。&lt;br&gt;与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Stripe 是如何招聘的</title>
@@ -430,26 +452,6 @@
       
       
     <summary type="html">&lt;p&gt;今天读到Chris Dixon的一篇文章&lt;a href=&quot;https://cdixon.org/2009/08/22/why-you-shouldnt-keep-your-startup-idea-secret&quot;&gt;你为什么不应该对你的创业想法保密&lt;/a&gt;。Chris Dix</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>好的研究离不开详尽的调查</title>
-    <link href="https://caoyihan.com/2024/06/07/Good-research-And-thorough-investigation/"/>
-    <id>https://caoyihan.com/2024/06/07/Good-research-And-thorough-investigation/</id>
-    <published>2024-06-08T03:37:30.000Z</published>
-    <updated>2024-06-11T12:13:16.286Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近阅读了浑水做空瑞幸的<a href="https://cdn.gmtresearch.com/public-ckfinder/Short-sellers/Unknown%20author/Luckin%20Coffee_Anonymous.pdf">《Luckin Coffee: Fraud + Fundamentally Broken Business》</a>，这篇的目的是揭露瑞幸的数据造假，风险警报，以及商业模式的缺陷。</p><p>好的研究离不开详尽的调查。为了支撑文中提出的16个非共识的观点，浑水动员了一千多人，采集了620个门店长达11260小时的门店流量视频，2.5万+份客户收据，让这些论点变得确凿无比。</p><p><img src="/../images/%E7%91%9E%E5%B9%B8%E9%97%A8%E5%BA%97.jpg" alt="瑞幸门店"></p><p>浑水提出的确切观点有：</p><blockquote><h4 id="确凿证据-1"><a href="#确凿证据-1" class="headerlink" title="确凿证据 #1"></a>确凿证据 #1</h4><p>2019年第三季度每店每日的销售数量至少被夸大了69%，2019年第四季度被夸大了88%，这由11,260小时的门店视频监控数据支持。我们动员了92名全职和1,418名兼职员工，在981个店日内监控和记录了100%营业时间内的门店客流。门店选取基于城市和位置类型，与瑞幸所有直营门店的分布相同。</p><h4 id="确凿证据-2"><a href="#确凿证据-2" class="headerlink" title="确凿证据 #2"></a>确凿证据 #2</h4><p>瑞幸咖啡“每单商品数量”从2019年第二季度的1.38下降到2019年第四季度的1.14。</p><h4 id="确凿证据-3"><a href="#确凿证据-3" class="headerlink" title="确凿证据 #3"></a>确凿证据 #3</h4><p>我们收集了25,843张顾客收据，发现瑞幸咖啡至少夸大了每件商品的净售价1.23元人民币或12.3%以人为维持其商业模式。实际店面级别的亏损率高达24.7%-28%。扣除免费商品，实际售价为标价的46%，而非管理层声称的55%。</p><h4 id="确凿证据-4"><a href="#确凿证据-4" class="headerlink" title="确凿证据 #4"></a>确凿证据 #4</h4><p>第三方媒体跟踪显示，瑞幸咖啡在2019年第三季度夸大了其广告费用超过150%，尤其是对分众传媒的支出。瑞幸咖啡可能通过回收夸大的广告费用回收，进而配平夸大的收入和店面利润。</p><h4 id="确凿证据-5"><a href="#确凿证据-5" class="headerlink" title="确凿证据 #5"></a>确凿证据 #5</h4><p>瑞幸咖啡2019年第三季度“其他产品”的收入贡献仅为约6%，几乎夸大了400%，这由25,843张顾客收据和其申报的增值税数据显示。</p><h4 id="商业模式缺陷-1"><a href="#商业模式缺陷-1" class="headerlink" title="商业模式缺陷 #1"></a>商业模式缺陷 #1</h4><p>瑞幸咖啡瞄准核心功能性咖啡需求的提议是错误的：中国人均咖啡因摄入量为86毫克&#x2F;天，与其他亚洲国家相当，其中95%的摄入量来自茶。中国的核心功能性咖啡产品市场规模较小且增长适中。</p><h4 id="商业模式缺陷-2"><a href="#商业模式缺陷-2" class="headerlink" title="商业模式缺陷 #2"></a>商业模式缺陷 #2</h4><p>瑞幸的客户是高度价格敏感的，客户保留主要依赖于大幅折扣促销。瑞幸试图减少折扣（即提高实际价格）并同时增加同店销售的做法是不可能实现的。</p><h4 id="商业模式缺陷-3"><a href="#商业模式缺陷-3" class="headerlink" title="商业模式缺陷 #3"></a>商业模式缺陷 #3</h4><p>瑞幸的单店经济效益有缺陷，无法实现盈利，其破碎的商业模式注定会崩溃。</p><h4 id="商业模式缺陷-4"><a href="#商业模式缺陷-4" class="headerlink" title="商业模式缺陷 #4"></a>商业模式缺陷 #4</h4><p>瑞幸“成为每个人日常生活的一部分，从咖啡开始”的梦想不太可能实现，因为它在非咖啡产品方面也缺乏核心竞争力。其“平台”充斥着没有品牌忠诚度的机会主义客户。其轻量化劳动力模式只适合生产已经存在市场十多年的“1.0”代茶饮，而领先的新鲜茶饮玩家五年前已经推出了“3.0”代产品。</p><h4 id="商业模式缺陷-5"><a href="#商业模式缺陷-5" class="headerlink" title="商业模式缺陷 #5"></a>商业模式缺陷 #5</h4><p>瑞幸茶的特许经营业务面临高合规风险，因为它没有按照法律要求在相关部门注册。瑞幸茶于2019年9月启动其特许经营业务，而当时它没有至少两家直营店运营满一年。</p></blockquote><p>全文报告中列出的证据非常详细，包括大量的视频截图和收据截图，论证的估计也都是有依据的。自然，浑水的这份报告是非常成功的。</p><p><img src="/../images/%E6%B5%91%E6%B0%B4%E7%91%9E%E5%B9%B8%E8%AE%A2%E5%8D%95%E6%88%AA%E5%9B%BE.png" alt="手机上的订单图片"></p><p>类似的优秀研究报告还有毛主席的《湖南农民运动考察报告》和《寻乌调查》。这些报告同样基于大量调查，用详实的证据、数据和信息做支撑，得出了非共识且正确的结论。</p><p>（附注：有趣的是，浑水公司虽然提出了很多瑞幸的商业模式缺陷，但现在四年半之后回首再看，应该会有不一样的结论。例如，瑞幸的价格战越打越猛烈，推出了9.9元一杯的活动，但是经营并没有崩溃，而且在 2023 年营收就超过了星巴克中国。并且中国整体的咖啡市场也在快速增长，2022 年同比增长 <a href="https://news.winshang.com/html/071/6541.html">28.67%</a>。而且中国人均咖啡因摄入量超过 100mg&#x2F;d。从现在来看，当初浑水公司提出的不少预测也是错误的。）</p><p><img src="/../images/%E4%B8%AD%E5%9B%BD%E5%92%96%E5%95%A1%E8%A1%8C%E4%B8%9A%E5%B8%82%E5%9C%BA%E8%A7%84%E6%A8%A1.png" alt="2013-2023中国咖啡行业市场规模"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;最近阅读了浑水做空瑞幸的&lt;a href=&quot;https://cdn.gmtresearch.com/public-ckfinder/Short-sellers/Unknown%20author/Luckin%20Coffee_Anonymous.pdf&quot;&gt;《Luckin Co</summary>
       
     
     
