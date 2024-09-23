@@ -6,8 +6,7 @@
   <title>为什么应该用 Hugging Face Inference Endpoints 构建AI应用 | 曹艺瀚的个人网站</title>
   <meta name="author" content="August曹艺瀚">
   
-  <meta name="description" content="最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)
-我采取的整体技术方案是，Next.js + Vercel + Hugging Face Inference End">
+  <meta name="description" content="最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -49,7 +48,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 66395</div>
+    <div class="word-count">Total words in posts: 66396</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -86,6 +85,8 @@
     <div class="e-content entry" itemprop="articleBody">
       
         <p>最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p>
+<span id="more"></span>
+
 <p>我采取的整体技术方案是，Next.js + Vercel + Hugging Face Inference Endpoint 的 API，前后端采用统一的框架，没有使用云服务器。</p>
 <p>因为做独立开发，最重要的，就是快速推出产品，而且为了快速迭代，应该使用简单的部署方案。而为了尽可能地使用简单的技术方案，用 API 构建产品，比自己部署大模型，要更方便快速，尤其是在构造 MVP（最小可行性产品）的时候。</p>
 <p>但问题是，有很多模型并没有提供 API，或者提供的 API 并不完全，比如说 OpenAI 的 Whisper，现在官方还只提供 Whisper-large-V2 的 API，但 Whisper-large-V3 已经推出很长时间了，但 OpenAI 并没有提供 API。而且还有很多基于某些特定任务做了微调的大模型，也没有提供 API。也有些模型，只有 Python 的 API，没有提供JavaScript 的API，使用起来也会麻烦一点。</p>
@@ -113,7 +114,7 @@
 
 
 <section id="comment">
-  <h1 class="title">Kommentare</h1>
+  <h1 class="title">Comments</h1>
 
   
       <div id="fb-root"></div>
@@ -136,7 +137,7 @@
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" name="q" results="0" placeholder="Search">
     <input type="hidden" name="as_sitesearch" value="caoyihan.com">
   </form>
 </div>

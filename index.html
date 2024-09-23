@@ -46,7 +46,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 66395</div>
+    <div class="word-count">Total words in posts: 66396</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -88,58 +88,14 @@
 <p>RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。<br>与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。</p>
 </blockquote>
 <p> 最近读到一篇关于开源与闭源（专有）指令架构集的<a target="_blank" rel="noopener" href="https://research.cs.wisc.edu/multifacet/papers/ieeemicro16_card_isa.pdf">争论</a>。Dave Christie的观点，代表了传统闭源 ISA 阵营的观点。而 David Patterson 作为 RISC-V 的主要推动者之一，代表了开源 ISA 阵营。</p>
-<p>Dave Christie：</p>
-<blockquote>
-<ol>
-<li>主流ISA，（尤其是x86，ARM，Power, MIPS, Sparc），已经很好地为该行业服务了。</li>
-<li>构建完美的指令架构集并不能确保商业上的成功。</li>
-<li>指令架构集不仅仅是一门技术，更是生态系统。一旦达到一定规模，它的巨大生态会让它变得无比强大。</li>
-<li>过去的经验证明，目前指令架构集的所有者会负责任地管理。</li>
-<li>指令架构集会偶尔有失误，RISC-V也终将如此。</li>
-</ol>
-</blockquote>
-<p>Dave Christie对 RISV-V提出质疑：</p>
-<blockquote>
-<ol>
-<li>RISC-V存在很多替代品，例如 Open RISC, Lattice Mico32.</li>
-<li>非常长的指令字（VLIW）格式是RISC-V中的一个选项。但这个选项过于学术化，因为它试图为太多人提供太多的东西。VLIW适合高度专业化而非通用的用途。</li>
-<li>不赞成共享的开放核设计可以缩短进入市场的时间。</li>
-<li>不赞成行业需要一个标准化的指令架构集来保护世界免遭专有指令集的垄断。</li>
-</ol>
-</blockquote>
-<p>Dave Christie提出：与其在指令架构集进行标准化，不如使用「虚拟指令架构集」或中间件语言来标准化软硬件之间的接口。例如异构系统架构(Heterogeneous System Architecture(HSA))</p>
-<p>另一方David Patterson认为：</p>
-<blockquote>
-<ol>
-<li>开放的标准、开源的软件塑造了计算机行业，如表一。指令架构集不应该例外。</li>
-<li>指令架构集是软硬件的相接之处，很重要。</li>
-<li>专有的指令架构集是AMD和 Intel 构起的护城河。不仅拥有怪癖的专利，还会在你违反许可时起诉你。即使获得许可证也未必能免受诉讼。</li>
-<li>ARM 的许可证不允许他人设计 ARM 内核，导致扼杀创新和竞争。</li>
-<li>从技术角度看，指令架构集没有理由要专有。因为大部分的生态开发不是指令集的所有者开发，而是外部人员开发的。而且很多人都有设计优秀的指令架构集的经验。而且目前流行的指令集ARM 和 x86 不是特别优雅，只是比较成功。 而且如果指令集与特定的公司挂钩，那么公司倒闭时，指令架构集也会随之而逝。</li>
-</ol>
-</blockquote>
-<p>David Patterson 认为开源指令架构集的优点：</p>
-<blockquote>
-<ol>
-<li>开源产生更多的创新</li>
-<li>共享的内核可以缩短进入市场的时间并降低成本。</li>
-<li>共享的内核可以减少错误，因为大家都可以看得到。</li>
-<li>便于学术研究。</li>
-</ol>
-</blockquote>
-<p>David Patterson 还提出了一个很有意思的角度：</p>
-<blockquote>
-<p>RISC-V 是最小化的模块指令架构集。像 Intel 这类公司设计的指令架构集需要能处理任何东西，因此随着时间的推移，会越来越大。而在21世纪的架构中，指令架构集应该用于SoC（即 System on a Chip，系统级芯片）。这就是RISC-V 的优势：基础指令少，支持32, 64, 128位， 可以添加标准扩展，支持更小的指令大小，为特定SoC指令预留了空间。</p>
-</blockquote>
-<p>从2024年的角度来看，David Patterson关于开源指令架构集和RISC-V的观点大体上被证明是正确的。RISC-V作为一个模块化、可扩展的 ISA，确实获得了广泛采用。目前，RISC-V拥有蓬勃发展的生态系统，得到了学术界和工业界的大力支持，在嵌入式系统、IoT和高性能计算等领域都有所突破。然而，传统的专有指令架构集如ARM和x86在市场份额上仍然保持强势地位。</p>
-<p><img src="/../images/isa-1.png" alt="isa-1"></p>
-<p><img src="/../images/isa-2.png" alt="isa-2"></p>
-<p>注：ISA 是 Instruction Set Architecture 的缩写，中文通常翻译为”指令集架构”。</p>
-
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2024/09/22/proprietary-vs-open-isa-RISC-V/#more" class="more-link">继续阅读</a>
+          </div>
         
         
       
@@ -326,25 +282,14 @@
     <div class="e-content entry" itemprop="articleBody">
       
         <p>TL;DR：Uvicorn 很适合 FastAPI。如果使用 FastAPI，建议首选 Uvicorn 作为 ASGI Web 服务器</p>
-<h4 id="FastAPI"><a href="#FastAPI" class="headerlink" title="FastAPI"></a>FastAPI</h4><p>FastAPI 是一个 Python 框架。</p>
-<h4 id="WSGI-ASGI"><a href="#WSGI-ASGI" class="headerlink" title="WSGI&amp;ASGI"></a>WSGI&amp;ASGI</h4><p>WSGI (Web Server Gateway Interface) Servers 是一种 Python Web 服务器技术，它定义了 Web 服务器和 Python Web 应用程序之间的标准接口。WSGI 服务器为不同的 Python Web 框架和 Web 服务器提供一个通用接口，增强互操作性。WSGI 服务器接收 HTTP 请求，将其转换为 WSGI 环境，调用 Python 应用，然后将响应发送回客户端。</p>
-<p>ASGI（Asynchronous Server Gateway Interface，异步服务器网关接口）是 WSGI 的精神继承者，旨在在支持异步的 Python Web 服务器、框架和应用程序之间提供标准接口。</p>
-<p>WSGI 是同步的，每个请求在处理完成前会阻塞线程。而 ASGI 则为异步和同步应用程序提供了一种标准，具有 WSGI 向后兼容性实现以及多个服务器和应用程序框架。</p>
-<h4 id="Uvicorn"><a href="#Uvicorn" class="headerlink" title="Uvicorn"></a>Uvicorn</h4><p>而 Uvicorn 是一个快速的 ASGI web 服务器，专为 Python 设计。</p>
-<h3 id="为什么FastAPI适合用Uvicorn"><a href="#为什么FastAPI适合用Uvicorn" class="headerlink" title="为什么FastAPI适合用Uvicorn"></a>为什么FastAPI适合用Uvicorn</h3><ol>
-<li>FastAPI 主要设计用于与 ASGI 服务器一起使用，而不是 WSGI 服务器。FastAPI 也需要一个 ASGI 服务器来运行。Uvicorn可以提供异步支持。FastAPI 重度使用 Python 的异步特性。Uvicorn 作为一个异步服务器，能够充分发挥 FastAPI 的异步性能。</li>
-<li>Uvicorn 是一个非常快速的 ASGI 服务器，它基于 uvloop 和 httptools 构建，这两者都是用 Cython 写的高性能 Python 网络库。</li>
-<li>开发便利性：<br>Uvicorn 提供了热重载功能（通过 –reload 参数），这在开发过程中非常有用，可以实时看到代码修改的效果。热重载是指，在开发过程中，当你修改代码后，服务器能够自动检测到这些更改并重新启动，使新的代码变更立即生效，而无需手动停止和重启服务器。热重载功能可以大幅提高开发效率。</li>
-<li>轻量级，且易于使用：<br>Uvicorn 是一个轻量级服务器，不会给应用增加太多额外的复杂性或开销。Uvicorn 使用很简单，几乎不用额外学习即可上手。通常只需一行命令就可以启动 FastAPI 应用。</li>
-</ol>
-<h3 id="对比其他-ASGI-服务器："><a href="#对比其他-ASGI-服务器：" class="headerlink" title="对比其他 ASGI 服务器："></a>对比其他 ASGI 服务器：</h3><p>Daphne或许更适合Django，不是 FastAPI的最佳选择。<br>Hypercorn 性能可能不如Uvicorn，配置可能相对复杂。<br>Gunicorn (with Uvicorn workers)。Gunicorn本身是一个WSGI服务器，但它可以使用Uvicorn workers来支持ASGI。主要缺点也是配置更复杂一点。</p>
-<p>参考链接：<a target="_blank" rel="noopener" href="https://asgi.readthedocs.io/en/latest/">ASGI Documentation</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.fullstackpython.com/wsgi-servers.html">Full Stack Python</a></p>
-
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2024/08/31/FastAPI-and-Uvicorn/#more" class="more-link">继续阅读</a>
+          </div>
         
         
       
@@ -515,21 +460,14 @@
     <div class="e-content entry" itemprop="articleBody">
       
         <p>最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到<a target="_blank" rel="noopener" href="http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError">http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError</a></p>
-<p>一开始猜测是Nginx配置问题，检查之后确认无误。</p>
-<p>后面花了很长时间，才意识到，Auth.js可以开启debug:true。开启后，发现我向github发送的请求内容中，</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;signinUrl&quot;: &quot;http://0.0.0.0:3000/api/auth/signin/github&quot;,</span><br><span class="line">“callbackUrl”： “http://0.0.0.0:3000/api/auth/callback/github”，</span><br></pre></td></tr></table></figure>
-
-<p>虽然没有发现具体原因。但是想起auth.js文档中，明确写了v5版本，不需要规定<code>AUTH_URL</code></p>
-<p><img src="/../images/authjs-AUTH_URL.png" alt="Auth.js AUTH_URL"></p>
-<p>在环境变量中，设置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">AUTH_URL=【自己的域名】</span><br><span class="line">例如：AUTH_URL=https://podcasthighlight.com</span><br></pre></td></tr></table></figure>
-
-<p>重启项目，发现运行正常，问题解决。</p>
-
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2024/08/13/Authjs-callbackUrl/#more" class="more-link">继续阅读</a>
+          </div>
         
         
       
@@ -1092,23 +1030,14 @@
     <div class="e-content entry" itemprop="articleBody">
       
         <p>最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p>
-<p>我采取的整体技术方案是，Next.js + Vercel + Hugging Face Inference Endpoint 的 API，前后端采用统一的框架，没有使用云服务器。</p>
-<p>因为做独立开发，最重要的，就是快速推出产品，而且为了快速迭代，应该使用简单的部署方案。而为了尽可能地使用简单的技术方案，用 API 构建产品，比自己部署大模型，要更方便快速，尤其是在构造 MVP（最小可行性产品）的时候。</p>
-<p>但问题是，有很多模型并没有提供 API，或者提供的 API 并不完全，比如说 OpenAI 的 Whisper，现在官方还只提供 Whisper-large-V2 的 API，但 Whisper-large-V3 已经推出很长时间了，但 OpenAI 并没有提供 API。而且还有很多基于某些特定任务做了微调的大模型，也没有提供 API。也有些模型，只有 Python 的 API，没有提供JavaScript 的API，使用起来也会麻烦一点。</p>
-<p>并且，不同的模型，提供的 API 格式可能也不一样，如果产品需要用到多个不同的模型，切换起来会麻烦一点。</p>
-<p>而 Hugging Face 就为很多模型提供了 API，只需要在 Hugging Face 找到需要的模型，点击 Deploy—Inference API，即可使用，并且有 Python, JavaScript, cURL 三个版本。而且，要切换不同的模型，只需要更改API链接，比如将<code>meta-llama/Meta-Llama-3-8B-Instruct</code>修改成<code>https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3</code>即可。</p>
-<p><img src="/../images/InferenceAPI2.png" alt="image-20240604160351720"></p>
-<p><img src="/../images/InferenceAPI1.png" alt="image-20240604160054753"></p>
-<p>注意，Inference API 只适合开发环境或者测试，因为比较拥挤，在生产环境是不够用的。在生产环境需要使用 Inference Endpoints。Inference API 是免费的，Inference Endpoints 按小时付费。如果说使用量较大的话，也需要注意成本。</p>
-<p><img src="/../images/EndPoints.png" alt="image-20240604161107855"></p>
-<p>Inference Endpoints 的主要作用，正如它<a target="_blank" rel="noopener" href="https://huggingface.co/inference-endpoints/dedicated">官网</a>所说，是让生产部署更加简单。可以部署任何模型到任何云。</p>
-<p>而且如果需要自己训练模型，也可以把模型上传到 Hugging Face Hub ，然后使用 Inference Endpoints 进行部署。</p>
-<p>总的来说，Hugging Face 的 Inference API 和 Inference Endpoints 为独立开发者和小型团队提供了一个轻量化的解决方案，帮助他们快速推出和迭代产品。</p>
-
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/#more" class="more-link">继续阅读</a>
+          </div>
         
         
       
@@ -1137,36 +1066,14 @@
     <div class="e-content entry" itemprop="articleBody">
       
         <p><strong>TL;DR:</strong> 使用 axios 和 dotenv 解决 APIConnectionError 问题。</p>
-<h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>在本地服务器运行 Next.js 项目时，调用 OpenAI API 或 Hugging face API 会报错 <code>APIConnectionError: Connection error</code>。调用 Hugging Face 的其他模型 API 时，同样报错。然而，部署在 Vercel 上可以正常运行。</p>
-<p>项目环境：</p>
-<ul>
-<li>编程语言：JavaScript 和 TypeScript</li>
-<li>框架：Next.js 和 React</li>
-<li>地理位置：中国大陆</li>
-</ul>
-<p><strong>错误原因分析</strong></p>
-<h3 id="错误原因分析："><a href="#错误原因分析：" class="headerlink" title="错误原因分析："></a>错误原因分析：</h3><p>通过谷歌查询，初步判断是 Node.js 的代理问题。附 OpenAI 官方文档：<a target="_blank" rel="noopener" href="https://help.openai.com/en/articles/6897191-apiconnectionerror"><strong>APIConnectionError</strong></a></p>
-<h3 id="尝试过的解决方案（无效）："><a href="#尝试过的解决方案（无效）：" class="headerlink" title="尝试过的解决方案（无效）："></a>尝试过的解决方案（无效）：</h3><ol>
-<li><p>在 powershell 上配置代理</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$env:HTTP_PROXY=&quot;http://127.0.0.1:33210&quot;</span><br><span class="line">$env:HTTPS_PROXY=&quot;http://127.0.0.1:33210&quot;</span><br><span class="line">$env:ALL_PROXY=&quot;socks5://127.0.0.1:33211&quot;</span><br></pre></td></tr></table></figure>
-<p>但发现这样配置了之后，仍然出现APIConnectionError: Connection error报错。</p>
-</li>
-<li><p>很多解决方案通过修改 openai 的 Python 库来解决，但是无法用在JavaScript 和 Next.js上。</p>
-</li>
-</ol>
-<h3 id="解决方案概述："><a href="#解决方案概述：" class="headerlink" title="解决方案概述："></a>解决方案概述：</h3><p>使用axios 和dotenv即可解决问题，以下是具体步骤：</p>
-<p>1.在 Next.js 项目中安装 axios 和 dotenv：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios dotenv</span><br></pre></td></tr></table></figure>
-<p>2.在需要调用API的场景，使用axios进行API请求，并同时配置代理。</p>
-<p>代码示例：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">import * as fs from &#x27;fs&#x27;;</span><br><span class="line">import * as path from &#x27;path&#x27;;</span><br><span class="line">import axios from &#x27;axios&#x27;;</span><br><span class="line">import * as dotenv from &#x27;dotenv&#x27;;</span><br><span class="line"></span><br><span class="line">dotenv.config();</span><br><span class="line"></span><br><span class="line">async function query(filePath: string) &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    const data = fs.readFileSync(filePath); // 读取文件内容</span><br><span class="line">    const response = await axios.post(</span><br><span class="line">      &#x27;https://api-inference.huggingface.co/models/openai/whisper-tiny&#x27;,</span><br><span class="line">      data, // 文件内容作为请求体</span><br><span class="line">      &#123;</span><br><span class="line">        headers: &#123;</span><br><span class="line">          &quot;Accept&quot;:&quot;application/json&quot;,</span><br><span class="line">          Authorization: `Bearer hf_xxxxxxxxxxxxxxxxxxxxxxxxxx`,</span><br><span class="line">          &#x27;Content-Type&#x27;: &#x27;audio/wav&#x27;, // 确保内容类型是音频文件</span><br><span class="line">        &#125;,</span><br><span class="line">        proxy: &#123;</span><br><span class="line">          protocol: &#x27;http&#x27;,</span><br><span class="line">          host: &#x27;127.0.0.1&#x27;,</span><br><span class="line">          port: 33210,// 这里应该根据使用的代理，修改成相应的port</span><br><span class="line">        &#125;,</span><br><span class="line">        timeout: 10000, // 设置超时时间为10秒</span><br><span class="line">      &#125;</span><br><span class="line">    );</span><br><span class="line">    return response.data;</span><br><span class="line">  &#125; catch (error) &#123;</span><br><span class="line">    if (axios.isAxiosError(error)) &#123;</span><br><span class="line">      console.error(&#x27;Axios error:&#x27;, error.response?.data);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      console.error(&#x27;Unexpected error:&#x27;, error);</span><br><span class="line">    &#125;</span><br><span class="line">    throw error;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 调用函数并传入文件路径</span><br><span class="line">query(path.resolve(__dirname, &quot;C:\\Users\\caoca\\Music\\sample1.wav&quot;))</span><br><span class="line">  .then((response) =&gt; &#123;</span><br><span class="line">    console.log(JSON.stringify(response));</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch((error) =&gt; &#123;</span><br><span class="line">    console.error(error);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<h3 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h3><p>通过使用 axios 和 dotenv，可以有效解决 Next.js 项目中调用 OpenAI API 或 Hugging face API 报错的问题，提升开发体验和项目的稳定性。</p>
-
       
     </div>
     <footer>
       
+        
+          <div class="alignleft">
+            <a href="/2024/06/04/APIConnectionError/#more" class="more-link">继续阅读</a>
+          </div>
         
         
       
@@ -1923,14 +1830,14 @@
 <nav id="pagination">
   
   
-    <a href="/page/2/" class="alignright next">Nächste Seite</a>
+    <a href="/page/2/" class="alignright next">Next</a>
   
   <div class="clearfix"></div>
 </nav></div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" name="q" results="0" placeholder="Search">
     <input type="hidden" name="as_sitesearch" value="caoyihan.com">
   </form>
 </div>

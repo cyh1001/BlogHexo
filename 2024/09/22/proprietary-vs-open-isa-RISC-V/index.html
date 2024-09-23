@@ -8,7 +8,9 @@
   
   <meta name="description" content="RISC-V，根据维基百科的解释
 
-RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然">
+RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。
+
+ 最近读到一篇关于开源与闭源（专有）指令架构集的争论。Dave Christie的观点，代表了传统闭源 ISA 阵营的观点。而 David Patterson 作为 RISC-V 的主要推动者之一，代表了开源 ISA 阵营。">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -50,7 +52,7 @@ RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 66395</div>
+    <div class="word-count">Total words in posts: 66396</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -91,6 +93,8 @@ RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（
 <p>RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。<br>与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。</p>
 </blockquote>
 <p> 最近读到一篇关于开源与闭源（专有）指令架构集的<a target="_blank" rel="noopener" href="https://research.cs.wisc.edu/multifacet/papers/ieeemicro16_card_isa.pdf">争论</a>。Dave Christie的观点，代表了传统闭源 ISA 阵营的观点。而 David Patterson 作为 RISC-V 的主要推动者之一，代表了开源 ISA 阵营。</p>
+<span id="more"></span>
+
 <p>Dave Christie：</p>
 <blockquote>
 <ol>
@@ -134,7 +138,7 @@ RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（
 <blockquote>
 <p>RISC-V 是最小化的模块指令架构集。像 Intel 这类公司设计的指令架构集需要能处理任何东西，因此随着时间的推移，会越来越大。而在21世纪的架构中，指令架构集应该用于SoC（即 System on a Chip，系统级芯片）。这就是RISC-V 的优势：基础指令少，支持32, 64, 128位， 可以添加标准扩展，支持更小的指令大小，为特定SoC指令预留了空间。</p>
 </blockquote>
-<p>从2024年的角度来看，David Patterson关于开源指令架构集和RISC-V的观点大体上被证明是正确的。RISC-V作为一个模块化、可扩展的 ISA，确实获得了广泛采用。目前，RISC-V拥有蓬勃发展的生态系统，得到了学术界和工业界的大力支持，在嵌入式系统、IoT和高性能计算等领域都有所突破。然而，传统的专有指令架构集如ARM和x86在市场份额上仍然保持强势地位。</p>
+<p>从2024年的角度来看，David Patterson关于开源指令架构集和RISC-V的观点大体上被证明是正确的。RISC-V作为一个模块化、可扩展的 ISA，确实获得了广泛采用。目前，RISC-V拥有蓬勃发展的生态系统，得到了学术界和工业界的大力支持，在嵌入式系统、IoT和高性能计算等领域都有所突破。（传统的专有指令架构集如ARM和x86在市场份额上目前仍然保持强势地位。）</p>
 <p><img src="/../images/isa-1.png" alt="isa-1"></p>
 <p><img src="/../images/isa-2.png" alt="isa-2"></p>
 <p>注：ISA 是 Instruction Set Architecture 的缩写，中文通常翻译为”指令集架构”。</p>
@@ -153,7 +157,7 @@ RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（
 
 
 <section id="comment">
-  <h1 class="title">Kommentare</h1>
+  <h1 class="title">Comments</h1>
 
   
       <div id="fb-root"></div>
@@ -176,7 +180,7 @@ RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
-    <input type="search" name="q" results="0" placeholder="Suche">
+    <input type="search" name="q" results="0" placeholder="Search">
     <input type="hidden" name="as_sitesearch" value="caoyihan.com">
   </form>
 </div>
