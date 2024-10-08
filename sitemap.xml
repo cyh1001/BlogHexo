@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/10/08/Digest-24-10/</loc>
+    
+    <lastmod>2024-10-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/10/07/Make-a-wish-to-the-universe%EF%BC%88en%EF%BC%89/</loc>
+    
+    <lastmod>2024-10-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/10/07/Make-a-wish-to-the-universe%EF%BC%88zh-cn%EF%BC%89/</loc>
+    
+    <lastmod>2024-10-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/09/26/Digest-24-9/</loc>
+    
+    <lastmod>2024-10-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/04/22/%E7%9F%AD%E6%83%B3%E6%B3%95/</loc>
+    
+    <lastmod>2024-09-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2024/09/28/reading-and-channels/</loc>
     
     <lastmod>2024-09-29</lastmod>
@@ -14,24 +59,6 @@
     <loc>https://caoyihan.com/2024/09/28/Perceived-Age/</loc>
     
     <lastmod>2024-09-29</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2024/09/26/Digest-24-9/</loc>
-    
-    <lastmod>2024-09-27</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2024/04/22/%E7%9F%AD%E6%83%B3%E6%B3%95/</loc>
-    
-    <lastmod>2024-09-27</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -544,7 +571,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2024-09-29</lastmod>
+    <lastmod>2024-10-08</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
