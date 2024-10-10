@@ -48,7 +48,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 77972</div>
+    <div class="word-count">Total words in posts: 78193</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -86,13 +86,16 @@
       
         <p>最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到<a target="_blank" rel="noopener" href="http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError">http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError</a></p>
 <span id="more"></span>
+
 <p>一开始猜测是Nginx配置问题，检查之后确认无误。</p>
 <p>后面花了很长时间，才意识到，Auth.js可以开启debug:true。开启后，发现我向github发送的请求内容中，</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;signinUrl&quot;: &quot;http://0.0.0.0:3000/api/auth/signin/github&quot;,</span><br><span class="line">“callbackUrl”： “http://0.0.0.0:3000/api/auth/callback/github”，</span><br></pre></td></tr></table></figure>
+
 <p>虽然没有发现具体原因。但是想起auth.js文档中，明确写了v5版本，不需要规定<code>AUTH_URL</code></p>
-<p><img src="../images/authjs-AUTH_URL.png" alt="Auth.js AUTH_URL"></p>
+<p><img src="/../images/authjs-AUTH_URL.png" alt="Auth.js AUTH_URL"></p>
 <p>在环境变量中，设置</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">AUTH_URL=【自己的域名】</span><br><span class="line">例如：AUTH_URL=https://podcasthighlight.com</span><br></pre></td></tr></table></figure>
+
 <p>重启项目，发现运行正常，问题解决。</p>
 
       
