@@ -2,7 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://caoyihan.com/2024/09/26/Digest-24-9/</loc>
+    <loc>https://caoyihan.com/2024/06/25/%E6%96%87%E6%91%98-24%E5%B9%B46%E6%9C%88/</loc>
+    
+    <lastmod>2024-10-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/07/31/%E6%96%87%E6%91%98-24%E5%B9%B47%E6%9C%88/</loc>
+    
+    <lastmod>2024-10-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/08/31/Digest-24-8/</loc>
     
     <lastmod>2024-10-10</lastmod>
     
@@ -13,7 +31,16 @@
   <url>
     <loc>https://caoyihan.com/2024/10/08/Digest-24-10/</loc>
     
-    <lastmod>2024-10-08</lastmod>
+    <lastmod>2024-10-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/09/26/Digest-24-9/</loc>
+    
+    <lastmod>2024-10-10</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -128,15 +155,6 @@
   </url>
   
   <url>
-    <loc>https://caoyihan.com/2024/08/31/Digest-24-8/</loc>
-    
-    <lastmod>2024-09-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://caoyihan.com/2024/08/27/Chinese-Identity/</loc>
     
     <lastmod>2024-09-01</lastmod>
@@ -158,15 +176,6 @@
     <loc>https://caoyihan.com/2024/08/06/Nextjs-deploy-cloud-git/</loc>
     
     <lastmod>2024-08-12</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2024/07/31/%E6%96%87%E6%91%98-24%E5%B9%B47%E6%9C%88/</loc>
-    
-    <lastmod>2024-08-03</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -212,15 +221,6 @@
     <loc>https://caoyihan.com/2024/07/03/%E6%9C%89%E7%BC%BA%E9%99%B7%E7%9A%84%E6%98%A0%E5%B0%84%E5%BC%95%E6%93%8E/</loc>
     
     <lastmod>2024-07-03</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2024/06/25/%E6%96%87%E6%91%98-24%E5%B9%B46%E6%9C%88/</loc>
-    
-    <lastmod>2024-06-26</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
