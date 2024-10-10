@@ -11,12 +11,10 @@
 
 例如，假设我们要验证以下数据：
 1Hello, world!
-
 我们可以将其分成两个小块：
 12Hello, world!
-
 然后计算每个小块的哈希值：
-12SHA256(Hello, ">
+12SHA256(Hello, ) ">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -58,7 +56,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 78331</div>
+    <div class="word-count">Total words in posts: 78094</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -99,21 +97,14 @@
 <p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hash_Tree.svg/1200px-Hash_Tree.svg.png" alt="Merkle tree - Wikipedia"></p>
 <p>例如，假设我们要验证以下数据：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, world!</span><br></pre></td></tr></table></figure>
-
 <p>我们可以将其分成两个小块：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello, </span><br><span class="line">world!</span><br></pre></td></tr></table></figure>
-
 <p>然后计算每个小块的哈希值：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SHA256(Hello, ) = 1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad</span><br><span class="line">SHA256(world!) = 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64</span><br></pre></td></tr></table></figure>
-
 <p>接下来，将这两个哈希值配对并计算它们的哈希值：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHA256(1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad, 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64) = 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure>
-
 <p>现在只剩下一个哈希值，这就是默克尔树的根哈希值：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure>
-
-
-
 <p><strong>作用</strong>：</p>
 <p>默克尔树主要防止传输的数据不被篡改。一个默克尔树，若某个数据块的内容发生修改，则对应的叶节点的哈希值就会改变，根哈希值就也会发生改变。所以，我们要验证数据是否发生篡改，只需要比较哈希值即可。</p>
 <p>在区块链中，例如比特币，假如比特币不用默克尔树，那么每个节点都必须保留每笔比特币交易的完整内容，这将是极其庞大的数据。而利用默克尔树，只储存并比较根哈希值。</p>
