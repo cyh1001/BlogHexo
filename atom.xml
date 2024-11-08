@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-11-07T00:22:38.569Z</updated>
+  <updated>2024-11-08T19:54:39.882Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我们需要个人数据库·To LLM 的产品构想</title>
+    <link href="https://caoyihan.com/2024/11/08/DataSelf-Engineering-Your-AI-Twin/"/>
+    <id>https://caoyihan.com/2024/11/08/DataSelf-Engineering-Your-AI-Twin/</id>
+    <published>2024-11-08T06:54:39.000Z</published>
+    <updated>2024-11-08T19:54:39.882Z</updated>
+    
+    <content type="html"><![CDATA[<p>因为 Claude 很强大嘛，但是自己生活中很多信息无法用prompt输入给LLM，所以感觉有必要，尽可能地积累这样一个自己专属的数据库。</p><p>比如，希望获得更精细的时间管理建议。可以做时间审计：详细记录一周中每一时间段具体在做什么。<br>这样Claude 就可以识别出自己做的好的地方和不足，再给自己设计足够个性化的时间管理策略。<br>能量管理也是，可以做一周的能量审计。除此之外，还有更多的，比如自己的各方各面的价值观，经历的重要事情，等等，都可以更完整地记录，作为Claude的输入，从而获得个性化的回答。</p><p>我感觉这也是一个创业机会。我们现在很多产品都说To B, To C，但可能也可以To LLM。比如我们有一个记录工具，是时间记录工具，能量记录工具，经历记录工具，价值观记录工具。但记录的结果并不是给人看的，而是便于LLM 使用的格式，然后直接给 LLM，让 LLM 寻找更深层的联系。<br>（现在应该没有，很方便可以记录自身并提供给AI的工具？）</p><p>这相当于是，「个性化的机器学习」。<br>先学习过去的时间&#x2F;能量分配，学习过去的决策与结果，做决策的考虑因素，决策结果的实际效果，决策偏好和模式，后悔的和满意的决策特征。然后可以真实地代替自己继续做决策，或改变时间&#x2F;能量管理策略。</p><p>想法：可能是硬件的记录工具，也可能是软件的。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;因为 Claude 很强大嘛，但是自己生活中很多信息无法用prompt输入给LLM，所以感觉有必要，尽可能地积累这样一个自己专属的数据库。&lt;/p&gt;
+&lt;p&gt;比如，希望获得更精细的时间管理建议。可以做时间审计：详细记录一周中每一时间段具体在做什么。&lt;br&gt;这样Claude 就可</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>友谊中的异端学说</title>
@@ -443,23 +464,6 @@
 &lt;h2 id=&quot;租房&quot;&gt;&lt;a href=&quot;#租房&quot; class=&quot;headerlink&quot; title=&quot;租房&quot;&gt;&lt;/a&gt;租房&lt;/h2&gt;&lt;p&gt;首先，在美国租房就是极大的难题。&lt;/p&gt;
 &lt;p&gt;很多人会选择在国内提前租好。但在国内看美</summary>
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>记录Auth.js的callbackUrl问题解决经历</title>
-    <link href="https://caoyihan.com/2024/08/13/Authjs-callbackUrl/"/>
-    <id>https://caoyihan.com/2024/08/13/Authjs-callbackUrl/</id>
-    <published>2024-08-13T12:59:37.000Z</published>
-    <updated>2024-09-23T04:27:16.266Z</updated>
-    
-    <content type="html"><![CDATA[<p>最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到<a href="http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError">http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError</a></p><span id="more"></span><p>一开始猜测是Nginx配置问题，检查之后确认无误。</p><p>后面花了很长时间，才意识到，Auth.js可以开启debug:true。开启后，发现我向github发送的请求内容中，</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;signinUrl&quot;: &quot;http://0.0.0.0:3000/api/auth/signin/github&quot;,</span><br><span class="line">“callbackUrl”： “http://0.0.0.0:3000/api/auth/callback/github”，</span><br></pre></td></tr></table></figure><p>虽然没有发现具体原因。但是想起auth.js文档中，明确写了v5版本，不需要规定<code>AUTH_URL</code></p><p><img src="/../images/authjs-AUTH_URL.png" alt="Auth.js AUTH_URL"></p><p>在环境变量中，设置</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">AUTH_URL=【自己的域名】</span><br><span class="line">例如：AUTH_URL=https://podcasthighlight.com</span><br></pre></td></tr></table></figure><p>重启项目，发现运行正常，问题解决。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到&lt;a href=&quot;http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError&quot;&gt;http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError&lt;/a&gt;&lt;/p&gt;</summary>
     
     
     
