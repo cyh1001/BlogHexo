@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-11-10T02:20:32.571Z</updated>
+  <updated>2024-11-15T00:57:43.404Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,49 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>不建议在第三方平台使用LLM</title>
+    <link href="https://caoyihan.com/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/"/>
+    <id>https://caoyihan.com/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/</id>
+    <published>2024-11-14T11:57:43.000Z</published>
+    <updated>2024-11-15T00:57:43.404Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。</p><p><img src="https://cdnv2.ruguoapp.com/FuqVHPYzbd-CuJu01jRZRLP6efbEv3.png?imageMogr2/auto-orient/thumbnail/308632@%7Cwatermark/3/image/aHR0cHM6Ly93YXRlcm1hcmsucnVndW9hcHAuY29tLz90ZXh0PSVFNSU4RCVCMyVFNSU4OCVCQiUyMCU0MEF1Z3VzdCVFNSVCMCU4RiVFNiU5QiVCOSZoZWlnaHQ9MTc=/gravity/SouthEast/dx/10/dy/10" alt="Image"></p><p>主要原因猜测是 API 调用链路差异，以及prompt可能不同。</p><blockquote><p>官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → Claude模型 → 返回结果</p><p>第三方平台的调用链路： 用户输入 → 第三方平台前端 → 第三方平台后端 → Anthropic API → Claude模型 → 返回结果 → 第三方平台后端→第三方平台前端 → 展示</p></blockquote><p>按理说，多封装一层 API 并不影响大模型的性能。但是第三方平台可能倾向于更短的回答以节省 prompt；修改了 AI 安全；上下文记忆没有正确设置和处理，等等原因，最后的结果是，性能受到影响。现在 LLM 的涌现仍很复杂，输入微小的不同，就很可能大幅影响输出。</p><p>此外第三方平台可能设置了自己的 prompt，或者是 Anthropic 优化了官网版的 Claude，也影响了结果。典型例子就是302.ai。</p><p>如果使用dify.ai, langchain等中间件平台，我尚不确定对 LLM 性能有什么影响。</p><p>因此，为了体验到最佳性能，建议不要使用第三方平台的 LLM，直接在官网使用。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://cdnv2.ruguoapp.com/FuqVHPYzbd-CuJu01jRZRLP6efbEv</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>文摘-24年11月</title>
+    <link href="https://caoyihan.com/2024/11/14/Digest-24-11/"/>
+    <id>https://caoyihan.com/2024/11/14/Digest-24-11/</id>
+    <published>2024-11-14T11:07:28.000Z</published>
+    <updated>2024-11-15T00:07:28.200Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://map.simonsarris.com/p/school-is-not-enough">《School is Not Enough》 </a></p><blockquote><p>An individual’s life can continue with an inertia that will lead them on to the next year or decade. Most young people today know approximately what they are going to be doing for the first twenty-or-more years of their life: school. Post-schooling, the inertia continues. Many a modern story opens with a worker—an office worker usually—who is so inert that he scarcely notices the passage of time until he becomes blindsided by a sudden yank of reality that forces him out of this inertia. Since we do not live in stories, we have to ask: How can we make that pull ourselves?</p></blockquote><p>——2024.11.1</p><p><a href="https://map.simonsarris.com/p/breadcrumbs">《Breadcrumbs》</a></p><blockquote><ol><li><p>Write what you’re learning.</p></li><li><p>Have at least a tiny website that shows something neat.</p></li><li><p>Do things publicly. Have Twitter, Github, etc. Comment publicly, ideally with your real name. This forces you to be nicer, too.</p></li><li><p>Help other people.*</p></li></ol></blockquote><p>你想让别人找到你，当他们找到你时，你希望给他们带来一些东西。</p><p>即使太真诚的分享，会给自己带来很多负面因素。但相比而言，分享太少的害处更大。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://map.simonsarris.com/p/school-is-not-enough&quot;&gt;《School is Not Enough》 &lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;An individual’s life can con</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>内容创造和「记忆点设计」</title>
@@ -421,45 +464,6 @@
       
       
     <summary type="html">&lt;p&gt;自从年初听说了 Pieter Levels 的&lt;a href=&quot;https://www.owenyoung.com/blog/books/make/&quot;&gt;创业故事&lt;/a&gt;之后，就很佩服。我现在虽然能构建产品了，但有时太完美主义了，拖延很严重。因此也想模仿 Pieter Lev</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>为什么 FastAPI 适合用 Uvicorn</title>
-    <link href="https://caoyihan.com/2024/08/31/FastAPI-and-Uvicorn/"/>
-    <id>https://caoyihan.com/2024/08/31/FastAPI-and-Uvicorn/</id>
-    <published>2024-08-31T12:35:10.000Z</published>
-    <updated>2024-09-23T04:27:36.855Z</updated>
-    
-    <content type="html"><![CDATA[<p>TL;DR：Uvicorn 很适合 FastAPI。如果使用 FastAPI，建议首选 Uvicorn 作为 ASGI Web 服务器</p><span id="more"></span><h4 id="FastAPI"><a href="#FastAPI" class="headerlink" title="FastAPI"></a>FastAPI</h4><p>FastAPI 是一个 Python 框架。</p><h4 id="WSGI-ASGI"><a href="#WSGI-ASGI" class="headerlink" title="WSGI&amp;ASGI"></a>WSGI&amp;ASGI</h4><p>WSGI (Web Server Gateway Interface) Servers 是一种 Python Web 服务器技术，它定义了 Web 服务器和 Python Web 应用程序之间的标准接口。WSGI 服务器为不同的 Python Web 框架和 Web 服务器提供一个通用接口，增强互操作性。WSGI 服务器接收 HTTP 请求，将其转换为 WSGI 环境，调用 Python 应用，然后将响应发送回客户端。</p><p>ASGI（Asynchronous Server Gateway Interface，异步服务器网关接口）是 WSGI 的精神继承者，旨在在支持异步的 Python Web 服务器、框架和应用程序之间提供标准接口。</p><p>WSGI 是同步的，每个请求在处理完成前会阻塞线程。而 ASGI 则为异步和同步应用程序提供了一种标准，具有 WSGI 向后兼容性实现以及多个服务器和应用程序框架。</p><h4 id="Uvicorn"><a href="#Uvicorn" class="headerlink" title="Uvicorn"></a>Uvicorn</h4><p>而 Uvicorn 是一个快速的 ASGI web 服务器，专为 Python 设计。</p><h3 id="为什么FastAPI适合用Uvicorn"><a href="#为什么FastAPI适合用Uvicorn" class="headerlink" title="为什么FastAPI适合用Uvicorn"></a>为什么FastAPI适合用Uvicorn</h3><ol><li>FastAPI 主要设计用于与 ASGI 服务器一起使用，而不是 WSGI 服务器。FastAPI 也需要一个 ASGI 服务器来运行。Uvicorn可以提供异步支持。FastAPI 重度使用 Python 的异步特性。Uvicorn 作为一个异步服务器，能够充分发挥 FastAPI 的异步性能。</li><li>Uvicorn 是一个非常快速的 ASGI 服务器，它基于 uvloop 和 httptools 构建，这两者都是用 Cython 写的高性能 Python 网络库。</li><li>开发便利性：<br>Uvicorn 提供了热重载功能（通过 –reload 参数），这在开发过程中非常有用，可以实时看到代码修改的效果。热重载是指，在开发过程中，当你修改代码后，服务器能够自动检测到这些更改并重新启动，使新的代码变更立即生效，而无需手动停止和重启服务器。热重载功能可以大幅提高开发效率。</li><li>轻量级，且易于使用：<br>Uvicorn 是一个轻量级服务器，不会给应用增加太多额外的复杂性或开销。Uvicorn 使用很简单，几乎不用额外学习即可上手。通常只需一行命令就可以启动 FastAPI 应用。</li></ol><h3 id="对比其他-ASGI-服务器："><a href="#对比其他-ASGI-服务器：" class="headerlink" title="对比其他 ASGI 服务器："></a>对比其他 ASGI 服务器：</h3><p>Daphne或许更适合Django，不是 FastAPI的最佳选择。<br>Hypercorn 性能可能不如Uvicorn，配置可能相对复杂。<br>Gunicorn (with Uvicorn workers)。Gunicorn本身是一个WSGI服务器，但它可以使用Uvicorn workers来支持ASGI。主要缺点也是配置更复杂一点。</p><p>参考链接：<a href="https://asgi.readthedocs.io/en/latest/">ASGI Documentation</a></p><p><a href="https://www.fullstackpython.com/wsgi-servers.html">Full Stack Python</a></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;TL;DR：Uvicorn 很适合 FastAPI。如果使用 FastAPI，建议首选 Uvicorn 作为 ASGI Web 服务器&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>文摘-24年8月</title>
-    <link href="https://caoyihan.com/2024/08/31/Digest-24-8/"/>
-    <id>https://caoyihan.com/2024/08/31/Digest-24-8/</id>
-    <published>2024-08-31T05:42:35.000Z</published>
-    <updated>2024-10-10T02:03:23.184Z</updated>
-    
-    <content type="html"><![CDATA[<p>原来「李沐」停更去创业了。<br><a href="https://www.bilibili.com/read/cv37076357">https://www.bilibili.com/read/cv37076357</a></p><blockquote><p>22年年底的时候想到两个用大语言模型（LLM）做生产力工具的想法。碰巧遇到张一鸣，就向他请教。讨论之后他反问：为什么不做LLM本身呢？我的下意识退缩：我们之前在Amazon的团队做了好几年这个，得上万张卡，和blabla这么一大堆困难。一鸣呵呵表示：这些都是短期困难，眼光得看长远点。 </p></blockquote><blockquote><p>有了钱后就去买GPU。问各个供应商，统一回复是H100交货得一年以后了。灵机一动，直接给老黄写邮件。老黄秒回说他来看下。一个小时后超微的CEO就打电话过来了。多付了些钱，插了个队，20天后拿到了机器。很荣幸早早的吃到了螃蟹。</p><p>螃蟹吃到怀疑人生，遇到了各种匪夷所思的bug。例如GPU供电不足导致不稳定，后来靠超微工程师修改bios代码打上补丁；例如光纤的切开角度不对，导致通讯不稳定；例如Nvidia的推荐网络布局不是最优，我们重新做一个方案，后来Nvidia自己也采用了这个方案。至今我都不理解，我们就买了不到一千张卡，算小买家吧。但我们遇到的这些问题，难道大买家没遇到吗，为啥需要我们的debug？</p></blockquote><blockquote><p>那么一个人的存在的意义是什么呢？小时候曾因为想不清这个问题而抑郁。所以潜意识里，我想去创造价值，获得存在的意义。我选择“上进”，去提升自己的创造价值的能力；选择录长视频和写教材，创造教育价值；选择去写读博、工作、创业的总结，描述里面的纠结和困难，创造事例的价值；选择去创业，团结很多人的力量去创造更大价值。</p></blockquote><br><br><p>Eric Schmidt 斯坦福演讲</p><blockquote><p>Google decided that work life balance and going home early and working from home was more important than winning. And the startups, the reason startups work is because the people work like hell. And I’m sorry to be so blunt, but the fact of the matter is if you all leave the university and go found a company, you’re not going to let people work from home and only come in one day a week. If you want to compete against the other startups with the early days of Google, Microsoft was like that. Exactly.<br>谷歌认为，工作与生活的平衡、早点回家和在家工作比获胜更重要。对于初创公司来说，初创公司之所以能成功，是因为人们拼命工作。我很抱歉这么直言不讳，但事实是，如果你们都离开大学去寻找一家公司，你们不会让人们在家工作，每周只来一天。如果你想与谷歌早期的其他初创公司竞争，微软就是这样的。确切地。</p><p>But now it seems to be, there’s a long history of in my industry, our industry, I guess, of companies winning in a genuinely creative way and really dominating a space and not making this the next transition. So we’re very well documented. And I think that the truth is founders are special. The founders need to be in charge. The founders are difficult to work with.<br>但现在看来，在我的行业、我们的行业，我想，公司以真正的创造性方式获胜并真正主导一个空间，而不是将其作为下一个转型，有着悠久的历史。所以我们有很好的记录。我认为事实是创始人很特别。创始人需要负责。创始人很难共事。</p><p>They push people hard. As much as we can dislike Elon’s personal behavior, look at what he gets out of people. I had dinner with him and he was flying. I was in Montana. He was flying that night at 10 PM to have a meeting at midnight with x.ai.<br>他们对人们施加压力。尽管我们可能不喜欢埃隆的个人行为，但看看他从人们身上得到了什么。我和他一起吃晚饭，他正在飞行。我当时在蒙大拿州。那天晚上 10 点，他乘飞机前往午夜与 x.ai 开会。</p></blockquote><blockquote><p>Coke and Pepsi will still be around and the fight between Coke and Pepsi will continue to go on and it’s all glacial. When I dealt with telcos, the typical telco deal would take 18 months to sign. There’s no reason to take 18 months to do anything. Get it done. We’re in a period of maximum growth, maximum gain.<br>可口可乐和百事可乐仍将存在，可口可乐和百事可乐之间的斗争将继续进行，而且一切都是冰冷的。当我与电信公司打交道时，典型的电信公司协议需要 18 个月才能签署。没有理由花 18 个月来做任何事情。完成它。我们正处于最大成长、最大收获的时期。</p></blockquote><br><br>[E Pur Si Muove](https://blog.samaltman.com/e-pur-si-muove)<blockquote><p>Earlier this year, I noticed something in China that really surprised me.  I realized I felt more comfortable discussing controversial ideas in Beijing than in San Francisco.  I didn’t feel completely comfortable—this was China, after all—just more comfortable than at home.<br>今年早些时候，我注意到中国发生了一些令我惊讶的事情。我意识到，在北京讨论有争议的想法比在旧金山更舒服。我感觉并不完全舒服——毕竟这是中国——只是比在家里舒服多了。</p></blockquote><blockquote><p>限制言论会导致思想的限制，继而导致创新的限制。最成功的社会通常是最开放的社会。通常主流思想是正确的，异端思想是错误的，但真实和不受欢迎的思想才是推动世界前进的动力。</p></blockquote><p>因此自己也应该对不同的思想更包容。</p><br><br>[The Post-YC Slump YC](https://blog.samaltman.com/the-post-yc-slump)<p>Sam Altman 指出，很多公司在离开YC之后，没有继续坚持不懈地专注于构建一个伟大的产品，而是专注于其他。而且工作也不那么努力，效率也比较低。（失去了YC期间的同辈压力）</p><p>这也让我想起之前在黑客松时爆棚的生产力。</p><blockquote><p>在 YC 期间，我们毫不留情地提醒初创公司，虚假工作不算数，无论您做得多么激烈，仍然会让您获得失败的创业机会。我们也很无情地询问你的进步，如果事情不顺利，我们会对你诚实。在 YC 之后，我们与初创公司的联系减少了——如果你愿意，你可以对我们暗淡无声。就其本身而言，这几乎总是一个迹象，表明创业公司做得很糟糕。</p></blockquote>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;原来「李沐」停更去创业了。&lt;br&gt;&lt;a href=&quot;https://www.bilibili.com/read/cv37076357&quot;&gt;https://www.bilibili.com/read/cv37076357&lt;/a&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;22年年</summary>
       
     
     

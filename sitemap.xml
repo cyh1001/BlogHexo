@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/</loc>
+    
+    <lastmod>2024-11-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/11/14/Digest-24-11/</loc>
+    
+    <lastmod>2024-11-15</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2024/11/09/Memory-Anchors/</loc>
     
     <lastmod>2024-11-10</lastmod>
@@ -643,7 +661,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2024-11-10</lastmod>
+    <lastmod>2024-11-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

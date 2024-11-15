@@ -46,7 +46,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 106518</div>
+    <div class="word-count">Total words in posts: 107790</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -67,6 +67,101 @@
 </header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article id="post-The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-11-14T11:57:43.000Z"><a href="/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/">2024-11-14</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/">不建议在第三方平台使用LLM</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。</p>
+<p><img src="https://cdnv2.ruguoapp.com/FuqVHPYzbd-CuJu01jRZRLP6efbEv3.png?imageMogr2/auto-orient/thumbnail/308632@%7Cwatermark/3/image/aHR0cHM6Ly93YXRlcm1hcmsucnVndW9hcHAuY29tLz90ZXh0PSVFNSU4RCVCMyVFNSU4OCVCQiUyMCU0MEF1Z3VzdCVFNSVCMCU4RiVFNiU5QiVCOSZoZWlnaHQ9MTc=/gravity/SouthEast/dx/10/dy/10" alt="Image"></p>
+<p>主要原因猜测是 API 调用链路差异，以及prompt可能不同。</p>
+<blockquote>
+<p>官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → Claude模型 → 返回结果</p>
+<p>第三方平台的调用链路： 用户输入 → 第三方平台前端 → 第三方平台后端 → Anthropic API → Claude模型 → 返回结果 → 第三方平台后端→第三方平台前端 → 展示</p>
+</blockquote>
+<p>按理说，多封装一层 API 并不影响大模型的性能。但是第三方平台可能倾向于更短的回答以节省 prompt；修改了 AI 安全；上下文记忆没有正确设置和处理，等等原因，最后的结果是，性能受到影响。现在 LLM 的涌现仍很复杂，输入微小的不同，就很可能大幅影响输出。</p>
+<p>此外第三方平台可能设置了自己的 prompt，或者是 Anthropic 优化了官网版的 Claude，也影响了结果。典型例子就是302.ai。</p>
+<p>如果使用dify.ai, langchain等中间件平台，我尚不确定对 LLM 性能有什么影响。</p>
+<p>因此，为了体验到最佳性能，建议不要使用第三方平台的 LLM，直接在官网使用。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-Digest-24-11" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-11-14T11:07:28.000Z"><a href="/2024/11/14/Digest-24-11/">2024-11-14</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/11/14/Digest-24-11/">文摘-24年11月</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://map.simonsarris.com/p/school-is-not-enough">《School is Not Enough》 </a></p>
+<blockquote>
+<p>An individual’s life can continue with an inertia that will lead them on to the next year or decade. Most young people today know approximately what they are going to be doing for the first twenty-or-more years of their life: school. Post-schooling, the inertia continues. Many a modern story opens with a worker—an office worker usually—who is so inert that he scarcely notices the passage of time until he becomes blindsided by a sudden yank of reality that forces him out of this inertia. Since we do not live in stories, we have to ask: How can we make that pull ourselves?</p>
+</blockquote>
+<p>——2024.11.1</p>
+<p><a target="_blank" rel="noopener" href="https://map.simonsarris.com/p/breadcrumbs">《Breadcrumbs》</a></p>
+<blockquote>
+<ol>
+<li><p>Write what you’re learning.</p>
+</li>
+<li><p>Have at least a tiny website that shows something neat.</p>
+</li>
+<li><p>Do things publicly. Have Twitter, Github, etc. Comment publicly, ideally with your real name. This forces you to be nicer, too.</p>
+</li>
+<li><p>Help other people.*</p>
+</li>
+</ol>
+</blockquote>
+<p>你想让别人找到你，当他们找到你时，你希望给他们带来一些东西。</p>
+<p>即使太真诚的分享，会给自己带来很多负面因素。但相比而言，分享太少的害处更大。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
   <article id="post-Memory-Anchors" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
@@ -2230,98 +2325,6 @@ Touch-It-Once 工作法：不要重复处理同一张纸。比如只需阅读每
           <div class="alignleft">
             <a href="/2024/06/04/APIConnectionError/#more" class="more-link">继续阅读</a>
           </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-Text-Role-Play" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2024-06-03T06:25:07.000Z"><a href="/2024/06/03/Text-Role-Play/">2024-06-03</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2024/06/03/Text-Role-Play/">语C黑话手册</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>最近偶然接触到一个亚文化圈子「语C」，突然发现，这不就和各种流行的AI聊天机器人很像吗？</p>
-<p>语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化。</p>
-<p>由于这个圈子黑话很多，所以我整理了一些常用的词义，方便对语C感兴趣的朋友们收藏，碰到时可以对照理解。Enjoy。</p>
-<h4 id="语C黑话手册"><a href="#语C黑话手册" class="headerlink" title="语C黑话手册"></a>语C黑话手册</h4><ol>
-<li><p><strong>语C，语擦，语cos</strong>：语言cosplay，一种用纯文字进行的角色扮演活动。</p>
-</li>
-<li><p><strong>皮</strong>：饰演的角色。</p>
-</li>
-<li><p><strong>披皮、上皮、改备注</strong>：将备注修改成自己所扮演的角色。</p>
-</li>
-<li><p><strong>带套</strong>：例如]、】、}、)等符号，用于说明三次元现实情况的句子。一些群也有单独的规定。</p>
-</li>
-<li><p><strong>开戏，KJ</strong>：将自己的角色带入特定场景或剧情，与其他角色互动或对话。</p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2024/06/03/Text-Role-Play/#more" class="more-link">继续阅读</a>
-          </div>
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-Spotlight-Effect" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2024-06-02T13:34:53.000Z"><a href="/2024/06/02/Spotlight-Effect/">2024-06-02</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2024/06/02/Spotlight-Effect/">聚光灯效应：如何在创业中减轻焦虑</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>创业途中，许多人总会有各种各样的担忧，比如担心迟迟没有收入，或者担心产品没做出来而被别人笑话。我想分享一个自己的心理妙方「聚光灯效应」，它或许能帮你缓解这些担忧。</p>
-<h4 id="聚光灯效应"><a href="#聚光灯效应" class="headerlink" title="聚光灯效应"></a>聚光灯效应</h4><p>聚光灯效应指的是，人们常常把自己看做一切的中心，并且高估别人对自己的关注程度。然而，事实上，其他人并没有那么在意我们的一举一动。在创业方面，像各种商业媒体，往往也只对大公司们感兴趣，很少报道小微公司。</p>
-<h4 id="为什么会产生聚光灯效应？"><a href="#为什么会产生聚光灯效应？" class="headerlink" title="为什么会产生聚光灯效应？"></a>为什么会产生聚光灯效应？</h4><p>聚光灯效应的产生与我们的大脑运作方式密切相关。我们每个人都是自己生活的主角，因此对自己的行为和外貌会格外敏感和关注。这种自我关注让我们不自觉地认为他人也在同样地关注着我们。</p>
-<p>心理学研究表明，聚光灯效应的出现主要是因为我们无法完全摆脱自我视角。在社交互动中，我们常常忘记他人也有自己的关注点和优先事项，因此会高估自己在他人眼中的显著性。</p>
-<p>例如，你可能在会议上发表了一个观点，随后一直担心大家对你观点的评价。然而，实际上，其他人可能只会短暂注意到你的发言，然后继续关注他们自己的事情。</p>
-<h4 id="如何应对聚光灯效应？"><a href="#如何应对聚光灯效应？" class="headerlink" title="如何应对聚光灯效应？"></a>如何应对聚光灯效应？</h4><p>认识到聚光灯效应的存在，可以帮助你在创业过程中减少不必要的紧张和焦虑。以下是几种应对的方法：</p>
-<ol>
-<li>勇于尝试：不要因为害怕被失败而退缩。创业本身就是一个不断试错和学习的过程，失败是其中的一部分。至少在当今时代，保守往往容易拖累发展，冒险更可能获得机会。</li>
-<li>调整心态：记住，别人并没有那么在意你。他们同样忙于自己的生活和工作。即使你在某些方面表现不佳，大多数人也不会过多关注。</li>
-<li>专注于目标：把注意力从他人的评价转移到自己的目标和任务上。专注于自己要完成的工作，而不是担心别人怎么想。</li>
-</ol>
-<p>认识到聚光灯效应，就不那么容易紧张而焦虑了。别人不会那么在意你，而且即使失败了，也没有你想象中的那么严重。勇敢地迈出每一步，你会发现自己的潜力远超预期。</p>
-
-      
-    </div>
-    <footer>
-      
         
         
       
