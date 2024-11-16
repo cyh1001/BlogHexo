@@ -46,7 +46,7 @@
   <h2><a href="/"></a></h2>
   <!-- 添加 word_count 标签 -->
   <!-- <div class="word-count">
-    <div class="word-count">Total words in posts: 110799</div>
+    <div class="word-count">Total words in posts: 111303</div>
   </div> -->
 </div>
 <nav id="main-nav" class="alignright">
@@ -67,6 +67,44 @@
 </header>
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper">
+  <article id="post-Why-You-Dont-Need-to-Train-Your-Own-AI" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-11-15T12:57:18.000Z"><a href="/2024/11/15/Why-You-Dont-Need-to-Train-Your-Own-AI/">2024-11-15</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/11/15/Why-You-Dont-Need-to-Train-Your-Own-AI/">应该专注于prompt而非训练模型</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近在和朋友聊天时，不只一次被建议考虑「训练模型」。</p>
+<p>这种建议虽然出于好意，但可能忽视了以下关键问题：</p>
+<p>首先，训练大模型，对于知识的要求很高，大部分人都没有训练模型的知识水平。而且，我们还需要专门收集我们个人的数据库，但作为个人，真的有那么大的数据吗？恐怕并没有。而 prompt，大多数人都可以写，只需要会说话就可以了。</p>
+<p>其次，训练大模型也需要钱，需要算力。Fine-tuning, RLHF, LoRA，等等，就算真的训练了，训练后的模型能力还可能会下降，并且训练后的模型，也难以和个人知识库数据保持同步更新。而使用 prompt，成本几乎为0。</p>
+<p>就解决实际需求而言，使用 prompt 的效果就比微调模型要好。因为 propmt 可以精准地调整输出，可以反复优化和调整，并且可以更好地利用 LLM 的涌现能力（emergent abilities）。并且，现在大的模型，输入可以有200K tokens，也就是大约10万汉字，有个人数据，完全可以直接复制粘贴进去。</p>
+<p>我个人觉得，对于大部分人而言，认识到 LLM 的局限性（例如回答常出现的问题）+积累个人Prompt模板库，就完全够用了。如果再为<a target="_blank" rel="noopener" href="https://www.caoyihan.com/2024/11/08/DataSelf-Engineering-Your-AI-Twin/">LLM专门积累自身的生活数据集</a>，效果会更加惊艳。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
   <article id="post-A-Conversation-with-Claude-Discovering-Lifes-Meaning-Through-Cultivating-Uniqueness" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
@@ -2468,42 +2506,6 @@ Touch-It-Once 工作法：不要重复处理同一张纸。比如只需阅读每
     </div>
     <footer>
       
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-  <article id="post-WhyHuggingFaceInferenceEndpoints" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time class="dt-published" datetime="2024-06-04T08:25:08.000Z"><a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/">2024-06-04</a></time>
-      
-      
-  
-    <h1 class="title"><a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/">为什么应该用 Hugging Face Inference Endpoints 构建AI应用</a></h1>
-  
-
-    </header>
-    <div class="e-content entry" itemprop="articleBody">
-      
-        <p>最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p>
-      
-    </div>
-    <footer>
-      
-        
-          <div class="alignleft">
-            <a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/#more" class="more-link">继续阅读</a>
-          </div>
         
         
       

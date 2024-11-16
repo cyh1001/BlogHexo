@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2024-11-16T00:55:09.335Z</updated>
+  <updated>2024-11-16T01:57:18.699Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>应该专注于prompt而非训练模型</title>
+    <link href="https://caoyihan.com/2024/11/15/Why-You-Dont-Need-to-Train-Your-Own-AI/"/>
+    <id>https://caoyihan.com/2024/11/15/Why-You-Dont-Need-to-Train-Your-Own-AI/</id>
+    <published>2024-11-15T12:57:18.000Z</published>
+    <updated>2024-11-16T01:57:18.699Z</updated>
+    
+    <content type="html"><![CDATA[<p>最近在和朋友聊天时，不只一次被建议考虑「训练模型」。</p><p>这种建议虽然出于好意，但可能忽视了以下关键问题：</p><p>首先，训练大模型，对于知识的要求很高，大部分人都没有训练模型的知识水平。而且，我们还需要专门收集我们个人的数据库，但作为个人，真的有那么大的数据吗？恐怕并没有。而 prompt，大多数人都可以写，只需要会说话就可以了。</p><p>其次，训练大模型也需要钱，需要算力。Fine-tuning, RLHF, LoRA，等等，就算真的训练了，训练后的模型能力还可能会下降，并且训练后的模型，也难以和个人知识库数据保持同步更新。而使用 prompt，成本几乎为0。</p><p>就解决实际需求而言，使用 prompt 的效果就比微调模型要好。因为 propmt 可以精准地调整输出，可以反复优化和调整，并且可以更好地利用 LLM 的涌现能力（emergent abilities）。并且，现在大的模型，输入可以有200K tokens，也就是大约10万汉字，有个人数据，完全可以直接复制粘贴进去。</p><p>我个人觉得，对于大部分人而言，认识到 LLM 的局限性（例如回答常出现的问题）+积累个人Prompt模板库，就完全够用了。如果再为<a href="https://www.caoyihan.com/2024/11/08/DataSelf-Engineering-Your-AI-Twin/">LLM专门积累自身的生活数据集</a>，效果会更加惊艳。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;最近在和朋友聊天时，不只一次被建议考虑「训练模型」。&lt;/p&gt;
+&lt;p&gt;这种建议虽然出于好意，但可能忽视了以下关键问题：&lt;/p&gt;
+&lt;p&gt;首先，训练大模型，对于知识的要求很高，大部分人都没有训练模型的知识水平。而且，我们还需要专门收集我们个人的数据库，但作为个人，真的有那么大的数</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>对话Claude：人生的意义在于「创造独特性」</title>
@@ -453,26 +475,6 @@
 &lt;p&gt;RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。&lt;br&gt;与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt; 最近读到一篇关于开源与闭源（专有）指令架构集的&lt;a href=&quot;https://research.cs.wisc.edu/multifacet/papers/ieeemicro16_card_isa.pdf&quot;&gt;争论&lt;/a&gt;。Dave Christie的观点，代表了传统闭源 ISA 阵营的观点。而 David Patterson 作为 RISC-V 的主要推动者之一，代表了开源 ISA 阵营。&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Stripe 是如何招聘的</title>
-    <link href="https://caoyihan.com/2024/09/19/How-Stripe-Hire/"/>
-    <id>https://caoyihan.com/2024/09/19/How-Stripe-Hire/</id>
-    <published>2024-09-20T03:38:02.000Z</published>
-    <updated>2024-09-20T15:38:02.670Z</updated>
-    
-    <content type="html"><![CDATA[<p>原文链接：<a href="https://review.firstround.com/how-stripe-built-one-of-silicon-valleys-best-engineering-teams/">https://review.firstround.com/how-stripe-built-one-of-silicon-valleys-best-engineering-teams/</a></p><h2 id="衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。"><a href="#衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。" class="headerlink" title="衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。"></a>衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。</h2><p>要优化的指标是高质量员工的数量，而不是候选人的数量。</p><h2 id="招聘就像营销"><a href="#招聘就像营销" class="headerlink" title="招聘就像营销"></a>招聘就像营销</h2><p>招聘员工就像卖公司一样，要宣传公司的卖点。优秀的人才供不应求，你如何让他们愿意加入你的公司？有时需要建立一个品牌。</p><p>当你聘请工程师时，需要对对方有基础的了解。比如当你发布：，你想要愿意为公司奉献一生的人时，基本只会吸引二十多岁的人。</p><p>透明度是向候选人传达，你的公司是一个理想的工作场所的另一种好方法，特别是offer阶段。</p><h2 id="不要将间接证据视为权威"><a href="#不要将间接证据视为权威" class="headerlink" title="不要将间接证据视为权威"></a>不要将间接证据视为权威</h2><p>不要仅仅因为某人在 Google 工作过就认为他们会拥有广泛的分布式系统知识。谷歌规模的公司通常拥有预先构建的基础设施，工程师不需要知道如何构建它就可以使用它。每当 Stripe 对某人的能力作出假设时，结果都证明他们是错误的。<strong>向与他们共事过的人寻求个人推荐。</strong></p><h2 id="The-Sunday-Test"><a href="#The-Sunday-Test" class="headerlink" title="The Sunday Test"></a>The Sunday Test</h2><p>如果具有杰出工程才能的候选人不适合团队文化，Stripe 就会拒绝他们。每个候选人都必须通过“周日测试”。如果周日这个人独自在办公室，你是否更有可能进来并想与他们一起工作？如果答案不是明确的“是”，那么就不要雇用。雇用一些坏蛋可能会影响您未来吸引顶尖人才的能力。从短期来看，你可能会错过真正优秀的人才，但就像招聘一样，你必须打持久战。</p><h2 id="新职位或新部门的第一个员工非常重要。"><a href="#新职位或新部门的第一个员工非常重要。" class="headerlink" title="新职位或新部门的第一个员工非常重要。"></a><strong>新职位或新部门的第一个员工非常重要。</strong></h2><p>每当您为特定角色或部门雇用第一人个时，请始终坚持寻找掌握精通所有事项的人。此人定义了其部门的发展轨迹，并可能负责组建该团队。他们需要激励其他有才华的人愿意与他们一起工作。</p><p>这种角色可能非常难找。</p><h2 id="Hire-People-Instead-of-Roles"><a href="#Hire-People-Instead-of-Roles" class="headerlink" title="Hire People Instead of Roles"></a><strong>Hire People Instead of Roles</strong></h2><p>招聘人而不是招聘岗位，可以因人设岗。对于 Stripe 来说，一件事很有效，那就是招募那些在组织中没有立即发挥明显作用的人。如果你能想到这个人可以做的一件事，那么两个月后他&#x2F;她可能还会做另外十件你没有想到的事情。专注于招聘来填补某个职位可能会让你更有可能牺牲质量，只是为了找到拥有合适技能的人。</p><h2 id="相信你的直觉"><a href="#相信你的直觉" class="headerlink" title="相信你的直觉"></a><strong>相信你的直觉</strong></h2><p>和一个人在一起的感觉也是很准确的。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;原文链接：&lt;a href=&quot;https://review.firstround.com/how-stripe-built-one-of-silicon-valleys-best-engineering-teams/&quot;&gt;https://review.firstround.co</summary>
-      
     
     
     
