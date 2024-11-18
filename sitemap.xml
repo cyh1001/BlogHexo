@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/11/05/Claude-makes-reading-obsolete/</loc>
+    
+    <lastmod>2024-11-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/11/15/A-Conversation-with-Claude-Discovering-Lifes-Meaning-Through-Cultivating-Uniqueness/</loc>
+    
+    <lastmod>2024-11-18</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2024/11/15/The-Minute-by-Minute-Life-Experiment-How-AI-Transformed-My-Time-Management/</loc>
     
     <lastmod>2024-11-16</lastmod>
@@ -12,15 +30,6 @@
   
   <url>
     <loc>https://caoyihan.com/2024/11/15/Why-You-Dont-Need-to-Train-Your-Own-AI/</loc>
-    
-    <lastmod>2024-11-16</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2024/11/15/A-Conversation-with-Claude-Discovering-Lifes-Meaning-Through-Cultivating-Uniqueness/</loc>
     
     <lastmod>2024-11-16</lastmod>
     
@@ -68,15 +77,6 @@
     <loc>https://caoyihan.com/2024/11/08/DataSelf-Engineering-Your-AI-Twin/</loc>
     
     <lastmod>2024-11-08</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2024/11/05/Claude-makes-reading-obsolete/</loc>
-    
-    <lastmod>2024-11-07</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -688,7 +688,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2024-11-16</lastmod>
+    <lastmod>2024-11-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
