@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/11/30/The-End-of-Transactional-Networking/</loc>
+    
+    <lastmod>2024-12-01</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2024/11/24/A-Conversation-with-Claude-Why-Decentralization-Shouldnt-Define-Crypto/</loc>
     
     <lastmod>2024-11-25</lastmod>
@@ -724,7 +733,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2024-11-25</lastmod>
+    <lastmod>2024-12-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
