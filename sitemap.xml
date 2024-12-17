@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/12/16/AI-has-no-utility-function/</loc>
+    
+    <lastmod>2024-12-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2024/10/15/%E7%9F%AD%E6%83%B3%E6%B3%95/</loc>
+    
+    <lastmod>2024-12-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2024/11/30/The-End-of-Transactional-Networking/</loc>
     
     <lastmod>2024-12-01</lastmod>
@@ -158,15 +176,6 @@
     <loc>https://caoyihan.com/2024/10/22/Digest-24-10-2/</loc>
     
     <lastmod>2024-10-22</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2024/10/15/%E7%9F%AD%E6%83%B3%E6%B3%95/</loc>
-    
-    <lastmod>2024-10-21</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -733,7 +742,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2024-12-01</lastmod>
+    <lastmod>2024-12-17</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
