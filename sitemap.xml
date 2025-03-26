@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2025/03/25/A-Week-of-Threejs-Reality/</loc>
+    
+    <lastmod>2025-03-26</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2025/03/02/Beyond-Copying-The-True-Value-of-Connection/</loc>
     
     <lastmod>2025-03-03</lastmod>
@@ -796,7 +805,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2025-03-03</lastmod>
+    <lastmod>2025-03-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
