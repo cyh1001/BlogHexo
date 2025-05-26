@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>不建议在第三方平台使用LLM | 曹艺瀚的个人网站</title>
+  <title>「生来为了消散」「最有魅力的老鼠」「宇宙电影」 | 曹艺瀚的个人网站</title>
   <meta name="author" content="August曹艺瀚">
   
-  <meta name="description" content="最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。
+  <meta name="description" content="最近发现了一个最有魅力的即友，让我难以言说，这种魅力太危险了，甚至让我觉得老鼠也是可爱的动物（他以老鼠自称）。
 
-主要原因猜测是 API 调用链路差异，以及prompt可能不同。
+「生来为了消散」
 
-官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → C">
+我甚至不记得生活中也没有这么有个性的人了，好像和他比起来，全部人都变得平淡无奇了，
+（我甚至还分不清是他还是她
+总说跳进兔子洞，但有意思的人，有意思的想法似乎在更阴暗">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="不建议在第三方平台使用LLM"/>
+  <meta property="og:title" content="「生来为了消散」「最有魅力的老鼠」「宇宙电影」"/>
   <meta property="og:site_name" content="曹艺瀚的个人网站"/>
 
   
@@ -72,33 +74,31 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-Universe-Movie" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
     <header>
       
         <div class="icon"></div>
-        <time class="dt-published" datetime="2024-11-14T11:57:43.000Z"><a href="/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/">2024-11-14</a></time>
+        <time class="dt-published" datetime="2025-05-25T14:15:38.000Z"><a href="/2025/05/25/Universe-Movie/">2025-05-25</a></time>
       
       
   
-    <h1 class="p-name title" itemprop="headline name">不建议在第三方平台使用LLM</h1>
+    <h1 class="p-name title" itemprop="headline name">「生来为了消散」「最有魅力的老鼠」「宇宙电影」</h1>
   
 
     </header>
     <div class="e-content entry" itemprop="articleBody">
       
-        <p>最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。</p>
-<p><img src="https://cdnv2.ruguoapp.com/FuqVHPYzbd-CuJu01jRZRLP6efbEv3.png?imageMogr2/auto-orient/thumbnail/308632@%7Cwatermark/3/image/aHR0cHM6Ly93YXRlcm1hcmsucnVndW9hcHAuY29tLz90ZXh0PSVFNSU4RCVCMyVFNSU4OCVCQiUyMCU0MEF1Z3VzdCVFNSVCMCU4RiVFNiU5QiVCOSZoZWlnaHQ9MTc=/gravity/SouthEast/dx/10/dy/10" alt="Image"></p>
-<p>主要原因猜测是 API 调用链路差异，以及prompt可能不同。</p>
+        <p>最近发现了一个最有魅力的即友，让我难以言说，这种魅力太危险了，甚至让我觉得老鼠也是可爱的动物（他以老鼠自称）。</p>
 <blockquote>
-<p>官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → Claude模型 → 返回结果</p>
-<p>第三方平台的调用链路： 用户输入 → 第三方平台前端 → 第三方平台后端 → Anthropic API → Claude模型 → 返回结果 → 第三方平台后端→第三方平台前端 → 展示</p>
+<p>「生来为了消散」</p>
 </blockquote>
-<p>按理说，多封装一层 API 并不影响大模型的性能。但是第三方平台可能倾向于更短的回答以节省 prompt；修改了 AI 安全；上下文记忆没有正确设置和处理，等等原因，最后的结果是，性能受到影响。现在 LLM 的涌现仍很复杂，输入微小的不同，就很可能大幅影响输出。</p>
-<p>此外第三方平台可能设置了自己的 prompt，或者是 Anthropic 优化了官网版的 Claude，也影响了结果。典型例子就是302.ai。</p>
-<p>如果使用dify.ai, langchain等中间件平台，我尚不确定对 LLM 性能有什么影响。</p>
-<p>因此，为了体验到最佳性能，建议不要使用第三方平台的 LLM，直接在官网使用。</p>
+<p>我甚至不记得生活中也没有这么有个性的人了，好像和他比起来，全部人都变得平淡无奇了，</p>
+<p>（我甚至还分不清是他还是她</p>
+<p>总说跳进兔子洞，但有意思的人，有意思的想法似乎在更阴暗又更瑰丽多彩的老鼠洞。（他以老鼠自称）</p>
+<p>真的好想认识瑰丽多彩的人类呀</p>
+<p>（写于2024.9.25）</p>
 
       
     </div>
@@ -128,7 +128,7 @@
   }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div class="fb-comments" data-href="https://caoyihan.com/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
+<div class="fb-comments" data-href="https://caoyihan.com/2025/05/25/Universe-Movie/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
       
   
 </section>
