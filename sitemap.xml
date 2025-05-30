@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2025/05/29/From-Tyler-Cowen-blog-to-Cognitive-Bias/</loc>
+    
+    <lastmod>2025-05-30</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2025/05/02/thoughts-2025-5/</loc>
+    
+    <lastmod>2025-05-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2025/05/25/When-Ants-Start-Overthinking-The-Modern-Trap-of-Endless-Analysis/</loc>
     
     <lastmod>2025-05-26</lastmod>
@@ -30,15 +48,6 @@
   
   <url>
     <loc>https://caoyihan.com/2025/05/15/Love-letters-have-you-written-before/</loc>
-    
-    <lastmod>2025-05-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://caoyihan.com/2025/05/02/thoughts-2025-5/</loc>
     
     <lastmod>2025-05-21</lastmod>
     
@@ -904,7 +913,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2025-05-26</lastmod>
+    <lastmod>2025-05-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>

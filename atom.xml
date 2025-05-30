@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2025-05-26T02:54:01.031Z</updated>
+  <updated>2025-05-30T15:41:52.437Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>读Tyler Cowen博客，想到的关于认知偏差</title>
+    <link href="https://caoyihan.com/2025/05/29/From-Tyler-Cowen-blog-to-Cognitive-Bias/"/>
+    <id>https://caoyihan.com/2025/05/29/From-Tyler-Cowen-blog-to-Cognitive-Bias/</id>
+    <published>2025-05-30T03:41:52.000Z</published>
+    <updated>2025-05-30T15:41:52.437Z</updated>
+    
+    <content type="html"><![CDATA[<p>我担心，自己陷入自己的思维误区。</p><p>今天读到 Tyler Cowen 和 Noah Smith 的一些 blog，真的让我震惊。我没想到，他们作为大经济学家，居然可以犯这么多错误，那我之前读到的，那么多文章，错误还会有多少？<br>这是原帖：</p><p><a href="https://www.noahpinion.blog/p/service-costs-arent-exploding-anymore">Service costs aren’t exploding anymore</a></p><p><a href="https://marginalrevolution.com/marginalrevolution/2025/05/noah-on-health-care-costs.html">Noah on health care costs</a></p><p><a href="https://marginalrevolution.com/marginalrevolution/2025/05/how-america-built-the-worlds-most-successful-market-for-generic-drugs.html">How America Built the World’s Most Successful Market for Generic Drugs</a></p><p><a href="https://marginalrevolution.com/marginalrevolution/2024/09/the-us-has-low-prices-for-most-prescription-drugs.html">The United States has some of the lowest prices in the world for most drugs</a></p><p>为什么觉得不对劲，因为当我读到：The United States has some of the <a href="https://marginalrevolution.com/marginalrevolution/2024/09/the-us-has-low-prices-for-most-prescription-drugs.html">lowest prices in the world for most drugs</a>.  我就震惊了。在中国，一管药膏，一般几元到几十元。但是在美国，保险之前可能要 200<del>300 美元，相当于一千多人民币，保险后，可能是 1 折，仍然需要 20</del>30 美元，人民币一百多元，也远远高于国内的价格。</p><p>而且，这还只是一部分。还有很多很稀松平常的药，在美国被刻意列为处方药，必须看医生，获得处方，才能购买。结果就是，有很多药，我压根懒得看医生，又没办法买药，就只好忍受一些微小的疾病。</p><p>（当然，我也不是说，美国什么药都贵，但至少，说美国大部分药便宜，就是误导人的。至少应该注意，是制造商价格，还是患者实际支付，以及患者的总获取成本。）</p><p>原来的几个作者，有这样一些错误。比如，在初始的NIH<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11147645/#:~:text=The%20gap%20between%20U.S.%20prices,States%20than%20in%20other%20countries.">研究文章</a>。这个文章研究了美国的处方药价格。但是，美国的处方药和其他国家的定义很不一样。其次，口径也有问题。但这篇研究文章，还是客观严谨，局限性也列了出来。至少承认复杂性。</p><p>但这篇，<a href="https://marginalrevolution.com/marginalrevolution/2024/09/the-us-has-low-prices-for-most-prescription-drugs.html">The US Has Low Prices for Most Prescription Drugs</a>，就直接引用原文的一段话，断章取义，得出美国大多数处方药价格低廉的结论。这篇 Alex Tabarrok 的文章，被 Tyler Cowen 摘录。</p><p>这篇 Alex Tabarrok 的文章，又被他自己引用，又得出新的文章。<a href="https://marginalrevolution.com/marginalrevolution/2025/05/how-america-built-the-worlds-most-successful-market-for-generic-drugs.html">How America Built the World’s Most Successful Market for Generic Drugs</a>。相当于，原本的文章就有偏见和扭曲了，然后扭曲和偏见有递进了一步，甚至觉得美国医药产业全球领先。</p><p>Tyler Cowen 也引用了，Noah Smith 的文章，结论也是类似的，认为美国人看病成本在下降。</p><p>Noah Smith 的这篇文章，还有别的问题，类似的数据操控在Noah Smith的教育成本分析中也出现了。比如，使用 College Board 的数据来源，证明自己的观点。但明显，College Board 与高等教育产业利益深度绑定，得出来的报告可能也是有偏见的。</p><p>又想起，其实连硅谷的大佬，Paul Graham，Dario Amodel，也对中国存在系统性偏见。</p><p>更关键的是，像上面，Noah Smith, Tyler Cowen, Alex Tabarrok，居然形成了一个精英信息茧房，自己的信息来回循环，互相论证。而硅谷的大佬，信息也很发达，却也可能有偏见。</p><p>虽然，完全客观的文章可能不存在。但仍然需要批判性思考，不能迷信即使title很厉害的人。我现在想起，a16z，Paradigm 等VC，在2022~2023年，在Web3中，得出很多有偏见的数据报告，现在也不会太迷信他们的判断，和对AI的看法。</p><p>也会想到，自己可能也会有自己的思维误区，系统性偏差。</p><p>而对我来说，我知道自己不可能严格考究每篇文章。先提起祛魅，保持批判性思考，再定期接触各种信息来源，用自己经验+AI分析检验。还有更重要的，培养「认知谦逊」，尊重复杂 —— 承认自己的知识和经验是有限的，不要急于下判断。</p><p>即使，上面写了这么多，我也不敢完全说，他们的数据和论证，就是完全错的，可能我的分析，也是我自身的偏见的体现。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我担心，自己陷入自己的思维误区。&lt;/p&gt;
+&lt;p&gt;今天读到 Tyler Cowen 和 Noah Smith 的一些 blog，真的让我震惊。我没想到，他们作为大经济学家，居然可以犯这么多错误，那我之前读到的，那么多文章，错误还会有多少？&lt;br&gt;这是原帖：&lt;/p&gt;
+&lt;p&gt;&lt;a</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>「当一只蚂蚁，开始思考哲学，会怎么样？」</title>
@@ -134,20 +156,19 @@
     <link href="https://caoyihan.com/2025/05/02/thoughts-2025-5/"/>
     <id>https://caoyihan.com/2025/05/02/thoughts-2025-5/</id>
     <published>2025-05-03T01:32:46.000Z</published>
-    <updated>2025-05-21T14:53:09.649Z</updated>
+    <updated>2025-05-28T22:17:00.589Z</updated>
     
-    <content type="html"><![CDATA[<p>我现在翻我最近几篇blog，我发现，好像AI的味道都比较重，而缺乏人的味道~——2025.5.20</p><br><br><p>life is too short to keep your kinks a secret.</p><p>生命太短，不该隐藏你的怪癖。</p><p>——<a href="https://www.erosblog.com/2025/05/02/dont-keep-your-kinks-a-secret/">source</a> (NSFW警告！)</p><p>——2025.5.10</p><br><br><p>我知道你没有告别<br>只是走出了时间<br>所以能陪我到永远</p><p>——<a href="https://igetideal.bearblog.dev/4433/">source</a></p><p>——2025.5.10</p><br><br><p><a href="https://bhoomerrr.bearblog.dev/taking-a-pause/">持续的行动并不总是意味着进步</a>——2025.5.9</p><br><br><p>「如果你在我24岁之前认识我，你不是真正意义上的了解我。你只是了解第一季的我，第一季的制作成本特别低，并且编剧团队经历了一些常人难以承受的事情」——<a href="https://weibo.com/7799863287/5156490450047493">source</a>——2025.5.4</p><br><br><p>任何抽象的体系（无论是Web3、特定公链，还是AI主导的世界）都不应成为目的本身。真正的目的应该是关心“具体的人和具体的生活”。建设的重点应该是改善人们对生活的体验和记忆（成为“Life Builder”或“Memory Builder”）。</p><p>相比之下，Balaji和Vitalik所说的：「旧世界在崩塌。世界的未来不在华盛顿，它会被编码，在链上。」，就像一种意识形态。</p><p><a href="https://mp.weixin.qq.com/s/Ng5eFFUIWQS7n031pZWowQ">《为什么SeeDAO从Web3转向了数字游民？》</a></p><p>——2025.5.3</p><p>（注：Balaji和Vitalik言论，未找到来源）</p><br><br><p>健康的关系固然好，但不健康的关系可能更令人着迷——2025.5.3</p>]]></content>
+    <content type="html"><![CDATA[<p>我有一点感觉，如果一个人要有深度思考能力，可能上班会破坏深度思考能力。因为，可能深度思考，需要大量的闲暇，而且最好不要有生存危机——2025.5.28</p><br><br><p>因为乌克兰希望加入北约，反而让自己陷入战争。如果乌克兰更强势地保持中立，更加独立自主，避免依赖欧洲或俄罗斯，反而有可能避免战争。我发现，似乎真的非常非常荒谬，我甚至觉得，乌克兰完完全全被欧洲和美国坑骗了，一开始是苏联解体时，坑骗乌克兰放弃核武器以及军事实力，后面又坑骗乌克兰加入北约，渲染俄罗斯威胁论，并近乎直接导致俄罗斯发动战争。我觉得，如果乌克兰坚定保持中立，坚定不加入北约，俄罗斯应该不会发动战争——2025.5.28</p><br><br><p>我现在翻我最近几篇blog，我发现，好像AI的味道都比较重，而缺乏人的味道~——2025.5.20</p><br><br><p>life is too short to keep your kinks a secret.</p><p>生命太短，不该隐藏你的怪癖。</p><p>——<a href="https://www.erosblog.com/2025/05/02/dont-keep-your-kinks-a-secret/">source</a> (NSFW警告！)</p><p>——2025.5.10</p><br><br><p>我知道你没有告别<br>只是走出了时间<br>所以能陪我到永远</p><p>——<a href="https://igetideal.bearblog.dev/4433/">source</a></p><p>——2025.5.10</p><br><br><p><a href="https://bhoomerrr.bearblog.dev/taking-a-pause/">持续的行动并不总是意味着进步</a>——2025.5.9</p><br><br><p>「如果你在我24岁之前认识我，你不是真正意义上的了解我。你只是了解第一季的我，第一季的制作成本特别低，并且编剧团队经历了一些常人难以承受的事情」——<a href="https://weibo.com/7799863287/5156490450047493">source</a>——2025.5.4</p><br><br><p>任何抽象的体系（无论是Web3、特定公链，还是AI主导的世界）都不应成为目的本身。真正的目的应该是关心“具体的人和具体的生活”。建设的重点应该是改善人们对生活的体验和记忆（成为“Life Builder”或“Memory Builder”）。</p><p>相比之下，Balaji和Vitalik所说的：「旧世界在崩塌。世界的未来不在华盛顿，它会被编码，在链上。」，就像一种意识形态。</p><p><a href="https://mp.weixin.qq.com/s/Ng5eFFUIWQS7n031pZWowQ">《为什么SeeDAO从Web3转向了数字游民？》</a></p><p>——2025.5.3</p><p>（注：Balaji和Vitalik言论，未找到来源）</p><br><br><p>健康的关系固然好，但不健康的关系可能更令人着迷——2025.5.3</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;我现在翻我最近几篇blog，我发现，好像AI的味道都比较重，而缺乏人的味道~——2025.5.20&lt;/p&gt;
+    <summary type="html">&lt;p&gt;我有一点感觉，如果一个人要有深度思考能力，可能上班会破坏深度思考能力。因为，可能深度思考，需要大量的闲暇，而且最好不要有生存危机——2025.5.28&lt;/p&gt;
 &lt;br&gt;
 
 &lt;br&gt;
 
-&lt;p&gt;life is too short to keep your kinks a secret.&lt;/p&gt;
-&lt;p&gt;生命太短，不该隐藏你的怪癖。</summary>
+&lt;p&gt;因为乌克兰希望加入北约，反而让自己陷入战争。如果乌克兰更强势地保持中立，更加独立自主</summary>
       
     
     
@@ -421,25 +442,6 @@
     <summary type="html">&lt;p&gt;我发现现在想要赚钱，都是为人类创造价值，但我在想，为什么要服务人类？能不能直接服务 AI，满足 AI 的需求呢？&lt;/p&gt;
 &lt;p&gt;这就引出一个问题：如果想要通过满足AI的需求来赚钱，就必须要求AI可以成为「经济主体」。我们是否应该，真的把 AI 视为独立的经济主体，而不仅仅是</summary>
       
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>2024年底，功利性社交失去意义，应该多关注从社交中获取情感价值（爱情和友谊）</title>
-    <link href="https://caoyihan.com/2024/11/30/The-End-of-Transactional-Networking/"/>
-    <id>https://caoyihan.com/2024/11/30/The-End-of-Transactional-Networking/</id>
-    <published>2024-11-30T15:16:05.000Z</published>
-    <updated>2024-12-01T17:10:40.554Z</updated>
-    
-    <content type="html"><![CDATA[<p>在2024年底，社交的性质已经发生了根本变化。我自己感觉，功利性的社交，价值不断下降。自己去参加完一些活动后，往往感觉后悔。和一些Title很大的大佬交流完，似乎往往容易祛魅和失望。而与好朋友聊天，一般没有很功利性的目的，反而往往会非常开心。以至于让我觉得，在2024年底这个时代，社交的意义应该重新思考。</p><p>现代人可能不需要像以前一样，依赖社交来获取信息、资源和机会了。例如，传统的社交，比如创业，需要多认识投资人，需要用 coffee chat 来寻找联合创始人。但是，有执行力的创始人可以直接通过社交媒体来获得投资人的关注。而一次coffee chat可能需要2小时，大多数交谈停留在表面，很难说能有很深的价值。</p><p>而参与社交的投资回报率有多少呢？以我自己为例，时间成本≈半小时筛选活动+1小时交通+2~3小时的活动时间。而收益可能仅仅是多交几个朋友。</p><span id="more"></span><p>在时间如此稀缺的情况下，在新时代，功利性社交的意义值得怀疑。我觉得应该着重把时间投入以下领域：</p><blockquote><pre><code>1. 锻炼核心力量和心肺功能   - 研究并实践优化睡眠2. 财务   - 创业与商业机会捕捉   - 建立被动收入来源3. 个人成长    - 元认知能力训练    - 决策思维框架构建    - 跨领域知识整合    - 信息获取效率优化    - 心智模型升级4. 时间管理    - 时间管理策略    - 能量管理策略5. 自我实现    - 探索个人使命    - 创造独特价值</code></pre></blockquote><p>我觉得在新时代，社交的价值应该回归本真，也就是和三到五个好朋友保持非常深度的交流，感受真实的情谊流动。</p><br><p>附注：</p><ol><li>上述部分观点来源于Claude和「中二怪」。其中，Claude的看法并不坚定，有时也会赞同功利性社交的价值。</li><li>功利性社交失去意义，也意味着，自己可以一个人去高级餐馆吃一顿好吃的，并单纯享受美食。</li></ol>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;在2024年底，社交的性质已经发生了根本变化。我自己感觉，功利性的社交，价值不断下降。自己去参加完一些活动后，往往感觉后悔。和一些Title很大的大佬交流完，似乎往往容易祛魅和失望。而与好朋友聊天，一般没有很功利性的目的，反而往往会非常开心。以至于让我觉得，在2024年底这个时代，社交的意义应该重新思考。&lt;/p&gt;
-&lt;p&gt;现代人可能不需要像以前一样，依赖社交来获取信息、资源和机会了。例如，传统的社交，比如创业，需要多认识投资人，需要用 coffee chat 来寻找联合创始人。但是，有执行力的创始人可以直接通过社交媒体来获得投资人的关注。而一次coffee chat可能需要2小时，大多数交谈停留在表面，很难说能有很深的价值。&lt;/p&gt;
-&lt;p&gt;而参与社交的投资回报率有多少呢？以我自己为例，时间成本≈半小时筛选活动+1小时交通+2~3小时的活动时间。而收益可能仅仅是多交几个朋友。&lt;/p&gt;</summary>
     
     
     
