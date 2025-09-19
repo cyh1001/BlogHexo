@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2024/06/03/Text-Role-Play/</loc>
+    
+    <lastmod>2025-09-19</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2025/07/31/thoughts-2025-8/</loc>
     
     <lastmod>2025-08-20</lastmod>
@@ -49,7 +58,7 @@
   <url>
     <loc>https://caoyihan.com/2025/06/14/thoughts-2025-6/</loc>
     
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2025-06-24</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -731,15 +740,6 @@
   </url>
   
   <url>
-    <loc>https://caoyihan.com/2024/06/03/Text-Role-Play/</loc>
-    
-    <lastmod>2024-06-11</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://caoyihan.com/2024/06/10/do-nothing-and-get-started/</loc>
     
     <lastmod>2024-06-11</lastmod>
@@ -994,7 +994,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2025-09-12</lastmod>
+    <lastmod>2025-09-19</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
