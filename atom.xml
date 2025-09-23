@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2025-09-23T00:27:01.596Z</updated>
+  <updated>2025-09-23T14:33:26.008Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -17,13 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>对AI失去爱</title>
+    <link href="https://caoyihan.com/2025/09/22/falling-out-of-love-with-ai/"/>
+    <id>https://caoyihan.com/2025/09/22/falling-out-of-love-with-ai/</id>
+    <published>2025-09-23T02:33:25.000Z</published>
+    <updated>2025-09-23T14:33:26.008Z</updated>
+    
+    <content type="html"><![CDATA[<p>我最近发现，如果我是手动复制粘贴代码到LLM的聊天框中，做项目的速度，比使用Gemini cli，或者cursor，反而快一点。</p><p>（前两天，有次Gemini Cli在没有告知我的情况下，把我的Next.js，从15改为了14，以至于依赖出了一堆的错。还有各种容易血压升高的修改）。</p><p>受到启发，我也利用「手动复制粘贴代码」的方式，只用两个半小时，就解决了之前用 Gemini Cli 几天都没有解决的问题。</p><p>LLM本身也是。Gemini和Claude已经很久没有让我惊艳的感觉了，反而经常让我觉得蠢蠢的，以至于自己都变得更自信了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;我最近发现，如果我是手动复制粘贴代码到LLM的聊天框中，做项目的速度，比使用Gemini cli，或者cursor，反而快一点。&lt;/p&gt;
+&lt;p&gt;（前两天，有次Gemini Cli在没有告知我的情况下，把我的Next.js，从15改为了14，以至于依赖出了一堆的错。还有各种容</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Le黑话手册</title>
     <link href="https://caoyihan.com/2025/09/22/Le/"/>
     <id>https://caoyihan.com/2025/09/22/Le/</id>
     <published>2025-09-22T12:27:01.000Z</published>
-    <updated>2025-09-23T00:27:01.596Z</updated>
+    <updated>2025-09-23T00:30:34.939Z</updated>
     
-    <content type="html"><![CDATA[<p>先开个坑，之后慢慢填上~</p><ol><li><strong>Le、Les、姛、拉子、拉拉、拉</strong>：均指女同，Lesbians</li><li><strong>直女</strong>：指异性恋的女生</li><li><strong>心选</strong>：Crush，心动对象，不特指性别。</li><li><strong>心选姐</strong>：心动女生。一般用于女生之间的恋爱关系，即le, wlw, 百合。「心选」2020年之前就用于语C圈，后面被拉拉借用。但亦可用于异性恋，也不一定限制年龄关系。</li><li><strong>直女装姬</strong>：指异性恋女生装成女同</li><li><strong>侄女</strong>：指直女</li><li><strong>双</strong>：双性恋</li><li><strong>直女微双、直女微拉</strong>：指直女略微偏双性恋或女同。</li><li><strong>T、P、H</strong>：T指拉拉中偏男性化的一方，P指拉拉中偏女性化的那一方，H属于中立，既可以T（偏男性化）又可以P（偏女性化），与双性恋的含义不同。注，T、P、H，只是一种感觉，有时还看双方之间的关系。同时，还可以有多种组合，例如长发t，短发p，p1，t0。有的人理解T、P、H是看外表，也有人是看内心。</li><li><strong>四爱</strong>：指女强男弱的关系。可以是恋爱关系，也可以是性关系。</li></ol>]]></content>
+    <content type="html"><![CDATA[<p>先开个坑，之后慢慢填上~</p><ol><li><strong>Le、Les、姛、拉子、拉拉、拉</strong>：均指女同，Lesbians</li><li><strong>直女</strong>：指异性恋的女生</li><li><strong>心选</strong>：Crush，心动对象，不特指性别。</li><li><strong>心选姐</strong>：心动女生。一般用于女生之间的恋爱关系，即le, wlw, 百合。「心选」2020年之前就用于语C圈，后面被拉拉借用。但亦可用于异性恋，也不一定限制年龄关系。</li><li><strong>直女装姬</strong>：指异性恋女生装成女同</li><li><strong>侄女</strong>：指直女</li><li><strong>双</strong>：双性恋</li><li><strong>直女微双、直女微拉</strong>：指直女略微偏双性恋或女同。</li><li><strong>T、P、H</strong>：T指拉拉中偏男性化的一方，P指拉拉中偏女性化的那一方，H属于中立，既可以T（偏男性化）又可以P（偏女性化），与双性恋的含义不同。注，T、P、H，只是一种感觉，有时还看双方之间的关系。同时，还可以有多种组合，例如长发t，短发p，p1，t0。有的人理解T、P、H是看外表，也有人是看内心。</li><li><strong>四爱</strong>：指女强男弱的关系。可以是恋爱关系，也可以是性关系。</li><li><strong>热拉、Nico</strong>：几款交友软件的名字</li></ol>]]></content>
     
     
       
@@ -432,29 +453,6 @@
     <summary type="html">&lt;ol&gt;
 &lt;li&gt;今天，差不多就去了Brooklyn downtown附近转了一转&lt;/li&gt;
 &lt;li&gt;我发现，似乎有很多卖果杯的，就是切好的西瓜，芒果等等，放在一个杯子里售卖，差不多是5美元一个。价格比中国的果盒贵很多，我不确定有没有人买，为什么会有这样的商业业态？也有很多餐车卖</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>美国经济效率观察之BOA银行</title>
-    <link href="https://caoyihan.com/2025/04/14/Navigating-the-Maze-A-Frustrating-Journey-with-Bank-of-Americas-Credit-Card-Auto-Payment-System/"/>
-    <id>https://caoyihan.com/2025/04/14/Navigating-the-Maze-A-Frustrating-Journey-with-Bank-of-Americas-Credit-Card-Auto-Payment-System/</id>
-    <published>2025-04-14T06:48:11.000Z</published>
-    <updated>2025-04-14T18:48:11.193Z</updated>
-    
-    <content type="html"><![CDATA[<p>「美国经济效率观察」</p><p>今天处理美国银行的银行卡。都快把我逼疯了。</p><p>因为我想设置信用卡自动付款。首先需要预约，预约了特定时间，才能去银行网点。但去了之后，银行网点告诉我，网点没办法处理，必须在网站上设置，app也不能。</p><p>上他们网站，一直显示账号密码错误。然后，我按照他们的步骤，修改了密码。但密码修改了之后，再次登录，每次一登录，又跳转Forgot password页面。就是不管怎么登录，就是直接跳转。（肯定是网站Bug）<br>我点击网站的”联系我们”，上面指导让我重新设置密码。</p><p>但我重新设置密码之后，又是循环：每次一登录，又跳转Forgot password页面</p><p>然后，我就搜小红书，小红书上幸好说了，在手机上设置自动支付的方式。但是，要在app上设置，必须需要SSN&#x2F;TIN，但这个很多外国人就没有，也就意味着没办法设置。</p><p>（现在绝大多数外国人，确实就是每月设置闹钟还信用卡）</p><p>而我看chase， citi等其他银行，小红书上的评论也很糟糕。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;「美国经济效率观察」&lt;/p&gt;
-&lt;p&gt;今天处理美国银行的银行卡。都快把我逼疯了。&lt;/p&gt;
-&lt;p&gt;因为我想设置信用卡自动付款。首先需要预约，预约了特定时间，才能去银行网点。但去了之后，银行网点告诉我，网点没办法处理，必须在网站上设置，app也不能。&lt;/p&gt;
-&lt;p&gt;上他们网站，一</summary>
       
     
     

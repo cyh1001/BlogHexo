@@ -3,18 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>不建议在第三方平台使用LLM | 曹艺瀚的个人网站</title>
+  <title>对AI失去爱 | 曹艺瀚的个人网站</title>
   <meta name="author" content="August曹艺瀚">
   
-  <meta name="description" content="最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。
-
-主要原因猜测是 API 调用链路差异，以及prompt可能不同。
-
-官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → C">
+  <meta name="description" content="我最近发现，如果我是手动复制粘贴代码到LLM的聊天框中，做项目的速度，比使用Gemini cli，或者cursor，反而快一点。
+（前两天，有次Gemini Cli在没有告知我的情况下，把我的Next.js，从15改为了14，以至于依赖出了一堆的错。还有各种容易血压升高的修改）。
+受到启发，我也利用">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="不建议在第三方平台使用LLM"/>
+  <meta property="og:title" content="对AI失去爱"/>
   <meta property="og:site_name" content="曹艺瀚的个人网站"/>
 
   
@@ -72,33 +70,26 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-falling-out-of-love-with-ai" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
     <header>
       
         <div class="icon"></div>
-        <time class="dt-published" datetime="2024-11-14T11:57:43.000Z"><a href="/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/">2024-11-14</a></time>
+        <time class="dt-published" datetime="2025-09-23T02:33:25.000Z"><a href="/2025/09/22/falling-out-of-love-with-ai/">2025-09-22</a></time>
       
       
   
-    <h1 class="p-name title" itemprop="headline name">不建议在第三方平台使用LLM</h1>
+    <h1 class="p-name title" itemprop="headline name">对AI失去爱</h1>
   
 
     </header>
     <div class="e-content entry" itemprop="articleBody">
       
-        <p>最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。</p>
-<p><img src="https://cdnv2.ruguoapp.com/FuqVHPYzbd-CuJu01jRZRLP6efbEv3.png?imageMogr2/auto-orient/thumbnail/308632@%7Cwatermark/3/image/aHR0cHM6Ly93YXRlcm1hcmsucnVndW9hcHAuY29tLz90ZXh0PSVFNSU4RCVCMyVFNSU4OCVCQiUyMCU0MEF1Z3VzdCVFNSVCMCU4RiVFNiU5QiVCOSZoZWlnaHQ9MTc=/gravity/SouthEast/dx/10/dy/10" alt="Image"></p>
-<p>主要原因猜测是 API 调用链路差异，以及prompt可能不同。</p>
-<blockquote>
-<p>官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → Claude模型 → 返回结果</p>
-<p>第三方平台的调用链路： 用户输入 → 第三方平台前端 → 第三方平台后端 → Anthropic API → Claude模型 → 返回结果 → 第三方平台后端→第三方平台前端 → 展示</p>
-</blockquote>
-<p>按理说，多封装一层 API 并不影响大模型的性能。但是第三方平台可能倾向于更短的回答以节省 prompt；修改了 AI 安全；上下文记忆没有正确设置和处理，等等原因，最后的结果是，性能受到影响。现在 LLM 的涌现仍很复杂，输入微小的不同，就很可能大幅影响输出。</p>
-<p>此外第三方平台可能设置了自己的 prompt，或者是 Anthropic 优化了官网版的 Claude，也影响了结果。典型例子就是302.ai。</p>
-<p>如果使用dify.ai, langchain等中间件平台，我尚不确定对 LLM 性能有什么影响。</p>
-<p>因此，为了体验到最佳性能，建议不要使用第三方平台的 LLM，直接在官网使用。</p>
+        <p>我最近发现，如果我是手动复制粘贴代码到LLM的聊天框中，做项目的速度，比使用Gemini cli，或者cursor，反而快一点。</p>
+<p>（前两天，有次Gemini Cli在没有告知我的情况下，把我的Next.js，从15改为了14，以至于依赖出了一堆的错。还有各种容易血压升高的修改）。</p>
+<p>受到启发，我也利用「手动复制粘贴代码」的方式，只用两个半小时，就解决了之前用 Gemini Cli 几天都没有解决的问题。</p>
+<p>LLM本身也是。Gemini和Claude已经很久没有让我惊艳的感觉了，反而经常让我觉得蠢蠢的，以至于自己都变得更自信了。</p>
 
       
     </div>
