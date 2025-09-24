@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://caoyihan.com/2025/09/23/The-Price-of-a-Yes/</loc>
+    
+    <lastmod>2025-09-24</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://caoyihan.com/2025/09/22/falling-out-of-love-with-ai/</loc>
     
     <lastmod>2025-09-23</lastmod>
@@ -1012,7 +1021,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2025-09-23</lastmod>
+    <lastmod>2025-09-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
