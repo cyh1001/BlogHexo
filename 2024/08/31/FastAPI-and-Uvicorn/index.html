@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>为什么 FastAPI 适合用 Uvicorn | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="TL;DR：Uvicorn 很适合 FastAPI。如果使用 FastAPI，建议首选 Uvicorn 作为 ASGI Web 服务器">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="为什么 FastAPI 适合用 Uvicorn"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-FastAPI-and-Uvicorn" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-08-31T12:35:10.000Z"><a href="/2024/08/31/FastAPI-and-Uvicorn/">2024-08-31</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">为什么 FastAPI 适合用 Uvicorn</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>TL;DR：Uvicorn 很适合 FastAPI。如果使用 FastAPI，建议首选 Uvicorn 作为 ASGI Web 服务器</p>
+<span id="more"></span>
+
+<h4 id="FastAPI"><a href="#FastAPI" class="headerlink" title="FastAPI"></a>FastAPI</h4><p>FastAPI 是一个 Python 框架。</p>
+<h4 id="WSGI-ASGI"><a href="#WSGI-ASGI" class="headerlink" title="WSGI&amp;ASGI"></a>WSGI&amp;ASGI</h4><p>WSGI (Web Server Gateway Interface) Servers 是一种 Python Web 服务器技术，它定义了 Web 服务器和 Python Web 应用程序之间的标准接口。WSGI 服务器为不同的 Python Web 框架和 Web 服务器提供一个通用接口，增强互操作性。WSGI 服务器接收 HTTP 请求，将其转换为 WSGI 环境，调用 Python 应用，然后将响应发送回客户端。</p>
+<p>ASGI（Asynchronous Server Gateway Interface，异步服务器网关接口）是 WSGI 的精神继承者，旨在在支持异步的 Python Web 服务器、框架和应用程序之间提供标准接口。</p>
+<p>WSGI 是同步的，每个请求在处理完成前会阻塞线程。而 ASGI 则为异步和同步应用程序提供了一种标准，具有 WSGI 向后兼容性实现以及多个服务器和应用程序框架。</p>
+<h4 id="Uvicorn"><a href="#Uvicorn" class="headerlink" title="Uvicorn"></a>Uvicorn</h4><p>而 Uvicorn 是一个快速的 ASGI web 服务器，专为 Python 设计。</p>
+<h3 id="为什么FastAPI适合用Uvicorn"><a href="#为什么FastAPI适合用Uvicorn" class="headerlink" title="为什么FastAPI适合用Uvicorn"></a>为什么FastAPI适合用Uvicorn</h3><ol>
+<li>FastAPI 主要设计用于与 ASGI 服务器一起使用，而不是 WSGI 服务器。FastAPI 也需要一个 ASGI 服务器来运行。Uvicorn可以提供异步支持。FastAPI 重度使用 Python 的异步特性。Uvicorn 作为一个异步服务器，能够充分发挥 FastAPI 的异步性能。</li>
+<li>Uvicorn 是一个非常快速的 ASGI 服务器，它基于 uvloop 和 httptools 构建，这两者都是用 Cython 写的高性能 Python 网络库。</li>
+<li>开发便利性：<br>Uvicorn 提供了热重载功能（通过 –reload 参数），这在开发过程中非常有用，可以实时看到代码修改的效果。热重载是指，在开发过程中，当你修改代码后，服务器能够自动检测到这些更改并重新启动，使新的代码变更立即生效，而无需手动停止和重启服务器。热重载功能可以大幅提高开发效率。</li>
+<li>轻量级，且易于使用：<br>Uvicorn 是一个轻量级服务器，不会给应用增加太多额外的复杂性或开销。Uvicorn 使用很简单，几乎不用额外学习即可上手。通常只需一行命令就可以启动 FastAPI 应用。</li>
+</ol>
+<h3 id="对比其他-ASGI-服务器："><a href="#对比其他-ASGI-服务器：" class="headerlink" title="对比其他 ASGI 服务器："></a>对比其他 ASGI 服务器：</h3><p>Daphne或许更适合Django，不是 FastAPI的最佳选择。<br>Hypercorn 性能可能不如Uvicorn，配置可能相对复杂。<br>Gunicorn (with Uvicorn workers)。Gunicorn本身是一个WSGI服务器，但它可以使用Uvicorn workers来支持ASGI。主要缺点也是配置更复杂一点。</p>
+<p>参考链接：<a target="_blank" rel="noopener" href="https://asgi.readthedocs.io/en/latest/">ASGI Documentation</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.fullstackpython.com/wsgi-servers.html">Full Stack Python</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

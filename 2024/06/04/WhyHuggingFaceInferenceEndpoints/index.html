@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>为什么应该用 Hugging Face Inference Endpoints 构建AI应用 | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="为什么应该用 Hugging Face Inference Endpoints 构建AI应用"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-WhyHuggingFaceInferenceEndpoints" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-06-04T08:25:08.000Z"><a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/">2024-06-04</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">为什么应该用 Hugging Face Inference Endpoints 构建AI应用</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p>
+<span id="more"></span>
+
+<p>我采取的整体技术方案是，Next.js + Vercel + Hugging Face Inference Endpoint 的 API，前后端采用统一的框架，没有使用云服务器。</p>
+<p>因为做独立开发，最重要的，就是快速推出产品，而且为了快速迭代，应该使用简单的部署方案。而为了尽可能地使用简单的技术方案，用 API 构建产品，比自己部署大模型，要更方便快速，尤其是在构造 MVP（最小可行性产品）的时候。</p>
+<p>但问题是，有很多模型并没有提供 API，或者提供的 API 并不完全，比如说 OpenAI 的 Whisper，现在官方还只提供 Whisper-large-V2 的 API，但 Whisper-large-V3 已经推出很长时间了，但 OpenAI 并没有提供 API。而且还有很多基于某些特定任务做了微调的大模型，也没有提供 API。也有些模型，只有 Python 的 API，没有提供JavaScript 的API，使用起来也会麻烦一点。</p>
+<p>并且，不同的模型，提供的 API 格式可能也不一样，如果产品需要用到多个不同的模型，切换起来会麻烦一点。</p>
+<p>而 Hugging Face 就为很多模型提供了 API，只需要在 Hugging Face 找到需要的模型，点击 Deploy—Inference API，即可使用，并且有 Python, JavaScript, cURL 三个版本。而且，要切换不同的模型，只需要更改API链接，比如将<code>meta-llama/Meta-Llama-3-8B-Instruct</code>修改成<code>https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.3</code>即可。</p>
+<p><img src="/../images/InferenceAPI2.png" alt="image-20240604160351720"></p>
+<p><img src="/../images/InferenceAPI1.png" alt="image-20240604160054753"></p>
+<p>注意，Inference API 只适合开发环境或者测试，因为比较拥挤，在生产环境是不够用的。在生产环境需要使用 Inference Endpoints。Inference API 是免费的，Inference Endpoints 按小时付费。如果说使用量较大的话，也需要注意成本。</p>
+<p><img src="/../images/EndPoints.png" alt="image-20240604161107855"></p>
+<p>Inference Endpoints 的主要作用，正如它<a target="_blank" rel="noopener" href="https://huggingface.co/inference-endpoints/dedicated">官网</a>所说，是让生产部署更加简单。可以部署任何模型到任何云。</p>
+<p>而且如果需要自己训练模型，也可以把模型上传到 Hugging Face Hub ，然后使用 Inference Endpoints 进行部署。</p>
+<p>总的来说，Hugging Face 的 Inference API 和 Inference Endpoints 为独立开发者和小型团队提供了一个轻量化的解决方案，帮助他们快速推出和迭代产品。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

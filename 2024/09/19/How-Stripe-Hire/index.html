@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>Stripe 是如何招聘的 | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="原文链接：https://review.firstround.com/how-stripe-built-one-of-silicon-valleys-best-engineering-teams/
+衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。要优化的指标是高质量员工的数量，而不是候选人的数">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="Stripe 是如何招聘的"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-How-Stripe-Hire" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-09-20T03:38:02.000Z"><a href="/2024/09/19/How-Stripe-Hire/">2024-09-19</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">Stripe 是如何招聘的</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>原文链接：<a target="_blank" rel="noopener" href="https://review.firstround.com/how-stripe-built-one-of-silicon-valleys-best-engineering-teams/">https://review.firstround.com/how-stripe-built-one-of-silicon-valleys-best-engineering-teams/</a></p>
+<h2 id="衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。"><a href="#衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。" class="headerlink" title="衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。"></a>衡量每个招聘渠道的绩效，并在发现最成功的地方加倍努力。</h2><p>要优化的指标是高质量员工的数量，而不是候选人的数量。</p>
+<h2 id="招聘就像营销"><a href="#招聘就像营销" class="headerlink" title="招聘就像营销"></a>招聘就像营销</h2><p>招聘员工就像卖公司一样，要宣传公司的卖点。优秀的人才供不应求，你如何让他们愿意加入你的公司？有时需要建立一个品牌。</p>
+<p>当你聘请工程师时，需要对对方有基础的了解。比如当你发布：，你想要愿意为公司奉献一生的人时，基本只会吸引二十多岁的人。</p>
+<p>透明度是向候选人传达，你的公司是一个理想的工作场所的另一种好方法，特别是offer阶段。</p>
+<h2 id="不要将间接证据视为权威"><a href="#不要将间接证据视为权威" class="headerlink" title="不要将间接证据视为权威"></a>不要将间接证据视为权威</h2><p>不要仅仅因为某人在 Google 工作过就认为他们会拥有广泛的分布式系统知识。谷歌规模的公司通常拥有预先构建的基础设施，工程师不需要知道如何构建它就可以使用它。每当 Stripe 对某人的能力作出假设时，结果都证明他们是错误的。<strong>向与他们共事过的人寻求个人推荐。</strong></p>
+<h2 id="The-Sunday-Test"><a href="#The-Sunday-Test" class="headerlink" title="The Sunday Test"></a>The Sunday Test</h2><p>如果具有杰出工程才能的候选人不适合团队文化，Stripe 就会拒绝他们。每个候选人都必须通过“周日测试”。如果周日这个人独自在办公室，你是否更有可能进来并想与他们一起工作？如果答案不是明确的“是”，那么就不要雇用。雇用一些坏蛋可能会影响您未来吸引顶尖人才的能力。从短期来看，你可能会错过真正优秀的人才，但就像招聘一样，你必须打持久战。</p>
+<h2 id="新职位或新部门的第一个员工非常重要。"><a href="#新职位或新部门的第一个员工非常重要。" class="headerlink" title="新职位或新部门的第一个员工非常重要。"></a><strong>新职位或新部门的第一个员工非常重要。</strong></h2><p>每当您为特定角色或部门雇用第一人个时，请始终坚持寻找掌握精通所有事项的人。此人定义了其部门的发展轨迹，并可能负责组建该团队。他们需要激励其他有才华的人愿意与他们一起工作。</p>
+<p>这种角色可能非常难找。</p>
+<h2 id="Hire-People-Instead-of-Roles"><a href="#Hire-People-Instead-of-Roles" class="headerlink" title="Hire People Instead of Roles"></a><strong>Hire People Instead of Roles</strong></h2><p>招聘人而不是招聘岗位，可以因人设岗。对于 Stripe 来说，一件事很有效，那就是招募那些在组织中没有立即发挥明显作用的人。如果你能想到这个人可以做的一件事，那么两个月后他&#x2F;她可能还会做另外十件你没有想到的事情。专注于招聘来填补某个职位可能会让你更有可能牺牲质量，只是为了找到拥有合适技能的人。</p>
+<h2 id="相信你的直觉"><a href="#相信你的直觉" class="headerlink" title="相信你的直觉"></a><strong>相信你的直觉</strong></h2><p>和一个人在一起的感觉也是很准确的。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

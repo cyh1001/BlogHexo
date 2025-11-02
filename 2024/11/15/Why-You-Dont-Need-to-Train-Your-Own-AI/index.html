@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>应该专注于prompt而非训练模型 | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="最近在和朋友聊天时，不只一次被建议考虑「训练模型」。
+这种建议虽然出于好意，但可能忽视了以下关键问题：
+首先，训练大模型，对于知识的要求很高，大部分人都没有训练模型的知识水平。而且，我们还需要专门收集我们个人的数据库，但作为个人，真的有那么大的数据吗？恐怕并没有。而 prompt，大多数人都可以写，">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="应该专注于prompt而非训练模型"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-Why-You-Dont-Need-to-Train-Your-Own-AI" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-11-15T12:57:18.000Z"><a href="/2024/11/15/Why-You-Dont-Need-to-Train-Your-Own-AI/">2024-11-15</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">应该专注于prompt而非训练模型</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近在和朋友聊天时，不只一次被建议考虑「训练模型」。</p>
+<p>这种建议虽然出于好意，但可能忽视了以下关键问题：</p>
+<p>首先，训练大模型，对于知识的要求很高，大部分人都没有训练模型的知识水平。而且，我们还需要专门收集我们个人的数据库，但作为个人，真的有那么大的数据吗？恐怕并没有。而 prompt，大多数人都可以写，只需要会说话就可以了。</p>
+<p>其次，训练大模型也需要钱，需要算力。Fine-tuning, RLHF, LoRA，等等，就算真的训练了，训练后的模型能力还可能会下降，并且训练后的模型，也难以和个人知识库数据保持同步更新。而使用 prompt，成本几乎为0。</p>
+<p>就解决实际需求而言，使用 prompt 的效果就比微调模型要好。因为 propmt 可以精准地调整输出，可以反复优化和调整，并且可以更好地利用 LLM 的涌现能力（emergent abilities）。并且，现在大的模型，输入可以有200K tokens，也就是大约10万汉字，有个人数据，完全可以直接复制粘贴进去。</p>
+<p>我个人觉得，对于大部分人而言，认识到 LLM 的局限性（例如回答常出现的问题）+积累个人Prompt模板库，就完全够用了。如果再为<a target="_blank" rel="noopener" href="https://www.caoyihan.com/2024/11/08/DataSelf-Engineering-Your-AI-Twin/">LLM专门积累自身的生活数据集</a>，效果会更加惊艳。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

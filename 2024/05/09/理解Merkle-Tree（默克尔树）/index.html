@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>理解Merkle-Tree（默克尔树） | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="默克尔树，也称哈希树。
+定义：若一种树，满足每个叶节点等于数据块的哈希值，每个非叶节点都等于其子节点的哈希值。
+
+例如，假设我们要验证以下数据：
+1Hello, world!
+
+我们可以将其分成两个小块：
+12Hello, world!
+
+然后计算每个小块的哈希值：
+12SHA256(Hello, ">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="理解Merkle-Tree（默克尔树）"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-理解Merkle-Tree（默克尔树）" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-09T04:02:23.000Z"><a href="/2024/05/09/%E7%90%86%E8%A7%A3Merkle-Tree%EF%BC%88%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%EF%BC%89/">2024-05-09</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">理解Merkle-Tree（默克尔树）</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>默克尔树，也称哈希树。</p>
+<p><strong>定义</strong>：若一种树，满足每个叶节点等于数据块的哈希值，每个非叶节点都等于其子节点的哈希值。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hash_Tree.svg/1200px-Hash_Tree.svg.png" alt="Merkle tree - Wikipedia"></p>
+<p>例如，假设我们要验证以下数据：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, world!</span><br></pre></td></tr></table></figure>
+
+<p>我们可以将其分成两个小块：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello, </span><br><span class="line">world!</span><br></pre></td></tr></table></figure>
+
+<p>然后计算每个小块的哈希值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SHA256(Hello, ) = 1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad</span><br><span class="line">SHA256(world!) = 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64</span><br></pre></td></tr></table></figure>
+
+<p>接下来，将这两个哈希值配对并计算它们的哈希值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHA256(1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad, 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64) = 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure>
+
+<p>现在只剩下一个哈希值，这就是默克尔树的根哈希值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>作用</strong>：</p>
+<p>默克尔树主要防止传输的数据不被篡改。一个默克尔树，若某个数据块的内容发生修改，则对应的叶节点的哈希值就会改变，根哈希值就也会发生改变。所以，我们要验证数据是否发生篡改，只需要比较哈希值即可。</p>
+<p>在区块链中，例如比特币，假如比特币不用默克尔树，那么每个节点都必须保留每笔比特币交易的完整内容，这将是极其庞大的数据。而利用默克尔树，只储存并比较根哈希值。</p>
+<p>参考资料：<a target="_blank" rel="noopener" href="https://www.simplilearn.com/tutorials/blockchain-tutorial/merkle-tree-in-blockchain">https://www.simplilearn.com/tutorials/blockchain-tutorial/merkle-tree-in-blockchain</a></p>
+<p>附比特币计算默克尔树-根哈希值的源码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">uint256 ComputeMerkleRoot(std::vector&lt;uint256&gt; hashes, bool* mutated) &#123;</span><br><span class="line"></span><br><span class="line">  bool mutation = false;</span><br><span class="line"></span><br><span class="line">  while (hashes.size() &gt; 1) &#123;</span><br><span class="line"></span><br><span class="line">​    if (mutated) &#123;</span><br><span class="line"></span><br><span class="line">​      for (size_t pos = 0; pos + 1 &lt; hashes.size(); pos += 2) &#123;</span><br><span class="line"></span><br><span class="line">​        if (hashes[pos] == hashes[pos + 1]) mutation = true;</span><br><span class="line"></span><br><span class="line">​      &#125;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    if (hashes.size() &amp; 1) &#123;</span><br><span class="line"></span><br><span class="line">​      hashes.push_back(hashes.back());</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    SHA256D64(hashes[0].begin(), hashes[0].begin(), hashes.size() / 2);</span><br><span class="line"></span><br><span class="line">​    hashes.resize(hashes.size() / 2);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (mutated) *mutated = mutation;</span><br><span class="line"></span><br><span class="line">  if (hashes.size() == 0) return uint256();</span><br><span class="line"></span><br><span class="line">  return hashes[0];</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

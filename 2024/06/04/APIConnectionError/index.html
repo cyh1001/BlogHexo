@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>关于APIConnectionError： Connection error在JavaScript的最新解决方案 | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="TL;DR: 使用 axios 和 dotenv 解决 APIConnectionError 问题。">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="关于APIConnectionError： Connection error在JavaScript的最新解决方案"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-APIConnectionError" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-06-04T06:30:30.000Z"><a href="/2024/06/04/APIConnectionError/">2024-06-04</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">关于APIConnectionError： Connection error在JavaScript的最新解决方案</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><strong>TL;DR:</strong> 使用 axios 和 dotenv 解决 APIConnectionError 问题。</p>
+<span id="more"></span>
+
+<h3 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h3><p>在本地服务器运行 Next.js 项目时，调用 OpenAI API 或 Hugging face API 会报错 <code>APIConnectionError: Connection error</code>。调用 Hugging Face 的其他模型 API 时，同样报错。然而，部署在 Vercel 上可以正常运行。</p>
+<p>项目环境：</p>
+<ul>
+<li>编程语言：JavaScript 和 TypeScript</li>
+<li>框架：Next.js 和 React</li>
+<li>地理位置：中国大陆</li>
+</ul>
+<p><strong>错误原因分析</strong></p>
+<h3 id="错误原因分析："><a href="#错误原因分析：" class="headerlink" title="错误原因分析："></a>错误原因分析：</h3><p>通过谷歌查询，初步判断是 Node.js 的代理问题。附 OpenAI 官方文档：<a target="_blank" rel="noopener" href="https://help.openai.com/en/articles/6897191-apiconnectionerror"><strong>APIConnectionError</strong></a></p>
+<h3 id="尝试过的解决方案（无效）："><a href="#尝试过的解决方案（无效）：" class="headerlink" title="尝试过的解决方案（无效）："></a>尝试过的解决方案（无效）：</h3><ol>
+<li><p>在 powershell 上配置代理</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$env:HTTP_PROXY=&quot;http://127.0.0.1:33210&quot;</span><br><span class="line">$env:HTTPS_PROXY=&quot;http://127.0.0.1:33210&quot;</span><br><span class="line">$env:ALL_PROXY=&quot;socks5://127.0.0.1:33211&quot;</span><br></pre></td></tr></table></figure>
+<p>但发现这样配置了之后，仍然出现APIConnectionError: Connection error报错。</p>
+</li>
+<li><p>很多解决方案通过修改 openai 的 Python 库来解决，但是无法用在JavaScript 和 Next.js上。</p>
+</li>
+</ol>
+<h3 id="解决方案概述："><a href="#解决方案概述：" class="headerlink" title="解决方案概述："></a>解决方案概述：</h3><p>使用axios 和dotenv即可解决问题，以下是具体步骤：</p>
+<p>1.在 Next.js 项目中安装 axios 和 dotenv：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install axios dotenv</span><br></pre></td></tr></table></figure>
+<p>2.在需要调用API的场景，使用axios进行API请求，并同时配置代理。</p>
+<p>代码示例：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br></pre></td><td class="code"><pre><span class="line">import * as fs from &#x27;fs&#x27;;</span><br><span class="line">import * as path from &#x27;path&#x27;;</span><br><span class="line">import axios from &#x27;axios&#x27;;</span><br><span class="line">import * as dotenv from &#x27;dotenv&#x27;;</span><br><span class="line"></span><br><span class="line">dotenv.config();</span><br><span class="line"></span><br><span class="line">async function query(filePath: string) &#123;</span><br><span class="line">  try &#123;</span><br><span class="line">    const data = fs.readFileSync(filePath); // 读取文件内容</span><br><span class="line">    const response = await axios.post(</span><br><span class="line">      &#x27;https://api-inference.huggingface.co/models/openai/whisper-tiny&#x27;,</span><br><span class="line">      data, // 文件内容作为请求体</span><br><span class="line">      &#123;</span><br><span class="line">        headers: &#123;</span><br><span class="line">          &quot;Accept&quot;:&quot;application/json&quot;,</span><br><span class="line">          Authorization: `Bearer hf_xxxxxxxxxxxxxxxxxxxxxxxxxx`,</span><br><span class="line">          &#x27;Content-Type&#x27;: &#x27;audio/wav&#x27;, // 确保内容类型是音频文件</span><br><span class="line">        &#125;,</span><br><span class="line">        proxy: &#123;</span><br><span class="line">          protocol: &#x27;http&#x27;,</span><br><span class="line">          host: &#x27;127.0.0.1&#x27;,</span><br><span class="line">          port: 33210,// 这里应该根据使用的代理，修改成相应的port</span><br><span class="line">        &#125;,</span><br><span class="line">        timeout: 10000, // 设置超时时间为10秒</span><br><span class="line">      &#125;</span><br><span class="line">    );</span><br><span class="line">    return response.data;</span><br><span class="line">  &#125; catch (error) &#123;</span><br><span class="line">    if (axios.isAxiosError(error)) &#123;</span><br><span class="line">      console.error(&#x27;Axios error:&#x27;, error.response?.data);</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">      console.error(&#x27;Unexpected error:&#x27;, error);</span><br><span class="line">    &#125;</span><br><span class="line">    throw error;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 调用函数并传入文件路径</span><br><span class="line">query(path.resolve(__dirname, &quot;C:\\Users\\caoca\\Music\\sample1.wav&quot;))</span><br><span class="line">  .then((response) =&gt; &#123;</span><br><span class="line">    console.log(JSON.stringify(response));</span><br><span class="line">  &#125;)</span><br><span class="line">  .catch((error) =&gt; &#123;</span><br><span class="line">    console.error(error);</span><br><span class="line">  &#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="结论："><a href="#结论：" class="headerlink" title="结论："></a>结论：</h3><p>通过使用 axios 和 dotenv，可以有效解决 Next.js 项目中调用 OpenAI API 或 Hugging face API 报错的问题，提升开发体验和项目的稳定性。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

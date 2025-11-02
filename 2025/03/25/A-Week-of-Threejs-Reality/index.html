@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>当AI遇上Three.js：一个网页游戏开发者的七天挣扎 | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="2025.3.19日上午，我看到X上，Pieter Levels发帖子，举办微型网页游戏比赛。
+我看到帖子，就决定参加了。其实当时并没有想清楚。但我看到他做了一个「神秘劣质游戏」：https://fly.pieter.com/ 这是一个飞机大战的游戏，但可能，用户进去，使用wasd都难以控制飞机，可">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="当AI遇上Three.js：一个网页游戏开发者的七天挣扎"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-A-Week-of-Threejs-Reality" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2025-03-25T14:28:07.000Z"><a href="/2025/03/25/A-Week-of-Threejs-Reality/">2025-03-25</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">当AI遇上Three.js：一个网页游戏开发者的七天挣扎</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>2025.3.19日上午，我看到X上，Pieter Levels发帖子，举办<a target="_blank" rel="noopener" href="https://x.com/levelsio/status/1901660771505021314">微型网页游戏比赛</a>。</p>
+<p>我看到帖子，就决定参加了。其实当时并没有想清楚。但我看到他做了一个「神秘劣质游戏」：<a target="_blank" rel="noopener" href="https://fly.pieter.com/">https://fly.pieter.com/</a> 这是一个飞机大战的游戏，但可能，用户进去，使用wasd都难以控制飞机，可能发现，过了很久，飞机都难以起飞。而且，飞机就是一个简单的多面体，发出红色小球作为子弹，可以击落一些气球。这是一个实时的多人游戏，其它人也可以击落气球，但实际上，用户和其他用户的互动并不多。</p>
+<p>Peiter levles在X上，发了很多帖子，关于他的飞机大战游戏的。并用同样的方法卖广告。他自己说，达到的收入是：8.7万美元&#x2F;月。（我现在有点怀疑这个数字了，我猜可能是一天一次性收入2000美元，就记成了6万美元&#x2F;月。）卖广告的方式就是，在游戏中加一些飞艇，在飞艇上写上他们的网站域名。</p>
+<p>我担心游戏开发很难。而且，Pieter Levels建议使用three.js. 我在网上，Github, B站上查了，我发现，three.js 可以做出，非常非常精美的游戏，并且我在我的本地运行了，发现确实是这样，很流畅，不卡。游戏有多好呢？<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1Eg4y1E7tm">有一个吉卜力风格的，</a>一个小人在开放世界里走，像风之旅人一样，我一下子都可以感觉很温馨。<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1zx4y1a7Kp">还有一款也是类似，但是是用宫崎骏风格。</a></p>
+<p><img src="/../images/threejs-game.png" alt="threejs-game"></p>
+<p>还有一个<a target="_blank" rel="noopener" href="https://donitz.itch.io/burger-frights"> itch.io 的恐怖游戏</a>。 游戏也是3D的，也是three.js做的，都是使用公开的模型，然后作者改了改，就使用了。但这是一个故事情节非常完整的恐怖游戏。大致是，玩家一个人骑着单车，不停地循环在马路上走，走到一个终点又会循环。但每次循环，都是不一样的游戏情节。玩家撞到障碍物会死掉。中间会遇到很多鬼。结尾是，“你”是开车的那个人，撞死了骑车的女性，自己也撞到了路边晕厥了，然后进入幻境，幻境就是在游戏经历的事情。主要是，几乎没有文字，但玩家在经历了很多循环之后，再看到结尾，可以想明白，整个的故事情节。所以我感觉很厉害，是一个完整的游戏，大概够玩15~20min，但已经是成熟的游戏的水准了。但就这样的游戏，也是 three.js 做的。</p>
+<p><img src="/../images/image-20250326232725656.png" alt="image-20250326232725656"></p>
+<p>我看到itch.io和B站上这些游戏，还有B站上一些人拍的玩steam游戏的reaction，我也感觉很震惊。最震惊的是，我一开始没想到three.js+网页，就可以达到这么好的3D效果。</p>
+<p>Pieter Levels 的 X 上，也有很多人分享他们自己做的游戏，这些游戏就比较简陋了，但勉强能玩，而且蛮多是 3D 的。</p>
+<p>但我也怀疑，是不是pieter levels的成功，来源于他自己流量高，所以做什么都容易成功？并且，他的成功需要流量，而办游戏开发比赛，就是一个噱头，可以吸引流量。而吸引的流量多了，才更可能成功。</p>
+<p>另一方面，也想试试看，因为比赛就一个星期，即使失败了也无所谓。</p>
+<p>但是，一开始，找游戏创意就遇到困难。一开始不知道做什么。想可以做一款 3D 版本的 IO 游戏，想到可以做一款 3D 版本的 Monopoly 大富翁游戏。</p>
+<p>第一个创意尝试（IO游戏）。但是，做这个 IO 游戏时，我想模仿deeep.io，类似大鱼吃小鱼。但当我自己亲自去做时，发现难度大大超过想象。即使我把模型都使用一个球代替，鼠标移动，整个屏幕都卡得动不了。AI似乎很难理解怎样处理 Camera。（完全不知道其它人是怎么做的这么流畅的。但这可能是 AI 处理Three.js的局限性，技术债务容易累积，而不是Three.js的问题。）</p>
+<p>几次尝试了几次，问题解决不了，就决定，直接拿别人的开源的游戏项目来改了。</p>
+<p>第二个创意尝试（宫崎骏风格游戏，3D版本的HOA）。使用VUE+Three.js。可以改游戏的bug，稍微容易一点，确实成功了。但是，改功能就不太行。比如，我希望添加一些花朵，AI确实可以把花朵加成一条直线的，但是没办法很灵活地摆放，无法实现到我心目中的标准。（AI处理3D模型文件的方法是，使用MCP Server，调用本地的 Blender 插件。）（我也感觉，做一个粗糙的游戏很容易，但玩家对精致度的要求，应该是蛮高的。所以细节还是很重要的。）而且，因为地图是一整个 glb 文件，改起来也很复杂，而且技术难度很高，我短时间内学不会，blender软件本身也很复杂。LLM可以用MCP，使用blender的插件，但是很不好用。（奇怪的是，这个blender mcp server, 在github上的stars暴涨，一周就涨了将近2000）。</p>
+<p>就感觉，整个过程很磨人，心也很累。</p>
+<p>再后面，又看了看别人做的恐怖游戏，心理创意多了很多。也知道，应该尽可能做的简单：第3次创意尝试：这是后面的创意：这是一个恐怖游戏，我想构建的是一个类似《米塔》的恐怖游戏，主要机制是背后有鬼追你，当你看着它时它不动，不看时它会靠近你。当他在你背后时，就会吃掉你。</p>
+<p>我吸取了之前的教训，决定这次不碰3D建模，直接使用现成的3D资源。我在网上找来了僵尸的3D模型。</p>
+<p>但是，实际与 Windsurf 的使用体验来说，会感觉迭代很慢。比如，有次windsurf自动帮我加了很多我不需要的功能，即使我完全没有相关指令，就擅自添加了一些手电筒。比如，玩家和鬼的移动，逻辑迟迟难以实现，总是出错。但就算出错了，Windsurf也总是发现不了原因，即使配置了MCP，能读取浏览器控制台，也注意不到问题。反观前端开发的话，出现问题，AI可以直接读取浏览器控制台，马上获得反馈，但游戏开发不是，AI 有时不知道自己错了，有时不知道哪里错了，因为很多内容就不会出现在浏览器控制台，而 AI 也不完全理解 .glb 文件。后面，因为我发现迭代效率很低，所以就决定放弃了。</p>
+<p>如果说自己有什么感受，可能是自己对游戏还缺乏敬畏之心吧，以为是2~3天可以做出demo的，但实际上，对细节的打磨，对剧情的处理，才是游戏成功的关键。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

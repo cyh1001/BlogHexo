@@ -1,0 +1,1580 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>第 3 页 | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+  <article id="post-Climbing-the-wrong-hill" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-06-07T09:39:53.000Z"><a href="/2024/06/07/Climbing-the-wrong-hill/">2024-06-07</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/06/07/Climbing-the-wrong-hill/">Climbing the wrong hill</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>我经常提醒自己，不要 <a target="_blank" rel="noopener" href="https://cdixon.org/2009/09/19/climbing-the-wrong-hill">climbing the wrong hill</a>。</p>
+<p>计算机科学中的一个经典问题是爬山（hill climbing）。想象一下，自己像一个小蚂蚁一样被扔在丘陵地带的一个随机地点，你只看得到周围一个小局部。目标是到达最高的山峰。</p>
+<p>一个最简单的算法是，在任何时刻，都朝着更高的方向迈出一小步。这种方法的风险是，很可能到达某个小山丘的顶部，而非最高的山峰顶部。</p>
+<p>另一个通常更好的算法是，先让自己反复地把自己随机地放在地形的不同部分，做简单的爬山，然后在多次这样的尝试之后，决定哪个山丘最高。</p>
+<p>作为一个普通人，我们可能知道我们想要登上的山峰并不是我们正在攀登的山丘。但当前的山丘诱惑力很强。最终陷入了行为经济学家强调的一个常见陷阱「当下享乐偏误」：人们倾向于系统性地高估短期回报，而非长期回报。这种影响在更有野心的人身上似乎更强烈。他们的雄心壮志似乎使他们很难放弃短期的上升台阶。</p>
+<p>那我们应该怎么做呢？应该随机地进入地形的不同部分，寻找最高的山峰，当寻找到最高的山峰时，不要再在当前的山丘上浪费时间了，无论下一步看起来多么好。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-WhyHuggingFaceInferenceEndpoints" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-06-04T08:25:08.000Z"><a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/">2024-06-04</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/">为什么应该用 Hugging Face Inference Endpoints 构建AI应用</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近在构建产品的过程当中，偶然使用了 Hugging face 的 Inference API 和 Inference Endpoints，感觉非常方便好用，想推荐给大家。(不是软文)</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2024/06/04/WhyHuggingFaceInferenceEndpoints/#more" class="more-link">继续阅读</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-APIConnectionError" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-06-04T06:30:30.000Z"><a href="/2024/06/04/APIConnectionError/">2024-06-04</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/06/04/APIConnectionError/">关于APIConnectionError： Connection error在JavaScript的最新解决方案</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><strong>TL;DR:</strong> 使用 axios 和 dotenv 解决 APIConnectionError 问题。</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2024/06/04/APIConnectionError/#more" class="more-link">继续阅读</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-Text-Role-Play" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-06-03T06:25:07.000Z"><a href="/2024/06/03/Text-Role-Play/">2024-06-03</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/06/03/Text-Role-Play/">语C黑话手册</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近偶然接触到一个亚文化圈子「语C」，突然发现，这不就和各种流行的AI聊天机器人很像吗？</p>
+<p>语C，又称语言cosplay，是一种用纯文字进行的角色扮演活动。通过文字描写叙述特定的背景故事，描述人物动作和心理活动，并与其他玩家互动。语C是由二次元文化衍生出的亚文化。</p>
+<p>由于这个圈子黑话很多，所以我整理了一些常用的词义，方便对语C感兴趣的朋友们收藏，碰到时可以对照理解。Enjoy。</p>
+<h4 id="语C黑话手册"><a href="#语C黑话手册" class="headerlink" title="语C黑话手册"></a>语C黑话手册</h4><ol>
+<li><p><strong>语C，语擦，语cos</strong>：语言cosplay，一种用纯文字进行的角色扮演活动。</p>
+</li>
+<li><p><strong>皮</strong>：饰演的角色。</p>
+</li>
+<li><p><strong>披皮、上皮、改备注</strong>：将备注修改成自己所扮演的角色。</p>
+</li>
+<li><p><strong>带套</strong>：例如]、】、}、)等符号，用于说明三次元现实情况的句子。一些群也有单独的规定。</p>
+</li>
+<li><p><strong>开戏，KJ</strong>：将自己的角色带入特定场景或剧情，与其他角色互动或对话。</p>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2024/06/03/Text-Role-Play/#more" class="more-link">继续阅读</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-Spotlight-Effect" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-06-02T13:34:53.000Z"><a href="/2024/06/02/Spotlight-Effect/">2024-06-02</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/06/02/Spotlight-Effect/">聚光灯效应：如何在创业中减轻焦虑</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>创业途中，许多人总会有各种各样的担忧，比如担心迟迟没有收入，或者担心产品没做出来而被别人笑话。我想分享一个自己的心理妙方「聚光灯效应」，它或许能帮你缓解这些担忧。</p>
+<h4 id="聚光灯效应"><a href="#聚光灯效应" class="headerlink" title="聚光灯效应"></a>聚光灯效应</h4><p>聚光灯效应指的是，人们常常把自己看做一切的中心，并且高估别人对自己的关注程度。然而，事实上，其他人并没有那么在意我们的一举一动。在创业方面，像各种商业媒体，往往也只对大公司们感兴趣，很少报道小微公司。</p>
+<h4 id="为什么会产生聚光灯效应？"><a href="#为什么会产生聚光灯效应？" class="headerlink" title="为什么会产生聚光灯效应？"></a>为什么会产生聚光灯效应？</h4><p>聚光灯效应的产生与我们的大脑运作方式密切相关。我们每个人都是自己生活的主角，因此对自己的行为和外貌会格外敏感和关注。这种自我关注让我们不自觉地认为他人也在同样地关注着我们。</p>
+<p>心理学研究表明，聚光灯效应的出现主要是因为我们无法完全摆脱自我视角。在社交互动中，我们常常忘记他人也有自己的关注点和优先事项，因此会高估自己在他人眼中的显著性。</p>
+<p>例如，你可能在会议上发表了一个观点，随后一直担心大家对你观点的评价。然而，实际上，其他人可能只会短暂注意到你的发言，然后继续关注他们自己的事情。</p>
+<h4 id="如何应对聚光灯效应？"><a href="#如何应对聚光灯效应？" class="headerlink" title="如何应对聚光灯效应？"></a>如何应对聚光灯效应？</h4><p>认识到聚光灯效应的存在，可以帮助你在创业过程中减少不必要的紧张和焦虑。以下是几种应对的方法：</p>
+<ol>
+<li>勇于尝试：不要因为害怕被失败而退缩。创业本身就是一个不断试错和学习的过程，失败是其中的一部分。至少在当今时代，保守往往容易拖累发展，冒险更可能获得机会。</li>
+<li>调整心态：记住，别人并没有那么在意你。他们同样忙于自己的生活和工作。即使你在某些方面表现不佳，大多数人也不会过多关注。</li>
+<li>专注于目标：把注意力从他人的评价转移到自己的目标和任务上。专注于自己要完成的工作，而不是担心别人怎么想。</li>
+</ol>
+<p>认识到聚光灯效应，就不那么容易紧张而焦虑了。别人不会那么在意你，而且即使失败了，也没有你想象中的那么严重。勇敢地迈出每一步，你会发现自己的潜力远超预期。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-something-about-Jobs" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-26T13:07:48.000Z"><a href="/2024/05/26/something-about-Jobs/">2024-05-26</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/26/something-about-Jobs/">乔布斯往事两则</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><img src="/../images/revolutioninthevalley.jpg"></p>
+<p>最近几年，马斯克似乎已经取代了乔布斯，成为了很多人的创业偶像。也很少再有人提乔布斯的现实扭曲力场了。但是读了《硅谷革命——成就苹果公司的疯狂往事》，发现了乔布斯蛮多有趣的细节。</p>
+<p>作者 Andy Hertzfeld 最早是在 Apple II 项目组，却想加入麦金塔项目组。当 Andy 走进乔布斯的办公室时，乔布斯劈头就问：「你行吗？我们麦金塔团队只要真正的能人，我不确定你行不行。」Andy 说能行。几个小时后，乔布斯告诉 Andy：「跟我来，让我带你到你的新工位。」</p>
+<p>Andy 说，他需要一两天时间来完成手头上的工作，下个星期一就可以加入麦金塔团队。</p>
+<p>乔布斯发问：「你现在在做什么？有什么事情比麦金塔更重要？你做这个只是在浪费时间而已！谁会关心 Apple II？再过几年 Apple II 就玩完了，你的操作系统还没写完就已经过时了。麦金塔才是苹果公司的未来，你现在就过来吧！」</p>
+<p>乔布斯说着，走到 Andy 桌旁，找到 Apple II 的电源线，用力一拉拔掉插头，电脑被关掉了。Andy 刚刚写的代码也跟着消失了。乔布斯拔掉显示器的插头，把它放在主机上，然后搬起它们放到车的后备箱里。</p>
+<p>乔布斯似乎很多时候都急不可耐，而且不是很有礼貌。有次，乔布斯面试一个软件经理时，候选人回答支支吾吾的，十分拘谨，乔布斯很快就不耐烦了，开始问一些出格的问题：</p>
+<p>「你是几岁失去童贞的？」</p>
+<p>候选人以为自己听错了。</p>
+<p>乔布斯又问：「你磕过几次迷幻药？」</p>
+<p>候选人就在回答问题时，乔布斯开始“呱、呱、呱”模仿火鸡的叫声，直接结束了面试。</p>
+<p>尽管《硅谷革命》揭示了许多关于乔布斯的有趣细节，但这本书整体上内容冗长、写作平淡，难以引人入胜。</p>
+<p>更糟糕的是，书中大量的细节描写显得琐碎且无关紧要，很多故事虎头蛇尾，无法为读者提供实质性的启示或价值。许多奇闻轶事虽然有趣，但未能深入挖掘事件背后的原因和影响，让人读后感觉不过是一些片段拼凑而成的文字。</p>
+<p>如果你对乔布斯的传奇生涯和苹果公司的发展历程感兴趣，或许有更好的选择可以深入了解这些内容。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-simplicity-is-more-important-than-correctness" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-24T06:38:02.000Z"><a href="/2024/05/24/simplicity-is-more-important-than-correctness/">2024-05-24</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/24/simplicity-is-more-important-than-correctness/">简单比正确更重要</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>Luyao 写了一个帖子<a target="_blank" rel="noopener" href="https://zhangluyao.com/blog/worse_is_better/">《简单比正确更重要》</a></p>
+<blockquote>
+<p>为什么一些看起来“很垃圾”的软件会占领市场?</p>
+<p>我从中学到的东西就是，<strong>简单比正确更重要</strong>。不必追求“正确”，你需要 50% 正确，当它像病毒一样传播以后，人们会花时间将它改进到 90% 正确。但它首先要是一个病毒，而不是一个“正确”的东西。而复杂的东西显然不会成为病毒。（作者把 C 语言和 Unix 称做最大的计算机病毒。）</p>
+</blockquote>
+<p>参考链接：[The Rise of “Worse is Better’’]<a target="_blank" rel="noopener" href="https://www.jwz.org/doc/worse-is-better.html">https://www.jwz.org/doc/worse-is-better.html</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-expressions" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-23T15:49:15.000Z"><a href="/2024/05/23/expressions/">2024-05-23</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/23/expressions/">中外程序员差异和文字表达</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://catcoding.me/p/diff/">《中外程序员差异》</a></p>
+<blockquote>
+<p>文字表达</p>
+<p>文字表达能力是开源社区里一个非常重要的，因为但凡一个大的改动都需要和其他人广泛讨论和协作。</p>
+<p>不少国外的程序员有文字表达的习惯，就是即使看很小的一点问题也会通过文字表达出来。这是很多国内程序员所没有的习惯，因为我们大多比较含蓄，认为多做比说强，说多容易错，说多容易暴露自己。</p>
+<p>可能和教育和网络环境也有一定关系，如果不是刻意维持文字表达的习惯，很多人高中毕业后就没有写过几篇长文，对很多事情也没有自己的看法。</p>
+<p>另外他们习惯使用 Email 来沟通，但中国开发人员大多习惯使用 IM 沟通。这两者还是有区别的，IM 沟通会让人不自觉地回复得更快，有的模糊想法随口就就表达了。而 Email 沟通更容易让人把事情写清楚，也更容易写得更长和有条理。</p>
+<p>这种细微的差异长久了之后就可看出中英文技术社区的巨大差别。另外，中文网络的环境中戾气更重一些，人们对自我推销很反感，容易揣测你的意图。</p>
+</blockquote>
+<p>看到这一点，深有感触。说多确实容易说错，但即使这样，也应该多说。</p>
+<p>而且，我自己短的帖子写多了，也会觉得长文很难写，写一篇2000字的文章，可能要花一整个下午。把事情写清楚，也是一种需要锻炼的能力。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-boyfriend-for-a-day" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-20T06:10:59.000Z"><a href="/2024/05/20/boyfriend-for-a-day/">2024-05-20</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/20/boyfriend-for-a-day/"></a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/sIx6fpOVYe1n-ywDwSMi8Q">《一日男友》</a>：</p>
+<blockquote>
+<p>被夸奖、被鼓励、被倾听、被看见，我们把对这些事物的渴望投射到“爱”上。“爱”不会天然眷顾每一个人。为了得到它，一些女性四处求索，从手机里到现实中，从二次元到三次元。她们痴迷、成瘾，最终相信自己得到了爱，哪怕是短暂的，明码标价的爱。</p>
+</blockquote>
+<blockquote>
+<p>我在游戏中体验到一种超越现实的理想亲密关系。我们的恋爱从暧昧开始，他会假装不经意地关心我，暗中吃我和别人的醋，我们给彼此起专属的外号。随着了解增加，我发现他其实在很早之前就爱上了我。当然了，他还拥有几乎完美的外貌和身材。</p>
+</blockquote>
+      
+    </div>
+    <footer>
+      
+        
+          <div class="alignleft">
+            <a href="/2024/05/20/boyfriend-for-a-day/#more" class="more-link">继续阅读</a>
+          </div>
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-A-website-with-high-traffic" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-20T03:51:31.000Z"><a href="/2024/05/19/A-website-with-high-traffic/">2024-05-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/19/A-website-with-high-traffic/">一个流量很高的冷门网站</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>偶然发现一个网站 <a target="_blank" rel="noopener" href="https://floor796.com/">floor796</a>。</p>
+<p><img src="/../images/796.jpg"></p>
+<p>虽然我还不太知道这个网站有什么用，但我觉得很有意思，而且流量也出奇地高，月访问量超过 60 万。</p>
+<p><img src="/../images/796traffic.png"></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-卡马克和DOOM" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-19T10:09:38.000Z"><a href="/2024/05/19/%E5%8D%A1%E9%A9%AC%E5%85%8B%E5%92%8CDOOM/">2024-05-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/19/%E5%8D%A1%E9%A9%AC%E5%85%8B%E5%92%8CDOOM/">卡马克和 DOOM</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近读了一本书《DOOM 启示录》，这本书讲述了《DOOM》这款游戏的开发历程，以及其背后的主创之一——约翰·卡马克的故事。</p>
+<p><img src="/../images/%E5%8D%A1%E9%A9%AC%E5%85%8B.jpg" alt="Carmack"></p>
+<h4 id="约翰·卡马克"><a href="#约翰·卡马克" class="headerlink" title="约翰·卡马克"></a>约翰·卡马克</h4><p>约翰·卡马克是《DOOM》这款游戏的主要创作者，也是 id Software 的联合创始人之一。二十多年前，卡马克凭借《DOOM》在游戏界获得了极高的声誉。</p>
+<p><img src="/../images/littlecat2.jpg"></p>
+<h4 id="卡马克的猫"><a href="#卡马克的猫" class="headerlink" title="卡马克的猫"></a>卡马克的猫</h4><p>卡马克有一只猫，叫咪子，咪子陪伴了他很久，他编程时，猫就趴在电脑上面。甚至他的合伙人罗梅洛，都把咪子放到公司的员工名单中了。</p>
+<p>但后来那只猫脾气变得有点暴躁，总是在办公室闲游乱逛，还把新买的皮沙发尿了一通。</p>
+<p>卡马克就向公司的人宣布，咪子只会给他带来麻烦，他要把咪子送到动物收容所。</p>
+<p>即使他那个合伙人说，咪子送到收容所可能就活不了了，但卡马克不以为然，回到房间继续工作了。</p>
+<p>其他员工要是不合适，他就会踢除，甚至 id Software 的创始人之一罗梅洛，也是卡马克踢除的，因为他认为罗梅洛不再专注了。</p>
+<p><img src="/../images/DOOM.jpg" alt="DOOM"></p>
+<h4 id="卡马克的专注力"><a href="#卡马克的专注力" class="headerlink" title="卡马克的专注力"></a>卡马克的专注力</h4><p>因为卡马克性格就是这样，他写程序时很专注很专注。</p>
+<p>有一次，他同事为了测试卡马克的专注力，在他隔壁放色情片，并把音量调到最大，其他同事很快都被呻吟声吸引到了电视机旁。但卡马克好像一开始没听到，后来听到了，就“嗯？”了一声，并没有停止工作。</p>
+<h4 id="卡马克的黑客精神"><a href="#卡马克的黑客精神" class="headerlink" title="卡马克的黑客精神"></a>卡马克的黑客精神</h4><p>《DOOM 启示录》里提到过很多次：</p>
+<blockquote>
+<p>卡马克清楚地知道，他喜欢的事情就是——编程，他系统地安排着生活，以便把大部分时间都用于此。从制作 DOOM 时起，他就决定开始调整生物钟，以达到一种更孤寂更专注的境界，以避开罗梅洛的尖叫，避开记者的电话，避开所有这些日常生活中使他分心的事物。他开始强迫自己每天睡觉前多熬一个小时，然后第二天再晚一个小时到办公室。1995 年初，他养成了他觉得最理想的作息规律：下午四点到公司，凌晨四点离开。为了 Quake，他得全神贯注才行。</p>
+</blockquote>
+<blockquote>
+<p>卡马克听到艾尔建议他去申请专利后怒不可遏。</p>
+<p>卡马克认为，所有科学技术，以及文化、知识、理论，都是在前人的基础上发展起来的。去注册一项专利，就等于宣布说：”这个想法是我的想法，你不能使用或扩展它，因为，我“拥有”了这个想法，这听起来荒谬绝伦。</p>
+<p>专利制度威胁到他生命中最重要的事情：编写代码去解决问题。如果这个世界上充斥着各种专利，以至于他连解决一个简单的问题都要侵犯到某项专利的话，那么，这将不是他所乐意生活在其中的世界。</p>
+</blockquote>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-张一鸣和他的创业策略" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-18T10:16:46.000Z"><a href="/2024/05/18/%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%92%8C%E4%BB%96%E7%9A%84%E5%88%9B%E4%B8%9A%E7%AD%96%E7%95%A5/">2024-05-18</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/18/%E5%BC%A0%E4%B8%80%E9%B8%A3%E5%92%8C%E4%BB%96%E7%9A%84%E5%88%9B%E4%B8%9A%E7%AD%96%E7%95%A5/">张一鸣和他的创业策略</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>阑夕在<a target="_blank" rel="noopener" href="https://tech.sina.com.cn/csj/2018-11-17/doc-ihnyuqhh6042529.shtml">《理性蜕变中的张一鸣》</a>里说：</p>
+<blockquote>
+<ul>
+<li>黄章晋说，张一鸣的创业项目是区分人的筛子，被他捕获的，是自我塑造意识薄弱，延迟满足能力低下，很难在现实世界获得成就奖赏的人，用饭桌上的话来说就是，他们的时间和生命不值钱，是我们给了他们幸福感。</li>
+<li>创业可以分为两种，一种是比较感性的，知行合一的。做的事情就是自己真心认同并热爱的。另一种是理性的，是从逻辑判断某个市场存在机会，然后调度一切资源进入谋求成功，自己是否对这件事情抱有兴趣，倒是非必要的。显而易见，张一鸣属于后一种创业者。他绝对不会是今日头条和抖音上的内容消费者，甚至恰恰相反。</li>
+<li>认识张一鸣十几年的大学室友说这个人像机器一样，“不打牌，不看碟，也不玩游戏，读了四年大学，除了上课、看书，他的业余活动就是写代码和修电脑。显然，如果张一鸣在他的大学时代遇到今日头条，恐怕连下载按钮都不会去点。</li>
+<li>张一鸣甚至很清醒的表达过一个现在看来相当残酷的观点：人可以分为两类，一类是追求效率的少数精英，他们可以在现实生活里实现自我认知，另一类则是大部分需要围绕一个东西打转的人，不管这些东西是宗教、小说、爱情还是今日头条，用户需要沉迷其中。</li>
+<li>张一鸣说，RSS模式对于用户是不友善的，RSS要求用户具备相当高的信息组织能力，而且还要足够自律，在信息匮乏和信息过载之间获得平衡，而普通用户是做不到的。——这篇日志没有给他刚刚开始做的今日头条打半个字的广告，但指向性已经相当明确，因为判断用户需要信息饲养，这才有了今日头条的横空出世。</li>
+</ul>
+</blockquote>
+<p>其实也给我的其启示是，有时创业确实应该瞄准更广大的普罗大众，而不是少数过于精英的人。</p>
+<p>前一阵子还看到 github 上一个<a target="_blank" rel="noopener" href="https://github.com/1c7/chinese-independent-developer">中国独立开发者项目列表</a>，给我的感觉是，大部分程序员做的项目，实在太小众了，比方说很多 rss 相关的，很多生产力工具。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-极简设计和用户体验" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-17T03:48:56.000Z"><a href="/2024/05/16/%E6%9E%81%E7%AE%80%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/">2024-05-16</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/16/%E6%9E%81%E7%AE%80%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C/">极简设计和用户体验</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>上次读到<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2022/07/weekly-issue-216.html">《极简主义的胜利》</a>，也发现很多网站产品的风格很类似，包括网页和 logo。比如都是极简风格，比较喜欢用蓝色或紫色。其余的装饰比较少。</p>
+<p>比如：Glitter AI</p>
+<p><img src="/../images/GlitterAI.png" alt="Glitter AI"></p>
+<p>Supabase</p>
+<p><img src="/../images/supabase.png" alt="Supabase"></p>
+<p>Jira logo</p>
+<p><img src="https://jira.agileassets.com/images/atlassian-jira-logo-large.png" alt="Atlassian Jira and Jira Plugins - Jira"></p>
+<p>我之前觉得，千篇一律的设计太无聊了，为什么他们不能差异化地做出一些不同的设计呢？</p>
+<p>最近读了《华与华方法》，似乎找到了原因。</p>
+<p>一切创意的创作原则也是降低成本，降低识别成本，记忆成本，阅读城堡，理解成本，传播成本。因为创意本身不是目的，创意是要解决问题的。比如一家银行的logo，首先要和餐馆区分开，要让用户第一眼看到的时候，就知道是银行。其次才是和其他银行区分开。所以大多数银行的logo设计里，都有一个铜钱。</p>
+<p>各种网站的设计也是这样。首先需要让用户一目了然，用标题，落地页和正文，快速告诉用户这个网站是做什么的，然后才是美学上的设计。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-文摘" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-15T07:47:24.000Z"><a href="/2024/05/15/%E6%96%87%E6%91%98/">2024-05-15</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/15/%E6%96%87%E6%91%98/">文摘</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>《火星任务在地球》</p>
+<blockquote>
+<p>火星任务在我看来就是一个人生隐喻。它隐喻了5点，1、火星上将会发生的一切都是未知的，不确定的；2、火星任务是艰巨的，而且是从零开始，风险极大，性命攸关；3、执行火星任务，飞船飞行到某一个点之后，就再也没有回头路；4、火星任务孤立无援，抵达之后全靠自己。最后，也是最感性的一点：抵达火星之后，要么在众目睽睽之中存活，要么地球人眼睁睁看着初代殖民者去死。</p>
+<p>只要去掉第5点，那么火星任务和一次表白，一次外派工作，一次北漂沪漂，一次跨越半球的旅行，或者一次砸锅卖铁的创业没有什么不同。并不需要大推力火箭，太空飞船，维生舱等等东西，你才能执行一次火星任务，你的火星任务在地球上随时都有。现在有了直播和社交媒体，那么连第5点也能同时满足，无数人可以实时目睹你的崛起或是陨落，只要直播间别被封号就行。<br>……<br>听起来这是有钱任性的天才疯子才有的梦呓，但是火星任务作为一种人生隐喻是成功的。地球上的人很多，大部分都满足于现在的生活，但是依然有一部分，想要得到他们人生中的火星任务，哪怕极度不确定，哪怕极度危险，哪怕极度艰辛，他们也依然坚持要去。</p>
+<p>因为在过去的六个月，一年，乃至两年时间里，我通过后台留言看到许多读者陷入了沉郁、沮丧和绝望。“生活太艰难”和“做人太辛苦”是基本的两大主题。与此同时，保守的心理趋势也在流行，留言中读者相互劝勉：别辞职，别创业，别投资，别离开家乡父母，别去做任何异想天开的事情……和十年前，十五年前相比，心态完全颠倒了过来，给人一种“人生从此就这样了”的感受。</p>
+<p>人生就是不确定，不可知的旅程，充满了不确定性，是你从零开始的艰巨任务，风险极高，付出极大。当你在这个世界上降生，就已经经过了这饭点，再不能回头。在你的人生旅途中，大部分时间你都孤立无援，只能依仗自己—毫无疑问的，你现在就是在执行你的火星任务。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/FibCRKjcqABbE_uAoEf49Q">《观点和想法》</a></p>
+<blockquote>
+<p>从内容上来说，所有社交媒体的特点都是一样的：结果前置。什么意思呢？社交媒体上最匮乏也是最珍贵的东西，是人们的注意力。结果前置，就是吸引注意力最快当的方法。</p>
+</blockquote>
+<p>一些观点是结论，但有些观点，需要有一系列的逻辑支撑，这整套的逻辑，就是想法。</p>
+<blockquote>
+<p>但是，完整清晰地陈述一个想法，需要大量的篇幅，对读者也提出了很高的阅读要求，所以在社交媒体上基本没有什么市场。没有几个人愿意花时间认真阅读一下某个人的具体想法，人们只对结论性的东西，结果性的东西感兴趣。</p>
+</blockquote>
+<p>即使社交媒体的流量逻辑，更偏好「结果前置」，但作者和菜头仍然鼓励人们多分享想法，认为「想法 &gt; 观点」。</p>
+<p>和菜头认为，所谓大众的注意力，是一种极不靠谱的存在，非常短暂，来去倏忽。</p>
+<p>通过观点的表达，一个人确实可以在极短的时间内获得上百万人的关注。但是，这些注意力加在一起，价值约等于零。而输出想法则不然，虽然愿意看的人的确很少，阅读的门槛也会高很多，也确确实抵触了社交媒体的传播规律。不过，也会有少数人，愿意看一下你的想法，想要了解一下你的思考过程，最后会因此关注你。</p>
+<p>类似这样的一个关注者，其价值或超过一万名流量粉。他们在相当程度上能够理解你，所以你们之间存在着真正的沟通，也存在着真正的共识。这种较为深厚的人际关系，能够抵挡时光的侵蚀，并且建立起宝贵的信任。</p>
+<p>所谓的个人品牌，就是通过这样的方式建立起来的。</p>
+<p><a target="_blank" rel="noopener" href="https://cdixon.org/2010/09/12/if-you-arent-getting-rejected-on-a-daily-basis-your-goals-arent-ambitious-enough">《如果你没有日常地被拒绝，说明你的目标仍然野心不够》</a> 有时雇主拒绝你，可能有各种各样的原因，并不代表你这个人不行。像找工作这种事，只需要找到最好的一个就可以了，而不是很多工作的平均值。——2024.6.7</p>
+<p>这篇<a target="_blank" rel="noopener" href="https://4ark.me/posts/2024-01-01-2023-summary/">文章</a>，作者记述了他偶然创作的小插件获得成功的故事:</p>
+<blockquote>
+<p>机缘巧合下，我为帮助一位朋友解决他所面临的问题，用相近一个小时写了个插件。出乎意料的是，这个插件竟然在接下来的数个月里为我带来了远超日常工资的额外收入。</p>
+<p>这个插件技术含量并不高，对任何程序员来说都是易如反掌的事情，但对普通人来说，它能让成本降低无数倍，所以他们拥有强烈的付费意愿，最终一传十、十传百，很快，我的微信好友从 200 人不到变成 1000+。</p>
+</blockquote>
+<p>——2024.5.15</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-纪念陈皓" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-12T14:47:52.000Z"><a href="/2024/05/12/%E7%BA%AA%E5%BF%B5%E9%99%88%E7%9A%93/">2024-05-12</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/12/%E7%BA%AA%E5%BF%B5%E9%99%88%E7%9A%93/">纪念陈皓</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>2023年5月15日，偶然在 Twitter 上看到陈皓的讣告，但当时我还未曾听说过他，就在谷歌查了一下，因此就偶然知道了他的博客——<a target="_blank" rel="noopener" href="https://coolshell.cn/">酷壳</a>。</p>
+<p><img src="/../images/%E9%99%88%E7%9A%93.png" alt="陈皓"></p>
+<p>读陈皓的博客，会真的很感慨。他的博客的内容比较丰富，不仅有很多技术文章，也有一些承载着很强烈观点的文章。而且博客也写得非常好，通过它，再沿着各种外链顺藤摸瓜，可以很完整地接触到他的思想和价值观。</p>
+<p>举一个例子，他写过<a target="_blank" rel="noopener" href="https://coolshell.cn/articles/19464.html">《如何超过大多数人》</a>，里面写到</p>
+<blockquote>
+<p>要超过别人其实还是比较简单的，尤其在今天的中国，更是简单。因为，你只看看中国的互联网，你就会发现，他们基本上全部都是在消费大众，让大众变得更为地愚蠢和傻瓜。所以，在今天的中国，你基本上不用做什么，只需要不使用中国互联网，你就很自然地超过大多数人了。当然，如果你还想跟他们彻底拉开，甩他们几个身位，把别人打到底层，下面的这些“技巧”你要多多了解一下。</p>
+<p>在信息获取上，你要不断地向大众鼓吹下面的这些事：</p>
+<p>让大家都用百度搜索引擎查找信息，订阅微信公众号或是到知乎上学习知识……要做到这一步，你就需要把“百度一下”挂在嘴边，然后要经常在群或朋友圈中转发微信公众号的文章，并且转发知乎里的各种“如何看待……”这样的文章，让他们爱上八卦，爱上转发，爱上碎片。</p>
+<p>让大家到微博或是知识星球上粉一些大咖，密切关注他们的言论和动向……是的，告诉大家，大咖的任何想法一言一行都可以在微博、朋友圈或是知识星球上获得，让大家相信，你的成长和大咖的见闻和闲扯非常有关系，你跟牛人在一个圈子里你也会变牛。</p>
+<p>把今日头条和抖音这样的APP推荐给大家……你只需要让你有朋友成功地安装这两个APP，他们就会花大量的时间在上面，而不能自拔，要让他们安装其实还是很容易的，你要不信你就装一个试玩一会看看（嘿嘿嘿）。</p>
+</blockquote>
+<p>陈皓还提出了很多警告：</p>
+<blockquote>
+<ol>
+<li>不要混淆认知和知识，以为开阔认知就是学习</li>
+<li>不要使用碎片时间学习，习惯利用碎片时间吃快餐后，就会失去精读一本书的耐性。</li>
+<li>玩具手枪是易用的，重武器是难以操控的，多给他们一些玩具，这样他们就会对玩具玩地得心应手，觉得玩玩具就是自己的专业。</li>
+</ol>
+</blockquote>
+<p>这篇文章，不仅是有效的心灵鸡汤，很能让人缓解焦虑，而且也指出了我平时很多司空见惯，但实际上有害的做法。比如我现在摆弄各种玩具多了，就发现已经忘了很多之前本科学的重武器，很多数学定理已经记不太清了。</p>
+<p>陈皓还有一些观点，比如他说，<a target="_blank" rel="noopener" href="https://coolshell.cn/articles/9308.html">「作环保的程序员，从不用百度开始」</a>，我之前虽然对百度没有感情，但后来发现向百度提交站点地图都极度麻烦，而且即使主动提交了网站，百度仍然没有收录我的个人网站，就会想起陈皓的那篇文章，感慨百度还在自暴自弃；<a target="_blank" rel="noopener" href="https://coolshell.cn/articles/18360.html">「程序员练级攻略」</a>介绍了学习金字塔和主动学习的重要性，我也是深受此影响，因此即使很麻烦，仍然搭建了个人博客，并坚持输出，把自己学到的知识教给别人。</p>
+<p>陈皓对我影响深远，想说的太多，却又说不出话来，谨以此文纪念陈皓！</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-华与华的品牌出事论" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-11T16:25:19.000Z"><a href="/2024/05/11/%E5%8D%8E%E4%B8%8E%E5%8D%8E%E7%9A%84%E5%93%81%E7%89%8C%E5%87%BA%E4%BA%8B%E8%AE%BA/">2024-05-11</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/11/%E5%8D%8E%E4%B8%8E%E5%8D%8E%E7%9A%84%E5%93%81%E7%89%8C%E5%87%BA%E4%BA%8B%E8%AE%BA/">华与华的品牌出事论</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>品牌出现负面舆论，我自然而然的想法也是应该去压舆论控评，降低负面影响。</p>
+<p>但最近读了<a target="_blank" rel="noopener" href="https://book.douban.com/subject/35079917/">《华与华方法》</a>，书中有一个理论，「品牌出事论·品牌失灵论」，很有意思，分享给大家。</p>
+<p>品牌出事论，指品牌就是为了出事而生的，如果不出事，就不需要品牌了。</p>
+<p>品牌失灵论，指品牌出事时，主动认错并买单，则品牌有效，反之，如果出事了不承认，甚至抵赖删帖，想办法压舆论，那么品牌就是失灵的。</p>
+<p>例如，一些网店卖了假冒伪劣产品，被封了换个号继续卖，因为他们的品牌本身没有价值，可以随意抛弃，相当于出事了并没有为错误买单。而一些大品牌，要是出事了，可能会毁掉整个品牌。因此更有动力提供好产品。</p>
+<p>作者认为，</p>
+<ol>
+<li><p>品牌出事时，应该马上认错，接受惩罚，甚至可以加大对自己的惩罚，这样就是最佳品牌，可以赢得顾客的信任。</p>
+</li>
+<li><p>维持完美人设没有好处，因为很容易崩塌，会加大风险。</p>
+</li>
+<li><p>会投诉的用户，是最好的用户。用户投诉的时候，就是你赢得终身终身用户的时候。因为你只要倾听用户的投诉，并解决他的问题，甚至给予一定的补偿，他就会终身信任你。</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-「食贫道」和对内容的思考" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-09T07:08:11.000Z"><a href="/2024/05/09/%E3%80%8C%E9%A3%9F%E8%B4%AB%E9%81%93%E3%80%8D%E5%92%8C%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%80%83/">2024-05-09</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/09/%E3%80%8C%E9%A3%9F%E8%B4%AB%E9%81%93%E3%80%8D%E5%92%8C%E5%AF%B9%E5%86%85%E5%AE%B9%E7%9A%84%E6%80%9D%E8%80%83/">「食贫道」和对内容的思考</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>前一阵子偶然发现一个B站up主「食贫道」，做出了很多很有深度的视频，比如「迦南孤儿」，进入战时的以色列，从不同的角度介绍加以冲突；「迷失东京」，选题居然选了日本黑帮，日本风俗业等题材。</p>
+<p>最近正好读到一篇「食贫道」对内容的思考：</p>
+<ul>
+<li><p>我对自己的定位一个“正能量硬核美食up主”，正能量是对自己的要求，“硬核”则是希望通过美食来传递不一样的内容。</p>
+</li>
+<li><p>事实上，我们到现在做片子都没有脚本，完全是即兴、靠对现场的感觉和冲动，怎么想就怎么干了。然后在后期再去探索自己情绪的爆发点，朝爆发点上使劲儿。</p>
+<p>这其实跟我的工作经历也有关，做调查记者的时候，是不能写脚本的——那叫主题先行，所以，其实即便是做美食，过去做内容的感觉还在——在生活中找热点，到现场去捕捉细节，然后在观众的反馈中寻找答案。</p>
+<p>然后一开始，主要都是关注哪些饭店有哪些好吃的，虽然很开心，但是开心之余会有落寞吧，会觉得自己做的“太轻”了，自己的创作意图和心愿，不止是美食那么简单。其实食物是人类生活赖以生存的基础，透过食物，应该有更多的情感、理念、意义去表达，所以后面就开始想做特别节目。（如果能想到，能投过食物来传达更深层次的东西，内容也会变得更有深度）</p>
+</li>
+<li><p>「有意义的内容」：首先要明确，自媒体是为谁服务的？可能说起来有些人会觉得很冠冕堂皇，但我认为内容创作者就是为人民服务的。这是一个基本概念，不管你是路边说书的，还是自媒体搞直播的，你为公众生产内容，就应该明确这个位置和导向，如果偏离了这个，那么早晚就会出问题。（这里感觉「人民」的概念好宽泛，不再细分一下市场吗？）</p>
+</li>
+<li><p>「消费场景」：你的视频是谁在看？在哪里看？什么时候看？这个问题的答案，决定了受众的痛点，决定了选题的方向，再进一步，决定了曝光量、阅转比、转化率。</p>
+<p>以美食为例，很多美食吃播视频消费的场景是大家吃饭的时候。出于人类本能的需求，美食视频本身食物的特写、主播吃的很香吃的很多，甚至吃得吧唧吧唧，都可以极大地促进受众的食欲。在这种消费场景下，我们出现了大胃王等各种吃播。但问题是随着能吃的人一代一代出，你一年能吃那么多，能连续不停吃下去吗？仅仅依靠消费场景和视觉刺激，繁荣是长久的吗？这势必要寻找自己更有内涵的人设和内容，才能让观众始终保持对你的关注。</p>
+</li>
+</ul>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-理解Merkle-Tree（默克尔树）" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-09T04:02:23.000Z"><a href="/2024/05/09/%E7%90%86%E8%A7%A3Merkle-Tree%EF%BC%88%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%EF%BC%89/">2024-05-09</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/09/%E7%90%86%E8%A7%A3Merkle-Tree%EF%BC%88%E9%BB%98%E5%85%8B%E5%B0%94%E6%A0%91%EF%BC%89/">理解Merkle-Tree（默克尔树）</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>默克尔树，也称哈希树。</p>
+<p><strong>定义</strong>：若一种树，满足每个叶节点等于数据块的哈希值，每个非叶节点都等于其子节点的哈希值。</p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Hash_Tree.svg/1200px-Hash_Tree.svg.png" alt="Merkle tree - Wikipedia"></p>
+<p>例如，假设我们要验证以下数据：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hello, world!</span><br></pre></td></tr></table></figure>
+
+<p>我们可以将其分成两个小块：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hello, </span><br><span class="line">world!</span><br></pre></td></tr></table></figure>
+
+<p>然后计算每个小块的哈希值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">SHA256(Hello, ) = 1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad</span><br><span class="line">SHA256(world!) = 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64</span><br></pre></td></tr></table></figure>
+
+<p>接下来，将这两个哈希值配对并计算它们的哈希值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SHA256(1115dd800feaacefdf481f1f9070374a2a81e27880f187396db67958b207cbad, 098f6bcd4624e37a20471f1875a427d7d1172a5b28685e5b637d5cc72f707d64) = 3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure>
+
+<p>现在只剩下一个哈希值，这就是默克尔树的根哈希值：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">3a7bd3e2360a3d29eea436fcfb7e44c735d117c42d1c1835420b6b9942dd4f1b</span><br></pre></td></tr></table></figure>
+
+
+
+<p><strong>作用</strong>：</p>
+<p>默克尔树主要防止传输的数据不被篡改。一个默克尔树，若某个数据块的内容发生修改，则对应的叶节点的哈希值就会改变，根哈希值就也会发生改变。所以，我们要验证数据是否发生篡改，只需要比较哈希值即可。</p>
+<p>在区块链中，例如比特币，假如比特币不用默克尔树，那么每个节点都必须保留每笔比特币交易的完整内容，这将是极其庞大的数据。而利用默克尔树，只储存并比较根哈希值。</p>
+<p>参考资料：<a target="_blank" rel="noopener" href="https://www.simplilearn.com/tutorials/blockchain-tutorial/merkle-tree-in-blockchain">https://www.simplilearn.com/tutorials/blockchain-tutorial/merkle-tree-in-blockchain</a></p>
+<p>附比特币计算默克尔树-根哈希值的源码：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">uint256 ComputeMerkleRoot(std::vector&lt;uint256&gt; hashes, bool* mutated) &#123;</span><br><span class="line"></span><br><span class="line">  bool mutation = false;</span><br><span class="line"></span><br><span class="line">  while (hashes.size() &gt; 1) &#123;</span><br><span class="line"></span><br><span class="line">​    if (mutated) &#123;</span><br><span class="line"></span><br><span class="line">​      for (size_t pos = 0; pos + 1 &lt; hashes.size(); pos += 2) &#123;</span><br><span class="line"></span><br><span class="line">​        if (hashes[pos] == hashes[pos + 1]) mutation = true;</span><br><span class="line"></span><br><span class="line">​      &#125;</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    if (hashes.size() &amp; 1) &#123;</span><br><span class="line"></span><br><span class="line">​      hashes.push_back(hashes.back());</span><br><span class="line"></span><br><span class="line">​    &#125;</span><br><span class="line"></span><br><span class="line">​    SHA256D64(hashes[0].begin(), hashes[0].begin(), hashes.size() / 2);</span><br><span class="line"></span><br><span class="line">​    hashes.resize(hashes.size() / 2);</span><br><span class="line"></span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  if (mutated) *mutated = mutation;</span><br><span class="line"></span><br><span class="line">  if (hashes.size() == 0) return uint256();</span><br><span class="line"></span><br><span class="line">  return hashes[0];</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-不要给牦牛剃毛" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-08T10:18:21.000Z"><a href="/2024/05/08/%E4%B8%8D%E8%A6%81%E7%BB%99%E7%89%A6%E7%89%9B%E5%89%83%E6%AF%9B/">2024-05-08</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/08/%E4%B8%8D%E8%A6%81%E7%BB%99%E7%89%A6%E7%89%9B%E5%89%83%E6%AF%9B/">不要给牦牛剃毛</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>今天读到一篇有意思的文章<a target="_blank" rel="noopener" href="https://seths.blog/2005/03/dont_shave_that/">《不要给牦牛剃毛》</a>（Don’t Shave That Yak!）。</p>
+<p>给牦牛剃毛（Yak Shaving）指的是一系列步骤的最后一步。当您发现需要做的事情时，就会发生这些步骤：</p>
+<blockquote>
+<p> “我今天想给汽车打蜡。”<br>“哎呀，打蜡要用到软管，软管还是冬天坏了。我需要在家得宝买一个新的。<br>“但是家得宝在 Tappan Zee 桥的另一边，没有我的 EZPass 到那里太痛苦了，因为要交通行费！”<br>“等等！我好像可以借用我邻居的 EZPass……”<br>“不会的！鲍勃不会把他的 EZPass 借给我，直到我还我儿子借来的 mooshi 枕头。”<br>“我们还没有还给他，是因为一些枕芯掉了出来，我们需要剪些牦牛毛来重新填充它。”<br>接下来你知道的，你在动物园里，给牦牛剃毛，这样你就可以给你的车打蜡了。</p>
+</blockquote>
+<p>解决方案也很简单，可以参考马斯克的「五步工作法」：先判断每项步骤，把能删除的全部删除了；再做简化和优化。</p>
+<p>比如在上面的例子中，就是不要去家得宝买软管。</p>
+<p>有的时候，现在的「完成」比以后的「完美」更重要。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-好看的网站" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-05-02T02:23:12.000Z"><a href="/2024/05/01/%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%BD%91%E7%AB%99/">2024-05-01</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/05/01/%E5%A5%BD%E7%9C%8B%E7%9A%84%E7%BD%91%E7%AB%99/">好看的网站</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://onepagelove.com/">onepagelove</a> 网站收集了一些好看的单页网站。我觉得可以为自己做网站提供一些思路。这里摘录几个例子。</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://mubasic-test.webflow.io/">mubasic</a></li>
+</ol>
+<p><img src="/../images/mubasic-test.webflow.io.png" alt="image-20240502100624374"></p>
+<p>mubasic网站的设计很独特，之前没见过类似的设计。但缺点似乎是不是很实用，用户点进去会不知道该做什么。</p>
+<ol start="2">
+<li><a target="_blank" rel="noopener" href="https://www.superlist.com/">superlist</a></li>
+</ol>
+<p><img src="/../images/superlist.png" alt="image-20240502101407008"></p>
+<ol start="3">
+<li><a target="_blank" rel="noopener" href="https://newestamericans.com/">Newest Americans</a></li>
+</ol>
+<p><img src="/../images/NewestAmericans.png" alt="image-20240502101647885"></p>
+<p>感觉做网页设计的方式有很多种，或许不应该拘泥于过去各种成熟的模板。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-一个人还能在网上写下自己的感慨，那么他的个人境遇就不会差到哪里去。" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-28T14:40:07.000Z"><a href="/2024/04/28/%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%BF%98%E8%83%BD%E5%9C%A8%E7%BD%91%E4%B8%8A%E5%86%99%E4%B8%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%9F%E6%85%A8%EF%BC%8C%E9%82%A3%E4%B9%88%E4%BB%96%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%A2%83%E9%81%87%E5%B0%B1%E4%B8%8D%E4%BC%9A%E5%B7%AE%E5%88%B0%E5%93%AA%E9%87%8C%E5%8E%BB%E3%80%82/">2024-04-28</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/28/%E4%B8%80%E4%B8%AA%E4%BA%BA%E8%BF%98%E8%83%BD%E5%9C%A8%E7%BD%91%E4%B8%8A%E5%86%99%E4%B8%8B%E8%87%AA%E5%B7%B1%E7%9A%84%E6%84%9F%E6%85%A8%EF%BC%8C%E9%82%A3%E4%B9%88%E4%BB%96%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%A2%83%E9%81%87%E5%B0%B1%E4%B8%8D%E4%BC%9A%E5%B7%AE%E5%88%B0%E5%93%AA%E9%87%8C%E5%8E%BB%E3%80%82/"></a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>「我想，一个人还能在网上写下自己的感慨，那么他的个人境遇就不会差到哪里去。」——<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/dgXWMrTr0S1EUEFtA0sHyQ">槽边往事</a></p>
+<p>我自己也有这样的体会，自己发社媒多的时候，说明心境起码没有太糟。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-「你的特质需要被保护」" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-28T04:52:15.000Z"><a href="/2024/04/28/%E3%80%8C%E4%BD%A0%E7%9A%84%E7%89%B9%E8%B4%A8%E9%9C%80%E8%A6%81%E8%A2%AB%E4%BF%9D%E6%8A%A4%E3%80%8D/">2024-04-28</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/28/%E3%80%8C%E4%BD%A0%E7%9A%84%E7%89%B9%E8%B4%A8%E9%9C%80%E8%A6%81%E8%A2%AB%E4%BF%9D%E6%8A%A4%E3%80%8D/">「你的特质需要被保护」</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>今天读到一个<a target="_blank" rel="noopener" href="https://www.owenyoung.com/thoughts/">帖子</a>，作者Owen认为「你的特质需要被保护」。</p>
+<p>特质包括对产品的想法，直觉和审美。</p>
+<p>Owen发现，当他和某些圈子混熟之后，很容易受到他们的影响，以前坚持的想法会和所在的圈子看齐，（可能是为了被接纳吧），从而离那个「有特质的自己越来越远」。</p>
+<p>而特质是很宝贵的，需要被保护起来。</p>
+<p>作者建议，最好一开始就和不喜欢的圈子 or 人保持一定距离。</p>
+<p>我感觉，隐身于一个群体里，太安全了。而「特质」是一种差异化，差异化就是竞争力。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-TypeScript简史" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-27T05:18:18.000Z"><a href="/2024/04/27/TypeScript%E7%AE%80%E5%8F%B2/">2024-04-27</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/27/TypeScript%E7%AE%80%E5%8F%B2/">TypeScript 简史</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <h2 id="2010–2012：开始"><a href="#2010–2012：开始" class="headerlink" title="2010–2012：开始"></a>2010–2012：开始</h2><p>TypeScript 于 2012 年 10 月由 Microsoft 首次发布，由 C# 和 Turbo Pascal 的创建者 Anders Hejlsberg 领导该项目。 </p>
+<p>TypeScript 最初动机是想解决 JavaScript 的缺点。JavaScript 是一种动态类型语言，由于缺乏类型检查，所以容易出现运行时错误。 TypeScript 旨在提供可选的静态类型和面向对象的编程功能，使开发人员更轻松地构建，这对大型程序来说，更加有效。</p>
+<p>由于 TypeScript 是 JavaScript 的严格超集，因此它保留了与现有 JavaScript 代码的兼容性。 TypeScript 编译器 ( <code>tsc</code> ) 将 TypeScript 代码转换为 JavaScript，使其可以在任何支持 JavaScript 的环境中运行。这确保了开发人员可以在他们的项目中逐渐采用 TypeScript，而无需重写整个代码库。</p>
+<p>也就是说，任何<code>.js</code>文件，只要将<code>.js</code>文件重命名为<code>.ts</code>文件，这些文件应该能够在TypeScript项目中正常工作，（除非JavaScript代码使用了TypeScript不支持的特性或模式（例如，使用了与TypeScript的类型系统冲突的代码））。</p>
+<h2 id="2012-2018-年：TypeScript-受到关注，并成为主流"><a href="#2012-2018-年：TypeScript-受到关注，并成为主流" class="headerlink" title="2012-2018 年：TypeScript 受到关注，并成为主流"></a>2012-2018 年：TypeScript 受到关注，并成为主流</h2><p>TypeScript 早年在开发者社区中的采用率稳步增长。 越来越多的流行的前端框架也开始使用TypeScript，例如Angular, React, Vue.js, Next.js, Nuxt.js, Svelte (通过svelte-preprocess支持TypeScript), Stencil, Aurecil, Ember.js。 React、Vue 和其他流行项目在其包中添加了 TypeScript 声明，使开发人员能够从 TypeScript 的类型检查和自动完成功能中受益。这反过来又鼓励更多的开发人员在他们的项目中采用 TypeScript，创建一个积极的反馈循环，进一步推动 TypeScript 的增长。</p>
+<p>在此期间，TypeScript 的类型系统也发生了重大改进，引入了联合类型、交集类型和映射类型等功能。这些增强功能使开发人员能够表达复杂的类型关系，使 TypeScript 更加强大和灵活。</p>
+<h2 id="2018-年至今：TypeScript-的成熟"><a href="#2018-年至今：TypeScript-的成熟" class="headerlink" title="2018 年至今：TypeScript 的成熟"></a>2018 年至今：TypeScript 的成熟</h2><p>近年来，TypeScript 已经成熟成为现代 Web 开发的主要工具。由于它结合了类型安全性、改进的工具以及与 JavaScript 生态系统的兼容性，该语言已在开发人员和组织中广泛采用。</p>
+<p>Microsoft 的 TypeScript 团队继续迭代该语言，定期发布引入新功能和增强功能的版本。与此同时，更广泛的 JavaScript 社区也开始接受 TypeScript，Next.js、NestJS 和 GraphQL 等流行项目提供了一流的开箱即用的 TypeScript 支持。</p>
+<p><a target="_blank" rel="noopener" href="https://medium.com/totally-typescript/a-brief-history-of-typescript-from-origin-to-modern-adoption-791368ec4b91">参考原文</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-关于看书" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-23T14:47:07.000Z"><a href="/2024/04/23/%E5%85%B3%E4%BA%8E%E7%9C%8B%E4%B9%A6/">2024-04-23</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/23/%E5%85%B3%E4%BA%8E%E7%9C%8B%E4%B9%A6/">关于看书</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>今天是「世界读书日」</p>
+<p>可能是之前学数学专业的缘故，自己看大部分书都很容易进入心流。也因此时常觉得光阴蹉跎，时间荒废，很耽误buidl。</p>
+<p>而且，看书的时候，绝大多数都是一个人，和其他人关系不大，也很难说为社会创造了什么。</p>
+<p>之前有一个朋友还写过《读书，是一种不太窝囊的逃避方式》。有时确实觉得看书太多会妨害自身发展。还因此多次和朋友立下flag，要少读些书。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-更孤独的男人" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-23T12:45:58.000Z"><a href="/2024/04/23/%E6%9B%B4%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%94%B7%E4%BA%BA/">2024-04-23</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/23/%E6%9B%B4%E5%AD%A4%E7%8B%AC%E7%9A%84%E7%94%B7%E4%BA%BA/">更孤独的男人</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>五分之一的男性没有亲密的朋友——<a target="_blank" rel="noopener" href="https://www.thetimes.co.uk/article/all-the-lonely-people-are-men-a-fifth-have-no-friends-6rzvhl736">《泰晤士报》</a></p>
+<p>前一阵子也发现，自己似乎和女生交朋友要比和男生要更轻松更快乐一点。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-提高摄影水平的建议" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-22T06:47:28.000Z"><a href="/2024/04/22/%E6%8F%90%E9%AB%98%E6%91%84%E5%BD%B1%E6%B0%B4%E5%B9%B3%E7%9A%84%E5%BB%BA%E8%AE%AE/">2024-04-22</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/22/%E6%8F%90%E9%AB%98%E6%91%84%E5%BD%B1%E6%B0%B4%E5%B9%B3%E7%9A%84%E5%BB%BA%E8%AE%AE/">提高摄影水平的建议</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://yayu.net/264.html">《提高摄影水平的100条建议》</a></p>
+<ol>
+<li><p>三分法则99%的时候都有效。（三分法则：人们的目光总是自然落在画面三分之二处的位置上，尽量使主要的被摄体位于画面三等分线的焦点上，效果会比位于中心位置更好。）</p>
+</li>
+<li><p>多去户外进行摄影，而不是成天呆在摄影棚里。</p>
+</li>
+<li><p>发现并捕捉到平凡中的美，这就是一张好照片。</p>
+</li>
+<li><p>好镜头给不了你好照片。</p>
+</li>
+<li><p>少花点时间看别人的作品，多花点时间自己去拍。</p>
+</li>
+<li><p>别把你的单反带到派对上去。</p>
+</li>
+<li><p>美眉们超爱摄影师。</p>
+</li>
+<li><p>拍照时靠近一点，出来的效果总会好一点。</p>
+</li>
+<li><p>在拍照时你要成为场景的一部分，而不是一个偷窥者。</p>
+</li>
+<li><p>蹲下拍照，你的照片会更有趣。</p>
+<p><img src="/../images/DALL%C2%B7E%202024-04-22%2014.48.48%20-%20A%20stunning%20night%20view%20of%20an%20illuminated%20city%20skyline%20reflected%20in%20the%20water,%20with%20twinkling%20lights%20and%20clear%20starry%20sky.webp"></p>
+</li>
+<li><p>只对外展示你最优秀的作品。</p>
+</li>
+<li><p>三思而后按快门。</p>
+</li>
+<li><p>随时随地带着相机，记着，随时随地。</p>
+</li>
+<li><p>不要让摄影妨碍到你享受生活。</p>
+</li>
+<li><p>送些你的照片给朋友们。</p>
+</li>
+<li><p>也送给陌生人一些你的作品。</p>
+</li>
+<li><p>永远别停止拍照。</p>
+</li>
+<li><p>摄影不只是拍照，更是一种生活哲学。</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-阿拉伯的劳伦斯" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-21T15:45:54.000Z"><a href="/2024/04/21/%E9%98%BF%E6%8B%89%E4%BC%AF%E7%9A%84%E5%8A%B3%E4%BC%A6%E6%96%AF/">2024-04-21</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/21/%E9%98%BF%E6%8B%89%E4%BC%AF%E7%9A%84%E5%8A%B3%E4%BC%A6%E6%96%AF/">《阿拉伯的劳伦斯》书评</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近读完了一本书<a target="_blank" rel="noopener" href="https://book.douban.com/subject/25883305/">《阿拉伯的劳伦斯》</a>，觉得蛮好看。</p>
+<p><img src="/../images/Lawrence%20of%20Arabia.jpg"></p>
+<p>T. E.劳伦斯是1916至1918年阿拉伯起义中，英国与费萨尔一世的联络官，为阿拉伯民族主义解放事业做出了很大贡献。</p>
+<p>最吸引我的是，T. E.劳伦斯原本只是一个普通的牛津大学的学生，在开罗的办公室里看地图和写公文。却通过自己惊人的主观能动性，为自己创造也很多机会。也使自己成为英国在奥斯曼唯一的，不可替代的重要角色。</p>
+<p>只说一个小例子，在阿拉伯起义前夕，因为宗教原因，侯赛因国王只允许英国人最多在海岸活动，不允许进入内地。但劳伦斯却想办法进入腹地，跟阿拉伯人穿一样的衣服，过一样的生活。一开始自然会有点格格不入，阿拉伯军队没有英国的那种效率。费萨尔甚至要花很多时间和部落酋长交流。但在当时，似乎只有劳伦斯一人愿意脱下英国军装，进入阿拉伯的群体，这才让他能真正理解阿拉伯民族，也能和费萨尔建立比较密切的关系。</p>
+<p>原本劳伦斯只是英国与阿拉伯人的临时联络官，但正是因为和费萨尔建立的独特的联系，才使劳伦斯的职位固定了下来。</p>
+<p>而在后面，因为劳伦斯能收集到大量的一手信息，所以能形成自己的判断，提出最独特的建议，也让他能做出很多正确的决策。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-两个学习小技巧" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-19T10:12:58.000Z"><a href="/2024/04/19/%E4%B8%A4%E4%B8%AA%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%8A%80%E5%B7%A7/">2024-04-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/19/%E4%B8%A4%E4%B8%AA%E5%AD%A6%E4%B9%A0%E5%B0%8F%E6%8A%80%E5%B7%A7/">两个学习小技巧</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <h4 id="原则一-要明白自己知道什么，不知道什么"><a href="#原则一-要明白自己知道什么，不知道什么" class="headerlink" title="原则一.要明白自己知道什么，不知道什么"></a>原则一.要明白自己知道什么，不知道什么</h4><p>如果自以为掌握了某些知识，但事实并非如此时，我们可能就会停止学习，或者以一种低效的方式学习。</p>
+<p>有时自己主观上或许很难清楚自己的掌握情况，此时可以借助适当的自我测验。</p>
+<h4 id="原则二-不要将「容易」「熟悉」当作「知道」"><a href="#原则二-不要将「容易」「熟悉」当作「知道」" class="headerlink" title="原则二.不要将「容易」「熟悉」当作「知道」"></a>原则二.不要将「容易」「熟悉」当作「知道」</h4><p>认知心理学的研究表明：</p>
+<p>①关于自我测验，曾经试图回答一个问题的行为，更可能在再次遇到这个问题时正确回答。</p>
+<p>②通过自我测试进行学习由于反复阅读。因为在把信息储存到记忆时，对信息进行整合加工，比简单重复的效果好。</p>
+<p>因此可以在再次阅读之前，进行自我测试，或者主动向自己问几个问题。</p>
+<p>作者建议：</p>
+<p>1.在学习之前，要充分休息（知识休息或者学点其他东西），然后再自我测试。</p>
+<p>2.分批次学习的记忆效果优于一次性学完。</p>
+<p>3.多次重复「自我测试、核对，过一段时间再自我测试」，如此往复比单纯通过看书更有效。</p>
+<p>当我看到第一条原则时，就发现，自己对很多知识的掌握低于自己想象中的那样。而且自己很少对自己测试。或许像学习金字塔中说的那样，让自己投入实践，或写成文字教程，也是一种自我测试吧。</p>
+<p>参考资料：《认知心理学——心智、研究与生活（原著第五版）》E.Bruce Goldstein著，张明 译</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-无限游戏和有限游戏" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-04-10T15:25:35.000Z"><a href="/2024/04/10/%E6%97%A0%E9%99%90%E6%B8%B8%E6%88%8F%E5%92%8C%E6%9C%89%E9%99%90%E6%B8%B8%E6%88%8F/">2024-04-10</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/04/10/%E6%97%A0%E9%99%90%E6%B8%B8%E6%88%8F%E5%92%8C%E6%9C%89%E9%99%90%E6%B8%B8%E6%88%8F/"></a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p><a target="_blank" rel="noopener" href="https://www.owenyoung.com/thoughts/">摘录</a>：笔记是一种无限游戏，没有结果，只有过程。而博客是一种有限游戏，因为产出了公开的作品：博文。这说明我们不应该当一个完美主义者，只在脑海中或草稿箱中保留想法，反之我们应该尽可能完成作品，公开它，然后不断的练习这个过程。 我更坚定做一个以公开为目的的笔记软件了。</p>
+<p>事实上，感觉经历了长时间的应试教育，会更熟悉有限游戏。如果将无限游戏转成有限游戏，或许能做得更好。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-create-for-yourself" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-03-24T21:37:22.000Z"><a href="/2024/03/24/create-for-yourself/">2024-03-24</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/03/24/create-for-yourself/">为自己而创作</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>感觉为自己做产品，就像为自己写作一样。为自己做产品，更能做出好产品。<br><a target="_blank" rel="noopener" href="https://samhawken.bearblog.dev/write-for-yourself/">「如果你为别人而不是为自己写作，你的文字就会死在纸上，你会发现你的内心也死了。」</a></p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-为什么要写随笔" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-03-19T10:43:48.000Z"><a href="/2024/03/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E9%9A%8F%E7%AC%94/">2024-03-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/03/19/%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%86%99%E9%9A%8F%E7%AC%94/">为什么要写随笔</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>我怕忘记发生了什么。我怕忘记现在自己的思想面貌</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-虚拟机和元宇宙" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-03-19T07:54:07.000Z"><a href="/2024/03/19/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E5%85%83%E5%AE%87%E5%AE%99/">2024-03-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/03/19/%E8%99%9A%E6%8B%9F%E6%9C%BA%E5%92%8C%E5%85%83%E5%AE%87%E5%AE%99/">虚拟机和元宇宙</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>读到一篇好玩的<a target="_blank" rel="noopener" href="https://wygxmew.github.io/posts/why-am-i-addicted-to-installing-systems/">文章</a></p>
+<p>作者讲述为什么他沉迷于在虚拟机中安装系统。</p>
+<p>读下来感觉好像沉迷于在虚拟机中安装系统，就好像沉迷于在 Minecraft 中建造房子一样，也好像在元宇宙里打工一样。</p>
+<p>「现实中我买不起房，可是我在虚拟机里装一个系统，相当于搭建一个数字房子，各种软件应用相当于其中的家装设施，从中体验到的成就感和快乐满足，跟现实中置房装修本质上不都一样吗。我的电脑系统就是与我的精神世界相连的家，现实世界里我的那个家早已破败不堪，基本上已经不抱幻想了，而数字世界里我的那个家则井井有条、日新月异，我的大部分时间和精力都花在这里。」</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-ReadingIsFundamentalOrNot" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-03-19T07:24:01.000Z"><a href="/2024/03/19/ReadingIsFundamentalOrNot/">2024-03-19</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/03/19/ReadingIsFundamentalOrNot/">读《Because Reading is Fundamental》有感</a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>今天读到<a target="_blank" rel="noopener" href="https://blog.codinghorror.com/because-reading-is-fundamental-2/">《Because Reading is Fundamental》</a>:</p>
+<p>Ars Technica在2011年进行了一个小实验。当他们发布《枪支更有可能在家中被愚蠢地使用，而非自卫》，文章第七段的最后一句话中嵌入了这段文字：</p>
+<p>如果您已经阅读了这篇文章，请在下面的评论中提及香蕉。我们很确定这个故事的 90% 的受访者甚至不会先阅读它。</p>
+<p>我也特意去翻了原来的评论，发现第一个提到香蕉的，已经在第三页了，可见大部分人在匆忙发表评论前，并没有读完全文。（当然，也有可能是第七段末尾是后来补充上去的）</p>
+<p> Farhad Manjoo在<a target="_blank" rel="noopener" href="http://www.slate.com/articles/technology/technology/2013/06/how_people_read_online_why_you_won_t_finish_this_article.html?ref=blog.codinghorror.com">You Won’t Finish This Article</a>中收集了这样一个数据<img src="/../images/article-scroll-graph-slate.png"></p>
+<p>实验表明，我们不需要激励谈话。已经有太多人说了太多的话了。我们迫切需要鼓励倾听。（另一面是，有人也说，1%的用户产生了90%的内容，9%的用户创造了10%的内容，而其他90%的人主要是沉默的观察者。）</p>
+<p>作者问，假设你对二战感兴趣。你更愿意和谁讨论这个问题？是刚刚浏览了维基百科文章的家伙，还是阅读了《第三帝国的兴衰》全文的女孩？</p>
+<p>作者也提出了一些鼓励阅读的建议：</p>
+<p>1.消除阅读中断，主要是分页。（让我想起短视频flow)</p>
+<p>2.记录阅读时间</p>
+<p>4.实时对话，而非异步通信。这样会让用户更有交流的感觉。</p>
+<p>注意，作者 Jeff Atwood 是 Stack Overflow 的创始人，可以发现一个论坛的创始人有很多思考似乎和现在的一些观点向背（例如提倡实时对话，认为创作者太多等等）</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+  <article id="post-a16z" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-03-16T10:12:58.000Z"><a href="/2024/03/16/a16z/">2024-03-16</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2024/03/16/a16z/"></a></h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>今天看到 Marc Andreessen 和 Tyler Cowen 的一个<a target="_blank" rel="noopener" href="https://a16z.com/america-needs-more-techno-optimism/">播客</a>，如果在简中互联网的话，是不是太政治不正确了？</p>
+<p><strong>Tyler:</strong></p>
+<p>因为父母对孩子的溺爱要多得多，所以年轻人的精神疾病发病率更高，年轻人的性生活似乎较少，还有很多文化变量。与新音乐相比，人们听旧音乐的百分比似乎更普遍地停滞不前。那么，您如何确定我们失去自信或活力的原因呢？这是从哪里来的？</p>
+<p><strong>Marc:</strong> </p>
+<p>是的。首先，需要明确的是，我们非常赞成年轻人不要约会，因为这会分散他们在我们创业公司的工作。所以效果很好。幸运的是，在我们的行业中，我们年轻时有很长的时间没有约会。效果很好。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+
+
+<nav id="pagination">
+  
+    <a href="/page/2/" class="alignleft prev">上一页</a>
+  
+  
+  <div class="clearfix"></div>
+</nav></div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

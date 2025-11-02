@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>指令架构集是否有必要开源？聊聊RISC-V和开源闭源指令集的争议。 | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="RISC-V，根据维基百科的解释
+
+RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。
+
+ 最近读到一篇关于开源与闭源（专有）指令架构集的争论。Dave Christie的观点，代表了传统闭源 ISA 阵营的观点。而 David Patterson 作为 RISC-V 的主要推动者之一，代表了开源 ISA 阵营。">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="指令架构集是否有必要开源？聊聊RISC-V和开源闭源指令集的争议。"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-proprietary-vs-open-isa-RISC-V" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-09-22T16:14:51.000Z"><a href="/2024/09/22/proprietary-vs-open-isa-RISC-V/">2024-09-22</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">指令架构集是否有必要开源？聊聊RISC-V和开源闭源指令集的争议。</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>RISC-V，根据维基百科的解释</p>
+<blockquote>
+<p>RISC-V 是一个基于精简指令集（RISC）原则的开源指令集架构（ISA）。该项目于2010年在加州大学伯克利分校启动。<br>与大多数指令集相比，RISC-V指令集可以自由地用于任何目的，允许任何人设计、制造和销售RISC-V芯片和软件而不必支付给任何公司专利费。虽然这不是第一个开源指令集，但它具有重要意义，因为其设计使其适用于现代计算设备（如仓库规模云计算机、高端移动电话和微小嵌入式系统）。设计者考虑到了这些用途中的性能与功率效率。该指令集还具有众多支持的软件，这解决了新指令集通常的弱点。</p>
+</blockquote>
+<p> 最近读到一篇关于开源与闭源（专有）指令架构集的<a target="_blank" rel="noopener" href="https://research.cs.wisc.edu/multifacet/papers/ieeemicro16_card_isa.pdf">争论</a>。Dave Christie的观点，代表了传统闭源 ISA 阵营的观点。而 David Patterson 作为 RISC-V 的主要推动者之一，代表了开源 ISA 阵营。</p>
+<span id="more"></span>
+
+<p>Dave Christie：</p>
+<blockquote>
+<ol>
+<li>主流ISA，（尤其是x86，ARM，Power, MIPS, Sparc），已经很好地为该行业服务了。</li>
+<li>构建完美的指令架构集并不能确保商业上的成功。</li>
+<li>指令架构集不仅仅是一门技术，更是生态系统。一旦达到一定规模，它的巨大生态会让它变得无比强大。</li>
+<li>过去的经验证明，目前指令架构集的所有者会负责任地管理。</li>
+<li>指令架构集会偶尔有失误，RISC-V也终将如此。</li>
+</ol>
+</blockquote>
+<p>Dave Christie对 RISV-V提出质疑：</p>
+<blockquote>
+<ol>
+<li>RISC-V存在很多替代品，例如 Open RISC, Lattice Mico32.</li>
+<li>非常长的指令字（VLIW）格式是RISC-V中的一个选项。但这个选项过于学术化，因为它试图为太多人提供太多的东西。VLIW适合高度专业化而非通用的用途。</li>
+<li>不赞成共享的开放核设计可以缩短进入市场的时间。</li>
+<li>不赞成行业需要一个标准化的指令架构集来保护世界免遭专有指令集的垄断。</li>
+</ol>
+</blockquote>
+<p>Dave Christie提出：与其在指令架构集进行标准化，不如使用「虚拟指令架构集」或中间件语言来标准化软硬件之间的接口。例如异构系统架构(Heterogeneous System Architecture(HSA))</p>
+<p>另一方David Patterson认为：</p>
+<blockquote>
+<ol>
+<li>开放的标准、开源的软件塑造了计算机行业，如表一。指令架构集不应该例外。</li>
+<li>指令架构集是软硬件的相接之处，很重要。</li>
+<li>专有的指令架构集是AMD和 Intel 构起的护城河。不仅拥有怪癖的专利，还会在你违反许可时起诉你。即使获得许可证也未必能免受诉讼。</li>
+<li>ARM 的许可证不允许他人设计 ARM 内核，导致扼杀创新和竞争。</li>
+<li>从技术角度看，指令架构集没有理由要专有。因为大部分的生态开发不是指令集的所有者开发，而是外部人员开发的。而且很多人都有设计优秀的指令架构集的经验。而且目前流行的指令集ARM 和 x86 不是特别优雅，只是比较成功。 而且如果指令集与特定的公司挂钩，那么公司倒闭时，指令架构集也会随之而逝。</li>
+</ol>
+</blockquote>
+<p>David Patterson 认为开源指令架构集的优点：</p>
+<blockquote>
+<ol>
+<li>开源产生更多的创新</li>
+<li>共享的内核可以缩短进入市场的时间并降低成本。</li>
+<li>共享的内核可以减少错误，因为大家都可以看得到。</li>
+<li>便于学术研究。</li>
+</ol>
+</blockquote>
+<p>David Patterson 还提出了一个很有意思的角度：</p>
+<blockquote>
+<p>RISC-V 是最小化的模块指令架构集。像 Intel 这类公司设计的指令架构集需要能处理任何东西，因此随着时间的推移，会越来越大。而在21世纪的架构中，指令架构集应该用于SoC（即 System on a Chip，系统级芯片）。这就是RISC-V 的优势：基础指令少，支持32, 64, 128位， 可以添加标准扩展，支持更小的指令大小，为特定SoC指令预留了空间。</p>
+</blockquote>
+<p>从2024年的角度来看，David Patterson关于开源指令架构集和RISC-V的观点大体上被证明是正确的。RISC-V作为一个模块化、可扩展的 ISA，确实获得了广泛采用。目前，RISC-V拥有蓬勃发展的生态系统，得到了学术界和工业界的大力支持，在嵌入式系统、IoT和高性能计算等领域都有所突破。（传统的专有指令架构集如ARM和x86在市场份额上目前仍然保持强势地位。）</p>
+<p><img src="/../images/isa-1.png" alt="isa-1"></p>
+<p><img src="/../images/isa-2.png" alt="isa-2"></p>
+<p>注：ISA 是 Instruction Set Architecture 的缩写，中文通常翻译为”指令集架构”。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>

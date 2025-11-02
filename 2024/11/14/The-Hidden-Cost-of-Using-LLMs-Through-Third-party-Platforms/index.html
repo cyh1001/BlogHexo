@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  
+  <title>不建议在第三方平台使用LLM | 曹艺瀚的个人网站</title>
+  <meta name="author" content="August曹艺瀚">
+  
+  <meta name="description" content="最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。
+
+主要原因猜测是 API 调用链路差异，以及prompt可能不同。
+
+官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → C">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="不建议在第三方平台使用LLM"/>
+  <meta property="og:site_name" content="曹艺瀚的个人网站"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  <link rel="shortcut icon" href="/favicon.png">
+  
+    <link rel="alternate" href="/atom.xml" title="曹艺瀚的个人网站" type="application/atom+xml">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  <!--[if lt IE 9]><script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script><![endif]-->
+  
+
+  <script data-goatcounter="https://caoyihan.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+  <script defer data-domain="caoyihan.com" src="https://plausible.io/js/script.js"></script>
+<!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0QH47RDHGF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-0QH47RDHGF');
+  </script>
+<meta name="generator" content="Hexo 7.1.1"></head>
+
+
+<body>
+  <header id="header" class="inner"><div class="alignleft">
+  <h1><a href="/">曹艺瀚的个人网站</a></h1>
+  <h2><a href="/"></a></h2>
+  <!-- 添加 word_count 标签 -->
+  <!-- <div class="word-count">
+    <div class="word-count">Total words in posts: 177434</div>
+  </div> -->
+</div>
+<nav id="main-nav" class="alignright">
+  <ul>
+    
+      <li><a href="/me">认识小曹~</a></li>
+    
+      <li><a href="/archives">Archives</a></li>
+    
+      <li><a href="/atom.xml">RSS</a></li>
+    
+      <li><a href="/friends">友情链接</a></li>
+    
+  </ul>
+  <div class="clearfix"></div>
+</nav>
+<div class="clearfix"></div>
+</header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+  <div class="post-content">
+    <header>
+      
+        <div class="icon"></div>
+        <time class="dt-published" datetime="2024-11-14T11:57:43.000Z"><a href="/2024/11/14/The-Hidden-Cost-of-Using-LLMs-Through-Third-party-Platforms/">2024-11-14</a></time>
+      
+      
+  
+    <h1 class="p-name title" itemprop="headline name">不建议在第三方平台使用LLM</h1>
+  
+
+    </header>
+    <div class="e-content entry" itemprop="articleBody">
+      
+        <p>最近发现，官网的 Claude 似乎表现比 POE，302.ai 的强得多。不确定是不是自己的错觉，感觉很奇怪，便研究了一下。</p>
+<p><img src="https://cdnv2.ruguoapp.com/FuqVHPYzbd-CuJu01jRZRLP6efbEv3.png?imageMogr2/auto-orient/thumbnail/308632@%7Cwatermark/3/image/aHR0cHM6Ly93YXRlcm1hcmsucnVndW9hcHAuY29tLz90ZXh0PSVFNSU4RCVCMyVFNSU4OCVCQiUyMCU0MEF1Z3VzdCVFNSVCMCU4RiVFNiU5QiVCOSZoZWlnaHQ9MTc=/gravity/SouthEast/dx/10/dy/10" alt="Image"></p>
+<p>主要原因猜测是 API 调用链路差异，以及prompt可能不同。</p>
+<blockquote>
+<p>官网版本的调用链路： 用户输入 → Anthropic官网前端 → Anthropic API → Claude模型 → 返回结果</p>
+<p>第三方平台的调用链路： 用户输入 → 第三方平台前端 → 第三方平台后端 → Anthropic API → Claude模型 → 返回结果 → 第三方平台后端→第三方平台前端 → 展示</p>
+</blockquote>
+<p>按理说，多封装一层 API 并不影响大模型的性能。但是第三方平台可能倾向于更短的回答以节省 prompt；修改了 AI 安全；上下文记忆没有正确设置和处理，等等原因，最后的结果是，性能受到影响。现在 LLM 的涌现仍很复杂，输入微小的不同，就很可能大幅影响输出。</p>
+<p>此外第三方平台可能设置了自己的 prompt，或者是 Anthropic 优化了官网版的 Claude，也影响了结果。典型例子就是302.ai。</p>
+<p>如果使用dify.ai, langchain等中间件平台，我尚不确定对 LLM 性能有什么影响。</p>
+<p>因此，为了体验到最佳性能，建议不要使用第三方平台的 LLM，直接在官网使用。</p>
+
+      
+    </div>
+    <footer>
+      
+        
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+    <div class="search">
+  <form action="//google.com/search" method="get" accept-charset="utf-8">
+    <input type="search" name="q" results="0" placeholder="搜索">
+    <input type="hidden" name="as_sitesearch" value="caoyihan.com">
+  </form>
+</div>
+
+  
+    
+  
+    
+  
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div class="alignleft">
+  
+  &copy; 2025 August曹艺瀚
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+
+
+<script src="/js/gallery.js"></script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+<script>
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+</body>
+</html>
