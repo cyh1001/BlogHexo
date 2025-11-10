@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://caoyihan.com/2025/10/09/thoughts-of-shipindao-essay/</loc>
+    <loc>https://caoyihan.com/2025/11/09/The-Great-Male-Renunciation/</loc>
     
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-11-10</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2025/11/09/decoration-and-UI/</loc>
+    
+    <lastmod>2025-11-09</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -12,6 +21,15 @@
   
   <url>
     <loc>https://caoyihan.com/2025/11/02/thoughts-2025-11/</loc>
+    
+    <lastmod>2025-11-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://caoyihan.com/2025/10/09/thoughts-of-shipindao-essay/</loc>
     
     <lastmod>2025-11-02</lastmod>
     
@@ -1057,7 +1075,7 @@
 
   <url>
     <loc>https://caoyihan.com/</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2025-11-10</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
