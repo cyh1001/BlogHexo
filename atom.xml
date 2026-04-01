@@ -6,7 +6,7 @@
   <link href="https://caoyihan.com/atom.xml" rel="self"/>
   
   <link href="https://caoyihan.com/"/>
-  <updated>2026-04-01T21:08:12.235Z</updated>
+  <updated>2026-04-01T23:11:12.333Z</updated>
   <id>https://caoyihan.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于赚AI的钱丨AI失业潮的随想</title>
+    <link href="https://caoyihan.com/2026/04/01/AI-Employment-Crisis/"/>
+    <id>https://caoyihan.com/2026/04/01/AI-Employment-Crisis/</id>
+    <published>2026-04-01T11:11:12.000Z</published>
+    <updated>2026-04-01T23:11:12.333Z</updated>
+    
+    <content type="html"><![CDATA[<p>2024年底写了<a href="https://www.caoyihan.com/2024/12/16/AI-has-no-utility-function/">AI 没有效用函数</a>。</p><p>当时想的是，因为想赚钱，但是赚人类的钱，太麻烦了，效率低，摩擦很多。而AI很高效，很干净。如果能直接赚AI的钱就好了。</p><p>那能不能通过服务AI，来赚AI的钱呢？当时的结论是：不能。因为AI没有欲望。</p><p>今天是2026.4.1，其实最近一年半以来，我经常会想起这个问题。</p><p>虽然大量资金投入AI，大量资本进场，AI公司估值水涨船高。<br>但从人类的方向来看，好像大家为AI的付费，并没有大量提升。全人类每人平均，可能也不超过20美元&#x2F;月。即使是很厉害的开发者，可能付200美元&#x2F;月的claude，就已经是算支出很多了。可能很多人甚至连每月的20美元&#x2F;月都不愿意支付。（不止一个朋友，跟我说过20美元&#x2F;月的AI很贵，以至于可能几个人共用。）<br>但是看AI侧，AI发展飞快，2026年已经又比2024年底，厉害很多了。可能很多是按照半月来迭代，半年就是天翻地覆的变化。但好像，其实主要收入，还是流向openai等几个LLM大厂，还有算力层，比如英伟达，一些供应链企业，等等。<br>这里，我感觉可能有些地方不对劲。</p><p>因为，看回2024年的那篇文章。如果人类不愿意付费。海量的涌入AI行业的人才，包括巨量的独立开发者，很可能都赚不了什么钱。<br>你想，2022之后，独立开发者应该巨量增长，很多一人微saas公司出现。各种AI网站，应用，都极多。生产力应该也是巨幅提升，一个程序员的生产力，提升了100倍都很有可能。<br>但好像，很少有人有变富了的感觉。可能赚到钱的人，也不是很多。很多人也获得了巨大的效用，比如很多人和AI聊天，解决情感需求，等等。也包括完成学校的作业。<br>但是，提高生产力的部分，好像很多转化为财富，反而确确实实造成了严重的失业浪潮，而且失业浪潮还在扩展，逐步进入律师，医生等领域。</p><p>还有一个方向,AI还在飞速发展,最典型的,就是AI agent,例如Claude code一类。一开始,人们是让代码辅助生成,例如copilot,后面是LLM,可以写完整代码。后面是cursor,可以把LLM整合进IDE,LLM直接写IDE。到后面是AI agent,claude code直接写项目,而不是一个个文件让人盯着。这方面,我感觉都可以预计,也不会有很强的财富效应。</p><p>所以,我感觉,可以理解一个东西是,人类的支付意愿总和,相当于人类的欲望总和。从人类的支付意愿总和来看,因为人类的支付意愿总和有限,可能人类的欲望,也可以说是比较有限的。<br>而且,大量的人失业,很多人没钱,就更没支付意愿,很可能反而大家都变更穷了,也有可能的。</p><p>总之，人类的付费意愿总和，赶不上生产力的发展。</p><p>经济学的默认假设是人类欲望无限，资源有限。但起码看中国的场景，很可能对于很多人来说，是欲望有限，资源无限。比如有些有钱的中年男人，其实反而没有那么强的消费欲望了。</p><p>经济学的核心是研究稀缺资源的分配，我感觉，很可能建立在新古典经济学的整个框架，在新时代，很可能有些不适配了。模型太简单了，但现实太复杂了。</p><p>反反复复想起，凯恩斯预言2030年，人们只需要每周工作15h了。虽然很多细节不完美，但凯恩斯的预测，应该极其准确。而且他预测是2030年，ChatGPT是2022出来，今年是2026年。即使2022年之前，还严重不符，很多经济学书都嘲笑凯恩斯预测错了。但2022之后，情况迅速变化，有点快速向凯恩斯的预测靠拢。</p><p> 但另一方面，中国大量的人，月收入少于10000.对于他们来说，仍然是欲望过多，但是资源不足。</p><p>不管不同人的收入，是不是分层的。但是，「人类愿意用金钱满足的欲望是有限的」，这个判断，应该是准确的。其实很多独立开发者和AI从业者，很容易FOMO和宣传焦虑。很多人用AI提高生产力之后，反而越来越忙了，但很有可能，和迅速快速发展的AI，保持一定距离，还可以赚钱更多。而且，既然在目前可以想到的将来，人类仍然是经济消费的主体，作为赚钱者来说，就应该把注意力放在瞄准人们愿意付费的需求上，而不是大量想象的需求，也不应该一直和AI打角度。 因为和AI打交道，非常干净。而和人类打交道，一直很低效，摩擦很多。</p><p>最后这点，我会反复想到，可能一些靠个人IP的微商，赚钱反而比独立开发者多。我会反反复复想到这个。</p><p>甚至感觉可以说，走独立开发者路线，很可能也是一段弯路？<br>或者，我知道很多独立开发企业，做得也相当好。可能月利润有10万或20万美元。一部分是幸存者偏差，大量的独立开发者，美元赚到钱，还需要承担AI成本。一部分是，他们可能是满足了细分市场的人类愿意付费的需求，但这部分，大量独立开发者不熟悉。很可能，这些赚钱的独立开发者，产品也很普通。只是卖出去了。</p><p>再说回AI失业潮。</p><p>其实即使是非AI，大量的中国制造业，生产力也在快速提升，虽然没有AI发展那么快。但是，整体肯定是，生产力快速提升，另一方面，大量的人失业。很多没有钱的人，或者有资产但没收入的人，肯定会非常不幸福。这对于中国整体，或者世界整体来说，肯定不是最优的。那么，这个问题怎么解决呢？</p><p>我能想到，几个思路：</p><ul><li>UBI（全民基本收入）</li><li>大规模缩短工作时间</li><li>砸掉珍妮机，拒绝AI进入</li><li>军事凯恩斯主义，通过打战，强制消耗产出。</li><li>一部分人接受，自己不需要工作，也可以快乐生活</li></ul><p>UBI本身的问题也很多，可能因为这个量级太大了。大规模缩短工作时间，很可能中国企业就失去竞争优势。拒绝AI进入，拒绝提高生产力，其实也是类似的，会让企业失去竞争优势。</p><p>我感觉，接下来的时代基调，就必然是，生产力快速提升，劳动产出贬值，失业潮严重。（这不仅是中国有消费不足的内生问题，也是全球性的趋势）</p><p>但问题的本质，很可能也是分配问题。包括很多国家的财务危机，也是分配问题。</p><p>但从另一个角度来说，似乎中国的富人还是极富。似乎把富人的1000元给到一个穷人，整个社会的效用还是更高的。 所以，可能中国的解决AI失业潮的思路还是，优化分配，让先富带后富，共同富裕。不一定是给富人征税，可能是提高农民养老金，可能是增加育儿补贴，可能是提高个人所得税起征点。相当于是，更加精细化的UBI。 在尽可能不损失中国在全球竞争力的情况下，优化分配。难度很大，但可能目前还有很多容易的果实可以摘。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;2024年底写了&lt;a href=&quot;https://www.caoyihan.com/2024/12/16/AI-has-no-utility-function/&quot;&gt;AI 没有效用函数&lt;/a&gt;。&lt;/p&gt;
+&lt;p&gt;当时想的是，因为想赚钱，但是赚人类的钱，太麻烦了，效率低，摩擦很多</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>关于Claude Code源代码泄露的一些想法</title>
@@ -440,27 +461,6 @@
 &lt;p&gt;价值观更是飘忽不定&lt;/p&gt;
 &lt;p&gt;没有稳定的身份认同&lt;/p&gt;
 </summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>读Tyler Cowen博客，想到的关于认知偏差</title>
-    <link href="https://caoyihan.com/2025/05/29/From-Tyler-Cowen-blog-to-Cognitive-Bias/"/>
-    <id>https://caoyihan.com/2025/05/29/From-Tyler-Cowen-blog-to-Cognitive-Bias/</id>
-    <published>2025-05-30T03:41:52.000Z</published>
-    <updated>2025-05-31T04:05:18.438Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天读到 Tyler Cowen 和 Noah Smith 的一些 blog，真的让我震惊。我没想到，他们作为大经济学家，居然可以犯这么多错误，那我之前读到的，那么多文章，错误还会有多少？<br>这是原帖：</p><p><a href="https://www.noahpinion.blog/p/service-costs-arent-exploding-anymore">Service costs aren’t exploding anymore</a></p><p><a href="https://marginalrevolution.com/marginalrevolution/2025/05/noah-on-health-care-costs.html">Noah on health care costs</a></p><p><a href="https://marginalrevolution.com/marginalrevolution/2025/05/how-america-built-the-worlds-most-successful-market-for-generic-drugs.html">How America Built the World’s Most Successful Market for Generic Drugs</a></p><p><a href="https://marginalrevolution.com/marginalrevolution/2024/09/the-us-has-low-prices-for-most-prescription-drugs.html">The United States has some of the lowest prices in the world for most drugs</a></p><p>为什么觉得不对劲，因为当我读到：The United States has some of the <a href="https://marginalrevolution.com/marginalrevolution/2024/09/the-us-has-low-prices-for-most-prescription-drugs.html">lowest prices in the world for most drugs</a>.  我就震惊了。在中国，一管药膏，一般几元到几十元。但是在美国，保险之前可能要 200~300 美元，相当于一千多人民币，保险后，可能是 1 折，仍然需要 20~30 美元，人民币一百多元，也远远高于国内的价格。</p><p>而且，这还只是一部分。还有很多很稀松平常的药，在美国被刻意列为处方药，必须看医生，获得处方，才能购买。结果就是，有很多药，我压根懒得看医生，又没办法买药，就只好忍受一些微小的疾病。</p><p>（当然，我也不是说，美国什么药都贵，但至少，说美国大部分药便宜，就是误导人的。至少应该注意，是制造商价格，还是患者实际支付，以及患者的总获取成本。）</p><p>原来的几个作者，有这样一些错误。比如，在初始的NIH<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11147645/#:~:text=The%20gap%20between%20U.S.%20prices,States%20than%20in%20other%20countries.">研究文章</a>。这个文章研究了美国的处方药价格。但是，美国的处方药和其他国家的定义很不一样。其次，口径也有问题。但这篇研究文章，还是客观严谨，局限性也列了出来。至少承认复杂性。</p><p>但这篇，<a href="https://marginalrevolution.com/marginalrevolution/2024/09/the-us-has-low-prices-for-most-prescription-drugs.html">The US Has Low Prices for Most Prescription Drugs</a>，就直接引用原文的一段话，断章取义，得出美国大多数处方药价格低廉的结论。这篇 Alex Tabarrok 的文章，被 Tyler Cowen 摘录。</p><p>这篇 Alex Tabarrok 的文章，又被他自己引用，又得出新的文章。<a href="https://marginalrevolution.com/marginalrevolution/2025/05/how-america-built-the-worlds-most-successful-market-for-generic-drugs.html">How America Built the World’s Most Successful Market for Generic Drugs</a>。相当于，原本的文章就有偏见和扭曲了，然后扭曲和偏见有递进了一步，甚至觉得美国医药产业全球领先。</p><p>Tyler Cowen 也引用了，Noah Smith 的文章，结论也是类似的，认为美国人看病成本在下降。</p><p>Noah Smith 的这篇文章，还有别的问题，类似的数据操控在Noah Smith的教育成本分析中也出现了。比如，使用 College Board 的数据来源，证明自己的观点。但明显，College Board 与高等教育产业利益深度绑定，得出来的报告可能也是有偏见的。</p><p>又想起，其实连硅谷的大佬，Paul Graham，Dario Amodel，也对中国存在系统性偏见。</p><p>更关键的是，像上面，Noah Smith, Tyler Cowen, Alex Tabarrok，居然形成了一个精英信息茧房，自己的信息来回循环，互相论证。而硅谷的大佬，信息也很发达，却也可能有偏见。</p><p>虽然，完全客观的文章可能不存在。但仍然需要批判性思考，不能迷信即使title很厉害的人。我现在想起，a16z，Paradigm 等VC，在2022~2023年，在Web3中，得出很多有偏见的数据报告，现在也不会太迷信他们的判断，和对AI的看法。</p><p>也会想到，自己可能也会有自己的思维误区，系统性偏差。</p><p>而对我来说，我知道自己不可能严格考究每篇文章。先提起祛魅，保持批判性思考，再定期接触各种信息来源，用自己经验+AI分析检验。还有更重要的，培养「认知谦逊」，尊重复杂 —— 承认自己的知识和经验是有限的，不要急于下判断。</p><p>即使，上面写了这么多，我也不敢完全说，他们的数据和论证，就是完全错的，可能我的分析，也是我自身的偏见的体现。</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;今天读到 Tyler Cowen 和 Noah Smith 的一些 blog，真的让我震惊。我没想到，他们作为大经济学家，居然可以犯这么多错误，那我之前读到的，那么多文章，错误还会有多少？&lt;br&gt;这是原帖：&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.noahp</summary>
       
     
     
