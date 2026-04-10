@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   
-  <title>记录Auth.js的callbackUrl问题解决经历 | 曹艺瀚的个人网站</title>
+  <title>「自己不愿意为其他独立开发者的产品付费的心理记录」 | 曹艺瀚的个人网站</title>
   <meta name="author" content="August曹艺瀚">
   
-  <meta name="description" content="最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError">
+  <meta name="description" content="我还发现自己一个显著现象，就是我愿意为一件衣服、一些实体的小工具、一个化妆品付费，即使可能是200元，我可能为LLM或Spotify付费，每个月几美元或20美元。但我似乎非常不愿意，为其他独立开发者的产品付费。比如，我用得最多的，沉浸式翻译，一个浏览器翻译插件，几年都是免费给我用。巨量的翻译的API">
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="记录Auth.js的callbackUrl问题解决经历"/>
+  <meta property="og:title" content="「自己不愿意为其他独立开发者的产品付费的心理记录」"/>
   <meta property="og:site_name" content="曹艺瀚的个人网站"/>
 
   
@@ -68,35 +68,24 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-Authjs-callbackUrl" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article id="post-Indie-pay" class="h-entry post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
   <div class="post-content">
     <header>
       
         <div class="icon"></div>
-        <time class="dt-published" datetime="2024-08-13T12:59:37.000Z"><a href="/2024/08/13/Authjs-callbackUrl/">2024-08-13</a></time>
+        <time class="dt-published" datetime="2026-04-10T08:35:24.000Z"><a href="/2026/04/10/Indie-pay/">2026-04-10</a></time>
       
       
   
-    <h1 class="p-name title" itemprop="headline name">记录Auth.js的callbackUrl问题解决经历</h1>
+    <h1 class="p-name title" itemprop="headline name">「自己不愿意为其他独立开发者的产品付费的心理记录」</h1>
   
 
     </header>
     <div class="e-content entry" itemprop="articleBody">
       
-        <p>最近在给Next.js项目配置 Auth.js时，遇到一个很头疼的问题。在本地测试和在Vercel上部署时，均可正常运行，但是同样的代码部署到 Google Cloud 云服务器上时，就会有问题。具体问题是，当使用Github登录时，callback会callback到<a target="_blank" rel="noopener" href="http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError">http://0.0.0.0:3000/api/auth/signin?error=OAuthCallbackError</a></p>
-<span id="more"></span>
-
-<p>一开始猜测是Nginx配置问题，检查之后确认无误。</p>
-<p>后面花了很长时间，才意识到，Auth.js可以开启debug:true。开启后，发现我向github发送的请求内容中，</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&quot;signinUrl&quot;: &quot;http://0.0.0.0:3000/api/auth/signin/github&quot;,</span><br><span class="line">“callbackUrl”： “http://0.0.0.0:3000/api/auth/callback/github”，</span><br></pre></td></tr></table></figure>
-
-<p>虽然没有发现具体原因。但是想起auth.js文档中，明确写了v5版本，不需要规定<code>AUTH_URL</code></p>
-<p><img src="/../images/authjs-AUTH_URL.png" alt="Auth.js AUTH_URL"></p>
-<p>在环境变量中，设置</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">AUTH_URL=【自己的域名】</span><br><span class="line">例如：AUTH_URL=https://podcasthighlight.com</span><br></pre></td></tr></table></figure>
-
-<p>重启项目，发现运行正常，问题解决。</p>
+        <p>我还发现自己一个显著现象，就是我愿意为一件衣服、一些实体的小工具、一个化妆品付费，即使可能是200元，我可能为LLM或Spotify付费，每个月几美元或20美元。<br>但我似乎非常不愿意，为其他独立开发者的产品付费。<br>比如，我用得最多的，沉浸式翻译，一个浏览器翻译插件，几年都是免费给我用。巨量的翻译的API调用，也很好用。创始人Owen就是我好朋友，我们经常聊天。<br>但是，最近，这个产品设置的免费的额度，超过额度，就需要登录，登录可以提高额度。再次超过，就需要49元人民币&#x2F;月。<br>我一般免费的额度，也确实够用。<br>但我感觉，自己就完全不愿意付费。<br>而且看到49元的价格，会想，如果这是9.9元，我可能就会付费。会想，找其他人做的替代品。<br>（但我又想到，如果他一开始，就不是给我49元，而是9.9元的价格，我可能照样是不愿意付费的）<br>我就感觉，很奇怪。</p>
+<p>很可能，我使用实物产品，一直都需要付费，所以买衣服、买化妆品、买实体的工具，觉得付费是正常的，自己想都不会想。<br>LLM和spotify，可能也是因为，即使在中国，音乐软件收费，也很多年了。<br>但是，一个免费的产品，突然要求收费，或者自己长期使用免费工具，突然要收费了，自己会有很强的内心不适应。即使后面的产品，给自己的价值，远远高于前面那些，前面那些我已经付费的产品。</p>
 
       
     </div>
